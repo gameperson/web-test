@@ -89,6 +89,19 @@ body {
     text-decoration: underline;
 }
 
+/* immages */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* quick-guide text boxes */
 .quick-guide {
     background-color: #f9f9f9; /* Light gray background */
