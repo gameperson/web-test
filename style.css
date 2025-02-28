@@ -172,6 +172,16 @@ body {
     border-top: 1px solid #ccc;
 }
 
+.footer-content {
+  display: inline-flex; /* Use inline-flex for inline alignment */
+  align-items: center; /* Vertically align items */
+  gap: 30px; /* Add space between image and text */
+}
+
+.footer-image {
+  height: 20px; /* Adjust image height as needed */
+}
+
 .footer-text {
     margin: 0;
 }
