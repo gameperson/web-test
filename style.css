@@ -170,21 +170,20 @@ aside#disclaimer .disclaimer a {
 }
 
 #full-disclaimer .return-link a {
-    background-color: #0070c9; /* Blue button background */
-    color: white; /* White text */
-    padding: 1em 2em; /* Increased padding */
-    border-radius: 8px; /* More rounded corners */
+    background-color: #f0f0f0; /* Light gray background (matches index links) */
+    color: #333; /* Dark gray text (matches index links) */
+    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
+    border-radius: 5px; /* Matches index links */
     text-decoration: none;
-    font-weight: 600; /* Bolder text */
     transition: background-color 0.3s ease;
-    display: inline-block; /* Make it a block-level element */
-    border: none; /* Remove default border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    display: inline-block;
+    border: 1px solid #ddd; /* Add a subtle border */
+    font-weight: normal; /* Normal font weight */
+    box-shadow: none; /* Remove box shadow */
 }
 
 #full-disclaimer .return-link a:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+    background-color: #e0e0e0; /* Slightly darker background on hover */
 }
 
 footer {
