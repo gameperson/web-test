@@ -205,7 +205,7 @@ footer img {
 }
 
 /* Footer Disclaimer Section */
-footer .footer-disclaimer { /* More specific selector */
+footer .footer-content aside#disclaimer .footer-disclaimer { /* Even more specific selector */
     text-align: center;
     padding: 10px;
     background-color: #f0f0f0;
@@ -216,17 +216,16 @@ footer .footer-disclaimer { /* More specific selector */
     display: inline-block;
 }
 
-footer .footer-disclaimer a { /* More specific selector */
+footer .footer-content aside#disclaimer .footer-disclaimer a { /* Even more specific selector */
     color: #555;
     text-decoration: none;
     padding: 0.5em 1em;
     display: inline-block;
 }
 
-footer .footer-disclaimer a:hover { /* More specific selector */
+footer .footer-content aside#disclaimer .footer-disclaimer a:hover { /* Even more specific selector */
     background-color: #e0e0e0;
 }
-
 /* Header and Navigation */
 .site-header {
     background-color: #f0f0f0;
