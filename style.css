@@ -7,12 +7,25 @@ body, p, a, h1, h2, ul, li, footer, aside {
     box-sizing: border-box;
 }
 
+/* Color Palette */
 body {
-    font-family: sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f0f0f0; /* Light gray */
+    background-color: #f8f8f8; /* Very light gray background */
     color: #333; /* Dark gray text */
+}
+
+a {
+    color: #0070c9; /* Slightly darker blue links */
+}
+
+aside#disclaimer .disclaimer {
+    background-color: #f0f0f0; /* Slightly darker light gray */
+    color: #555;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #e8e8e8; /* Slightly darker light gray */
+    color: #444;
 }
 
 /* Typography */
@@ -42,26 +55,14 @@ p {
     margin-bottom: 1.2em;
 }
 
-/* Color Palette */
 body {
-    background-color: #f8f8f8; /* Very light gray background */
+    font-family: sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f0f0f0; /* Light gray */
     color: #333; /* Dark gray text */
 }
 
-a {
-    color: #0070c9; /* Slightly darker blue links */
-}
-
-aside#disclaimer .disclaimer {
-    background-color: #f0f0f0; /* Slightly darker light gray */
-    color: #555;
-    border: 1px solid #ddd;
-}
-
-footer {
-    background-color: #e8e8e8; /* Slightly darker light gray */
-    color: #444;
-}
 
 /* Link Styles */
 a {
@@ -102,8 +103,6 @@ p {
     margin-bottom: 1.2em;
 }
 
-/* ... (Your existing CSS) ... */
-
 /* Index Section */
 .index-list {
     list-style: none;
@@ -121,13 +120,13 @@ p {
 }
 
 .index-list li a {
-    display: inline-block; /* Make the link a block element */
-    padding: 0.8em 1.2em; /* Add padding to the link */
-    background-color: #f0f0f0; /* Light gray background */
-    color: #333; /* Dark gray text */
+    display: inline-block; /* Or display: block; */
+    padding: 0.8em 1.2em;
+    background-color: #f0f0f0;
+    color: #333;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    transition: background-color 0.3s ease;
 }
 
 .index-list li a:hover {
