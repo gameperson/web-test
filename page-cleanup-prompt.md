@@ -1,10 +1,12 @@
-# Prompt for Uniform Article Page Optimization
-
 ### **How to Use This Prompt:**
 1.  **Prepare Your Files:** Have your `article_name.html` file and your `style.css` file ready.
 2.  **Copy and Paste:** Copy the prompt above and paste it into our chat.
 3.  **Provide Files:** After I acknowledge the prompt, provide the contents of your HTML and CSS files.
 4.  **Iterate:** We'll work together step by step to optimize your article page.
+
+
+
+# Prompt for Uniform Article Page Optimization
 
 I want to apply the same optimization, styling, and best practices we implemented on `index.html` to my article pages.
 **This Includes ALL these Steps**:
