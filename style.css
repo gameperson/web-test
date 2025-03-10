@@ -205,6 +205,7 @@ footer img {
 }
 
 /* Disclaimer Section */
+
 /* Footer Disclaimer Section */
 .footer-disclaimer {
     text-align: center;
@@ -219,13 +220,48 @@ footer img {
 
 .footer-disclaimer a {
     color: #555;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
     padding: 0.5em 1em;
     display: inline-block;
 }
 
 .footer-disclaimer a:hover {
     background-color: #e0e0e0;
+}
+
+/* Header and Navigation */
+.site-header {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.site-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.site-nav li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.nav-item a { /* Style links within .nav-item as buttons */
+    background-color: #f0f0f0;
+    color: #333; /* Set link color to dark gray */
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: 1px solid #ddd;
+    font-weight: normal;
+    box-shadow: none;
+}
+
+.nav-item a:hover {
+    background-color: #e0e0e0; /* Change background on hover */
+    text-decoration: none; /* Remove underline on hover */
 }
 
 /* General Disclaimer Section */
