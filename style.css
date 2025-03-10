@@ -101,7 +101,7 @@ a:hover {
 
 .nav-item a { /* Style links within .nav-item as buttons */
     background-color: #f0f0f0;
-    color: #333;
+    color: #333; /* Set link color to dark gray */
     padding: 0.8em 1.2em;
     border-radius: 5px;
     text-decoration: none;
