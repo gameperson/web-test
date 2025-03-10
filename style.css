@@ -1,4 +1,5 @@
-/* style.css - Default Light Theme */
+/* style.css - Default Theme */
+
 /* Basic Reset */
 body, p, a, h1, h2, ul, li, footer, aside {
     margin: 0;
@@ -13,6 +14,24 @@ body {
     background-color: #f0f0f0; /* Light gray */
     color: #333; /* Dark gray text */
 }
+
+/* Typography */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* More readable font */
+    line-height: 1.7; /* Increased line spacing */
+    color: #333;
+}
+
+h1, h2 {
+    font-weight: 600; /* Slightly bolder headings */
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.6em;
+}
+
 
 /* Link Styles */
 a {
@@ -41,6 +60,26 @@ a:hover {
 }
 
 /* Headings */
+h1, h2 {
+    font-weight: 600; /* Slightly bolder headings */
+    line-height: 1.3;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 0.6em;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+/* ... (Your existing CSS) ... */
 h1 {
     margin-bottom: 20px;
 }
