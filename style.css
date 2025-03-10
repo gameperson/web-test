@@ -204,10 +204,8 @@ footer img {
     margin-top: 0.5rem;
 }
 
-/* Disclaimer Section */
-
 /* Footer Disclaimer Section */
-.footer-disclaimer {
+footer .footer-disclaimer { /* More specific selector */
     text-align: center;
     padding: 10px;
     background-color: #f0f0f0;
@@ -218,14 +216,14 @@ footer img {
     display: inline-block;
 }
 
-.footer-disclaimer a {
+footer .footer-disclaimer a { /* More specific selector */
     color: #555;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
     padding: 0.5em 1em;
     display: inline-block;
 }
 
-.footer-disclaimer a:hover {
+footer .footer-disclaimer a:hover { /* More specific selector */
     background-color: #e0e0e0;
 }
 
