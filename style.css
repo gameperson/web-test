@@ -133,10 +133,53 @@ img {
     height: auto;
 }
 
+
+/* ... (Your existing CSS) ... */
+
 /* Responsive Design */
+
+/* For screens smaller than 768px (tablets and phones) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .index-title {
+        font-size: 2em;
+    }
+
+    .index-subtitle {
+        font-size: 1em;
+    }
+
+    .index-list li {
+        padding: 0.8em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
+
+/* For screens smaller than 600px (phones) */
 @media (max-width: 600px) {
-    .site-nav li {
-        display: block;
-        margin: 0.5rem 0;
+    .index-list li {
+        display: block; /* Ensure each link is on a new line */
+        margin: 0.5rem 0; /* Add vertical spacing */
+    }
+
+    .index-title {
+        font-size: 1.8em; /* Further reduce title size */
+    }
+}
+
+/* For screens smaller than 480px (smaller phones) */
+@media (max-width: 480px) {
+    .index-title {
+        font-size: 1.6em;
     }
 }
