@@ -267,7 +267,31 @@ aside#disclaimer .disclaimer a {
     background-color: #e0e0e0; /* Slightly darker background on hover */
 }
 
+/* ... other styles ... */
 
+.return-link {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.return-link a {
+    background-color: #f0f0f0; /* Light gray background (matches index links) */
+    color: #333; /* Dark gray text (matches index links) */
+    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
+    border-radius: 5px; /* Matches index links */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: 1px solid #ddd; /* Add a subtle border */
+    font-weight: normal; /* Normal font weight */
+    box-shadow: none; /* Remove box shadow */
+}
+
+.return-link a:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* ... other styles ... */
 /* Image Styles */
 img {
     max-width: 100%;
