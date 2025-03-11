@@ -262,7 +262,7 @@ footer img {
     text-decoration: none; /* Remove underline on hover */
 }
 
-/* General Disclaimer Section */
+/* General Disclaimer Section 
 aside#disclaimer .disclaimer {
     background-color: #f0f0f0;
     color: #555;
@@ -278,6 +278,7 @@ aside#disclaimer .disclaimer a {
     color: #0070c9;
     text-decoration: underline;
 }
+*/
 
 /* gameperson_Disclaimer.html Styles */
 #full-disclaimer {
