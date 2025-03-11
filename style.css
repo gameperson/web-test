@@ -25,11 +25,11 @@ a {
     color: #0070c9; /* Slightly darker blue links */
 }
 
-aside#disclaimer .disclaimer {
-    background-color: #f0f0f0; /* Slightly darker light gray */
-    color: #555;
-    border: 1px solid #ddd;
-}
+/*  aside#disclaimer .disclaimer {
+/*  background-color: #f0f0f0; /* Slightly darker light gray */
+/*  color: #555;
+/*  border: 1px solid #ddd;
+}   */
 
 footer {
     background-color: #e8e8e8; /* Slightly darker light gray */
@@ -57,7 +57,7 @@ p {
     margin-bottom: 1.2em;
 }
 
-/* Link Styles */
+/* a links */
 a {
     color: #0070c9;
     text-decoration: none;
@@ -67,13 +67,14 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Container */
+/* container */
 .container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.center-content {  /* Center Content */
+/* center-ontent */
+.center-content {  
     text-align: center;
     margin-top: 50px;
 }
@@ -82,7 +83,7 @@ a:hover {
     margin: 10px;
 }
 
-/* Header and Navigation */
+/* site header and nav */
 .site-header {
     background-color: #f0f0f0;
     padding: 1rem;
@@ -117,7 +118,7 @@ a:hover {
     text-decoration: none; /* Remove underline on hover */
 }
 
-/* Index Section */
+/* index */
 .index-title {
     font-size: 2.8em;
     margin-bottom: 0.6em;
@@ -164,7 +165,7 @@ a:hover {
     display: block;
 }
 
-/* Content Section and Dividers */
+/* content and section */
 .content-section {
     margin-bottom: 2rem;
 }
@@ -174,7 +175,7 @@ a:hover {
     margin: 2rem 0;
 }
 
-/* Footer and Disclaimer */
+/* footer */
 footer {
     background-color: #e8e8e8;
     color: #444;
@@ -205,8 +206,8 @@ footer img {
     margin-top: 0.5rem;
 }
 
-/* General Disclaimer Section */ 
-/* Disclaimer Button */
+/* Disclaimer */ 
+/* Disclaimer Buttons */
 .disclaimer-button {
     text-align: center;
     margin-top: 20px;
@@ -220,52 +221,73 @@ footer img {
     text-decoration: none;
     border: 1px solid #ddd;
 }
-
 .disclaimer-button a:hover {
     background-color: #e0e0e0;
-}
-
-/* asside disclaimer
-aside#disclaimer .disclaimer {
-    background-color: #f0f0f0;
-    color: #555;
-    padding: 15px;
+    
+/* disclaimer links */
+.disclaimer-link {
     text-align: center;
-    font-size: 0.9em;
-    border: 1px solid #ddd;
-    margin: 20px auto;
-    max-width: 800px;
+    margin-top: 2em;
 }
 
-aside#disclaimer .disclaimer a {
-    color: #0070c9;
-    text-decoration: underline;
-}
-END - asside disclaimer
-
-/* Footer Disclaimer Section 
-.footer-disclaimer {
-    text-align: center !important;
-    padding: 10px !important;
-    background-color: #f0f0f0 !important;
-    font-size: .8em !important;
-    margin-top: 1rem !important;
-    border: 1px solid #ddd !important;
-    border-radius: 5px !important;
-    display: inline-block !important;
+.disclaimer-link a {
+    background-color: #f0f0f0; /* Light gray background (matches index links) */
+    color: #333; /* Dark gray text (matches index links) */
+    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
+    border-radius: 5px; /* Matches index links */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: 1px solid #ddd; /* Add a subtle border */
+    font-weight: normal; /* Normal font weight */
+    box-shadow: none; /* Remove box shadow */
 }
 
-.footer-disclaimer a {
-    color: #555 !important;
-    text-decoration: none !important;
-    padding: 0.5em 1em !important;
-    display: inline-block !important;
+.disclaimer-link a:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
 }
 
-.footer-disclaimer a:hover {
-    background-color: #e0e0e0 !important;
+/* asside disclaimer */
+/*aside#disclaimer .disclaimer {
+/*    background-color: #f0f0f0;
+/*    color: #555;
+/*    padding: 15px;
+/*    text-align: center;
+/*    font-size: 0.9em;
+/*    border: 1px solid #ddd;
+/*    margin: 20px auto;
+/*    max-width: 800px;
+}     */
+
+/*aside#disclaimer .disclaimer a {
+/*    color: #0070c9;
+/*    text-decoration: underline;
 }
-END - Footer Disclaimer Section */
+/*END - asside disclaimer
+
+/* Footer Disclaimer Section */ 
+/*.footer-disclaimer {
+/*    text-align: center !important;
+/*    padding: 10px !important;
+/*    background-color: #f0f0f0 !important;
+/*    font-size: .8em !important;
+/*    margin-top: 1rem !important;
+/*    border: 1px solid #ddd !important;
+/*    border-radius: 5px !important;
+/*    display: inline-block !important;
+}    /*
+
+/*.footer-disclaimer a {
+/*    color: #555 !important;
+/*    text-decoration: none !important;
+/*    padding: 0.5em 1em !important;
+/*    display: inline-block !important;
+}    /*
+
+/*.footer-disclaimer a:hover {
+/*    background-color: #e0e0e0 !important;
+}    /*
+/*END - Footer Disclaimer Section */
 
 /* gameperson_Disclaimer.html Styles */
 #full-disclaimer {
@@ -315,6 +337,7 @@ END - Footer Disclaimer Section */
 #full-disclaimer .return-link a:hover {
     background-color: #e0e0e0; /* Slightly darker background on hover */
 }
+
 /* Return Link */
 .return-link {
     text-align: center;
