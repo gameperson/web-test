@@ -205,6 +205,44 @@ footer img {
     margin-top: 0.5rem;
 }
 
+/* General Disclaimer Section */ 
+/* Disclaimer Button */
+.disclaimer-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.disclaimer-button a {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+}
+
+.disclaimer-button a:hover {
+    background-color: #e0e0e0;
+}
+
+/* asside disclaimer
+aside#disclaimer .disclaimer {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+aside#disclaimer .disclaimer a {
+    color: #0070c9;
+    text-decoration: underline;
+}
+END - asside disclaimer
+
 /* Footer Disclaimer Section 
 .footer-disclaimer {
     text-align: center !important;
@@ -228,23 +266,6 @@ footer img {
     background-color: #e0e0e0 !important;
 }
 END - Footer Disclaimer Section */
-
-/* General Disclaimer Section */ 
-aside#disclaimer .disclaimer {
-    background-color: #f0f0f0;
-    color: #555;
-    padding: 15px;
-    text-align: center;
-    font-size: 0.9em;
-    border: 1px solid #ddd;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-aside#disclaimer .disclaimer a {
-    color: #0070c9;
-    text-decoration: underline;
-}
 
 /* gameperson_Disclaimer.html Styles */
 #full-disclaimer {
@@ -294,7 +315,7 @@ aside#disclaimer .disclaimer a {
 #full-disclaimer .return-link a:hover {
     background-color: #e0e0e0; /* Slightly darker background on hover */
 }
-
+/* Return Link */
 .return-link {
     text-align: center;
     margin-top: 2em;
