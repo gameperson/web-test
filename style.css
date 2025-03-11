@@ -204,7 +204,7 @@ footer img {
     margin-top: 0.5rem;
 }
 
-/* Footer Disclaimer Section */
+/* Footer Disclaimer Section 
 .footer-disclaimer {
     text-align: center !important;
     padding: 10px !important;
@@ -226,6 +226,7 @@ footer img {
 .footer-disclaimer a:hover {
     background-color: #e0e0e0 !important;
 }
+*/
 
 /* Header and Navigation */
 .site-header {
@@ -329,8 +330,6 @@ aside#disclaimer .disclaimer a {
     background-color: #e0e0e0; /* Slightly darker background on hover */
 }
 
-/* ... other styles ... */
-
 .return-link {
     text-align: center;
     margin-top: 2em;
@@ -353,7 +352,6 @@ aside#disclaimer .disclaimer a {
     background-color: #e0e0e0; /* Slightly darker background on hover */
 }
 
-/* ... other styles ... */
 /* Image Styles */
 img {
     max-width: 100%;
