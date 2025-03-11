@@ -97,8 +97,9 @@ a:hover {
 }
 
 .site-nav li {
-    display: inline;
+    display: block;
     margin: 0 1rem;
+    text-align: center;
 }
 
 .nav-item a { /* Style links within .nav-item as buttons */
@@ -185,6 +186,7 @@ a:hover {
     background-color: #f8f8f8; /* Light background */
     border: 1px solid #ddd;
     border-radius: 5px;
+    text-align: center;
 }
 
 #full-disclaimer h1 {
@@ -205,6 +207,7 @@ a:hover {
 }
 
 #full-disclaimer .return-link {
+    diaplay: block;
     text-align: center;
     margin-top: 2em;
 }
@@ -228,6 +231,7 @@ a:hover {
 
 /* Disclaimer Buttons */
 .disclaimer-button {
+    display: block;
     text-align: center;
     margin-top: 20px;
 }
@@ -246,6 +250,7 @@ a:hover {
     
 /* disclaimer links */
 .disclaimer-link {
+    display: block;
     text-align: center;
     margin-top: 2em;
 }
@@ -312,6 +317,7 @@ a:hover {
 
 /* Return Link */
 .return-link {
+    display: block;
     text-align: center;
     margin-top: 2em;
 }
