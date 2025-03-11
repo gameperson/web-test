@@ -34,6 +34,7 @@ a {
 footer {
     background-color: #e8e8e8; /* Slightly darker light gray */
     color: #444;
+    text-align: center;
 }
 
 /* Typography */
@@ -238,6 +239,7 @@ a:hover {
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid #ddd;
+    text-align: center;
 }
 .disclaimer-button a:hover {
     background-color: #e0e0e0;
@@ -259,6 +261,7 @@ a:hover {
     border: 1px solid #ddd; /* Add a subtle border */
     font-weight: normal; /* Normal font weight */
     box-shadow: none; /* Remove box shadow */
+    text-align: center;
 }
 
 .disclaimer-link a:hover {
@@ -324,6 +327,7 @@ a:hover {
     border: 1px solid #ddd; /* Add a subtle border */
     font-weight: normal; /* Normal font weight */
     box-shadow: none; /* Remove box shadow */
+    text-align: center;
 }
 
 .return-link a:hover {
