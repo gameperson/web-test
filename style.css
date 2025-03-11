@@ -175,38 +175,56 @@ a:hover {
     margin: 2rem 0;
 }
 
-/* footer */
-footer {
-    background-color: #e8e8e8;
-    color: #444;
-    padding: 20px;
-    text-align: center;
-    margin-top: 30px;
-}
-
-footer img {
-    max-width: 100px;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.site-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #e8e8e8;
-}
-
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-text {
-    margin-top: 0.5rem;
-}
-
 /* Disclaimer */ 
+/* gameperson_Disclaimer.html Styles */
+#full-disclaimer {
+    padding: 2em;
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: #f8f8f8; /* Light background */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#full-disclaimer h1 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #333;
+}
+
+#full-disclaimer .disclaimer p {
+    line-height: 1.8; /* Improved line spacing */
+    margin-bottom: 1.2em;
+    color: #444;
+}
+
+#full-disclaimer .disclaimer a {
+    color: #0070c9;
+    text-decoration: underline;
+}
+
+#full-disclaimer .return-link {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#full-disclaimer .return-link a {
+    background-color: #f0f0f0; /* Light gray background (matches index links) */
+    color: #333; /* Dark gray text (matches index links) */
+    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
+    border-radius: 5px; /* Matches index links */
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    border: 1px solid #ddd; /* Add a subtle border */
+    font-weight: normal; /* Normal font weight */
+    box-shadow: none; /* Remove box shadow */
+}
+
+#full-disclaimer .return-link a:hover {
+    background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
 /* Disclaimer Buttons */
 .disclaimer-button {
     text-align: center;
@@ -289,55 +307,6 @@ footer img {
 }    /*
 /*END - Footer Disclaimer Section */
 
-/* gameperson_Disclaimer.html Styles */
-#full-disclaimer {
-    padding: 2em;
-    max-width: 800px;
-    margin: 2em auto;
-    background-color: #f8f8f8; /* Light background */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-#full-disclaimer h1 {
-    text-align: center;
-    margin-bottom: 1.5em;
-    color: #333;
-}
-
-#full-disclaimer .disclaimer p {
-    line-height: 1.8; /* Improved line spacing */
-    margin-bottom: 1.2em;
-    color: #444;
-}
-
-#full-disclaimer .disclaimer a {
-    color: #0070c9;
-    text-decoration: underline;
-}
-
-#full-disclaimer .return-link {
-    text-align: center;
-    margin-top: 2em;
-}
-
-#full-disclaimer .return-link a {
-    background-color: #f0f0f0; /* Light gray background (matches index links) */
-    color: #333; /* Dark gray text (matches index links) */
-    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
-    border-radius: 5px; /* Matches index links */
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: inline-block;
-    border: 1px solid #ddd; /* Add a subtle border */
-    font-weight: normal; /* Normal font weight */
-    box-shadow: none; /* Remove box shadow */
-}
-
-#full-disclaimer .return-link a:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
-}
-
 /* Return Link */
 .return-link {
     text-align: center;
@@ -361,6 +330,37 @@ footer img {
     background-color: #e0e0e0; /* Slightly darker background on hover */
 }
 
+/* footer */
+footer {
+    background-color: #e8e8e8;
+    color: #444;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+footer img {
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.site-footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e8e8e8;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-text {
+    margin-top: 0.5rem;
+}
+    
 /* Image Styles */
 img {
     max-width: 100%;
