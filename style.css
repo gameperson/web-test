@@ -98,7 +98,7 @@ a:hover {
 }
 
 .site-nav li {
-    display: block;
+    display: inline-block;
     margin: 0 1rem;
     text-align: center;
 }
@@ -110,7 +110,7 @@ a:hover {
     border-radius: 5px;
     text-decoration: none; 
     transition: background-color 0.3s ease;
-    display: block;
+    display: inline-block;
     border: 1px solid #ddd;
     font-weight: normal;
     box-shadow: none;
