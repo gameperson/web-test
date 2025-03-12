@@ -89,8 +89,18 @@ a:hover {
     text-decoration: bold;
 }
 
+/* inline links */
 .inline-link {
-    diaplay: inline;
+    display: inline; 
+    text-decoration: none; 
+    color: inherit; /* takes the color of parent */
+}
+
+.inline-link:hover,
+.inline-link:focus {
+    text-decoration: none; 
+    color: inherit; 
+    outline: none; 
 }
 
 /* Image Styles */
