@@ -187,7 +187,6 @@ a:hover {
     background-color: #f8f8f8; 
     border: 1px solid #ddd;
     border-radius: 5px;
-    text-align: center;
 }
 
 #full-disclaimer h1 {
@@ -197,14 +196,14 @@ a:hover {
 }
 
 #full-disclaimer .disclaimer p {
-    line-height: 1.8; /* Improved line spacing */
+    line-height: 1.8;
     margin-bottom: 1.2em;
     color: #444;
 }
 
 #full-disclaimer .disclaimer a {
     color: #0070c9;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 #full-disclaimer .return-link {
@@ -227,7 +226,7 @@ a:hover {
 }
 
 #full-disclaimer .return-link a:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
+    background-color: #e0e0e0; 
 }
 
 /* disclaimer links */
