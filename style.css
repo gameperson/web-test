@@ -25,12 +25,6 @@ a {
     color: #0070c9; /* Slightly darker blue links */
 }
 
-/*  aside#disclaimer .disclaimer {
-/*  background-color: #f0f0f0; /* Slightly darker light gray */
-/*  color: #555;
-/*  border: 1px solid #ddd;
-}   */
-
 footer {
     background-color: #e8e8e8; /* Slightly darker light gray */
     color: #444;
@@ -97,17 +91,17 @@ a:hover {
 }
 
 .site-nav li {
-    display: block;
+    display: inline-block;
     margin: 0 1rem;
     text-align: center;
 }
 
-.nav-item a { /* Style links within .nav-item as buttons */
+.nav-item a { 
     background-color: #f0f0f0;
-    color: #333; /* Set link color to dark gray */
+    color: #333; 
     padding: 0.8em 1.2em;
     border-radius: 5px;
-    text-decoration: none; /* Remove underline */
+    text-decoration: none; 
     transition: background-color 0.3s ease;
     display: inline-block;
     border: 1px solid #ddd;
@@ -116,8 +110,8 @@ a:hover {
 }
 
 .nav-item a:hover {
-    background-color: #e0e0e0; /* Change background on hover */
-    text-decoration: none; /* Remove underline on hover */
+    background-color: #e0e0e0; 
+    text-decoration: none; 
 }
 
 /* index */
@@ -183,7 +177,7 @@ a:hover {
     padding: 2em;
     max-width: 800px;
     margin: 2em auto;
-    background-color: #f8f8f8; /* Light background */
+    background-color: #f8f8f8; 
     border: 1px solid #ddd;
     border-radius: 5px;
     text-align: center;
@@ -207,113 +201,53 @@ a:hover {
 }
 
 #full-disclaimer .return-link {
-    diaplay: block;
+    display: block;
     text-align: center;
     margin-top: 2em;
 }
 
 #full-disclaimer .return-link a {
-    background-color: #f0f0f0; /* Light gray background (matches index links) */
-    color: #333; /* Dark gray text (matches index links) */
-    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
-    border-radius: 5px; /* Matches index links */
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 0.8em 1.2em; 
+    border-radius: 5px; 
     text-decoration: none;
     transition: background-color 0.3s ease;
     display: inline-block;
-    border: 1px solid #ddd; /* Add a subtle border */
-    font-weight: normal; /* Normal font weight */
-    box-shadow: none; /* Remove box shadow */
+    border: 1px solid #ddd; 
+    font-weight: normal;
+    box-shadow: none;
 }
 
 #full-disclaimer .return-link a:hover {
     background-color: #e0e0e0; /* Slightly darker background on hover */
 }
 
-/* Disclaimer Buttons */
-.disclaimer-button {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-}
-
-.disclaimer-button a {
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 1px solid #ddd;
-    text-align: center;
-}
-.disclaimer-button a:hover {
-    background-color: #e0e0e0;
-    
 /* disclaimer links */
 .disclaimer-link {
     display: block;
     text-align: center;
-    margin-top: 2em;
+    /* margin-top: 2em; */
+    margin-top: 20px;
 }
 
 .disclaimer-link a {
-    background-color: #f0f0f0; /* Light gray background (matches index links) */
-    color: #333; /* Dark gray text (matches index links) */
-    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
-    border-radius: 5px; /* Matches index links */
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 010px 20px; 
+    border-radius: 5px; 
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease; 
     display: inline-block;
-    border: 1px solid #ddd; /* Add a subtle border */
-    font-weight: normal; /* Normal font weight */
-    box-shadow: none; /* Remove box shadow */
+    border: 1px solid #ddd; 
+    font-weight: normal; 
+    box-shadow: none; 
     text-align: center;
 }
 
 .disclaimer-link a:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
+    background-color: #e0e0e0;
 }
-
-/* asside disclaimer */
-/*aside#disclaimer .disclaimer {
-/*    background-color: #f0f0f0;
-/*    color: #555;
-/*    padding: 15px;
-/*    text-align: center;
-/*    font-size: 0.9em;
-/*    border: 1px solid #ddd;
-/*    margin: 20px auto;
-/*    max-width: 800px;
-}     */
-
-/*aside#disclaimer .disclaimer a {
-/*    color: #0070c9;
-/*    text-decoration: underline;
-}
-/*END - asside disclaimer
-
-/* Footer Disclaimer Section */ 
-/*.footer-disclaimer {
-/*    text-align: center !important;
-/*    padding: 10px !important;
-/*    background-color: #f0f0f0 !important;
-/*    font-size: .8em !important;
-/*    margin-top: 1rem !important;
-/*    border: 1px solid #ddd !important;
-/*    border-radius: 5px !important;
-/*    display: inline-block !important;
-}    /*
-
-/*.footer-disclaimer a {
-/*    color: #555 !important;
-/*    text-decoration: none !important;
-/*    padding: 0.5em 1em !important;
-/*    display: inline-block !important;
-}    /*
-
-/*.footer-disclaimer a:hover {
-/*    background-color: #e0e0e0 !important;
-}    /*
-/*END - Footer Disclaimer Section */
 
 /* Return Link */
 .return-link {
@@ -323,21 +257,21 @@ a:hover {
 }
 
 .return-link a {
-    background-color: #f0f0f0; /* Light gray background (matches index links) */
-    color: #333; /* Dark gray text (matches index links) */
-    padding: 0.8em 1.2em; /* Adjusted padding (smaller) */
-    border-radius: 5px; /* Matches index links */
+    background-color: #f0f0f0; 
+    color: #333; 
+    padding: 0.8em 1.2em; 
+    border-radius: 5px; 
     text-decoration: none;
     transition: background-color 0.3s ease;
     display: inline-block;
-    border: 1px solid #ddd; /* Add a subtle border */
-    font-weight: normal; /* Normal font weight */
-    box-shadow: none; /* Remove box shadow */
+    border: 1px solid #ddd; 
+    font-weight: normal; 
+    box-shadow: none; 
     text-align: center;
 }
 
 .return-link a:hover {
-    background-color: #e0e0e0; /* Slightly darker background on hover */
+    background-color: #e0e0e0; 
 }
 
 /* footer */
