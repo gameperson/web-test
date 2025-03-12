@@ -52,6 +52,33 @@ p {
     margin-bottom: 1.2em;
 }
 
+/* content and section */
+/* container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* center-content */
+.center-content {  
+    text-align: center;
+    margin-top: 50px;
+}
+
+.center-content p {
+    margin: 10px;
+}
+
+.content-section {
+    margin-bottom: 2rem;
+}
+
+/* secton-divider */
+.section-divider {
+    border: 1px solid #ddd;
+    margin: 2rem 0;
+}
+
 /* a links */
 a {
     color: #0070c9;
@@ -62,20 +89,14 @@ a:hover {
     text-decoration: bold;
 }
 
-/* container */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.inline-link {
+    diaplay: inline;
 }
 
-/* center-ontent */
-.center-content {  
-    text-align: center;
-    margin-top: 50px;
-}
-
-.center-content p {
-    margin: 10px;
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* site header and nav */
@@ -168,17 +189,6 @@ a:hover {
     display: block;
 }
 
-/* content and section */
-.content-section {
-    margin-bottom: 2rem;
-}
-
-.section-divider {
-    border: 1px solid #ddd;
-    margin: 2rem 0;
-}
-
-/* Disclaimer */ 
 /* gameperson_Disclaimer.html Styles */
 #full-disclaimer {
     padding: 2em;
@@ -229,6 +239,7 @@ a:hover {
     background-color: #e0e0e0; 
 }
 
+/* Disclaimer */ 
 /* disclaimer links */
 .disclaimer-link {
     display: block;
@@ -311,12 +322,6 @@ footer img {
     margin-top: 0.5rem;
 }
     
-/* Image Styles */
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 /* Responsive Design */
 
 /* For screens smaller than 992px (larger tablets/small laptops) */
