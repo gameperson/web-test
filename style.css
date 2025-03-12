@@ -98,25 +98,25 @@ a:hover {
 }
 
 .site-nav li {
-    display: inline-block;
+    display: block;
     margin: 0 1rem;
     text-align: center;
 }
 
-.nav-item a { 
+.site-nav li a { 
     background-color: #f0f0f0;
     color: #333; 
     padding: 0.8em 1.2em;
     border-radius: 5px;
     text-decoration: none; 
     transition: background-color 0.3s ease;
-    display: inline-block;
+    display: block;
     border: 1px solid #ddd;
     font-weight: normal;
     box-shadow: none;
 }
 
-.nav-item a:hover {
+.site-nav li a:hover {
     background-color: #e0e0e0; 
     text-decoration: none; 
 }
