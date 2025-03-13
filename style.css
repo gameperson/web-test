@@ -11,7 +11,9 @@ body, p, a, h1, h2, ul, li, footer, aside {
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;
+    margin: 0;
     padding: 20px;
+    text-align: cnter;
     background-color: #f8f8f8;
     color: #333;
 }
@@ -36,6 +38,7 @@ footer {
 h1, h2 {
     font-weight: 600;
     line-height: 1.3;
+    text-align: cnter;
 }
 
 h1 {
@@ -309,7 +312,7 @@ footer img {
 .index-list {
     list-style: none;
     padding: 0;
-    max-width: 800px;
+/*    max-width: 800px; */
     margin: 0 auto;
 }
 
