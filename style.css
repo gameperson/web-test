@@ -296,17 +296,19 @@ footer img {
     }
 }
 
-/* Page Styles
+/* Individual Page Styles
 
 /* index.html Index */
 .index-title {
     font-size: 2.8em;
     margin-bottom: 0.6em;
+    text-align: cnter;
 }
 
 .index-subtitle {
     font-size: 1.1em;
     margin-bottom: 1em;
+    text-align: cnter;
 }
 
 .index-list {
