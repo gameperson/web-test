@@ -1,17 +1,18 @@
 /* style.css - Default Theme */
 
-/* Basic Reset */
-/* body, p, a, h1, h2, ul, li, footer, aside { */
+/* Basic Reset of Everything */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* General Body Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.7;
+    /* font-family: Arial, sans-serif; */
+    /* font-size: 16px; */
+    line-height: 1.7; /* line-height: 1.6; */
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -26,18 +27,23 @@ body {
 }
 
 a {
-    color: #0070c9; /* Slightly darker blue links */
+    color: 444; /* Slightly darker gray links */
+    /* color: #0066cc; */
+}
+
+a:hover {
+    color: 555; /* Darker gray" 
+    /* color: #004499; */
 }
 
 footer {
     background-color: #e8e8e8; /* Slightly darker light gray */
-    color: #444;
-    text-align: center;
+    color: 444; /* Slightly darker gray links */
 }
 
 /* Typography */
 h1, h2 {
-    font-weight: 600;
+    font-weight: 600; /* font-weight: bold; */
     line-height: 1.3;
     text-align: center;
 }
@@ -64,7 +70,6 @@ ul, li {
 /* Basiic Links */
 a {
     text-decoration: none;
-    color: #0070c9;
 }
 
 a:hover {
@@ -84,7 +89,6 @@ a:hover {
     color: inherit; 
     outline: none; 
 }
-
 
 .container {
     max-width: 800px;
@@ -110,11 +114,15 @@ a:hover {
     margin: 2rem 0;
 }
 
-/* Image Styles */
 img {
     max-width: 100%;
     height: auto;
 }
+
+footer {
+    text-align: center;
+}
+
 
 /* Content */
 .site-header {
