@@ -1,13 +1,14 @@
 /* style.css - Default Theme */
 
 /* Basic Reset */
-body, p, a, h1, h2, ul, li, footer, aside {
+/* body, p, a, h1, h2, ul, li, footer, aside { */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Base Style */
+/* General Body Styling */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.7;
@@ -56,14 +57,18 @@ p {
     margin-bottom: 1.2em;
 }
 
-/* Links */
+ul, li {
+    list-style: none;
+}
+
+/* Basiic Links */
 a {
-    color: #0070c9;
     text-decoration: none;
+    color: #0070c9;
 }
 
 a:hover {
-    text-decoration: bold;
+    font-weight: bold;
 }
 
 /* Inline Links */
@@ -180,25 +185,85 @@ img {
     background-color: #e0e0e0; 
 }
 
-/* Disclaimer Links */
+/* Disclaimer Section */
+.disclaimer-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.disclaimer-text a {
+    display: inline;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.disclaimer-text a:hover {
+    text-decoration: underline;
+    color: #004499;
+}
+
+/* Disclaimer Button */
 .disclaimer-link {
     display: block;
     text-align: center;
-    /* margin-top: 2em; */
     margin-top: 20px;
 }
 
 .disclaimer-link a {
-    background-color: #f0f0f0; 
-    color: #333; 
-    padding: 010px 20px; 
-    border-radius: 5px; 
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px; /* Fixed typo */
+    border-radius: 5px;
     text-decoration: none;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
     display: block;
-    border: 1px solid #ddd; 
-    font-weight: normal; 
-    box-shadow: none; 
+    border: 1px solid #ddd;
+    font-weight: normal;
+    box-shadow: none;
+    text-align: center;
+}
+
+.disclaimer-link a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Disclaimer Section */
+
+/* Disclaimer Text */
+.disclaimer-text {
+    font-size: 14px;
+    color: #555;
+}
+
+.disclaimer-text a {
+    display: inline;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.disclaimer-text a:hover {
+    text-decoration: none;
+    color: #004499;
+}
+
+/* Disclaimer Button */
+.disclaimer-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.disclaimer-link a {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px 20px; /* Fixed typo */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    display: block;
+    border: 1px solid #ddd;
+    font-weight: normal;
+    box-shadow: none;
     text-align: center;
 }
 
@@ -296,7 +361,7 @@ footer img {
     }
 }
 
-/* Individual Page Styles
+/* Individual Page Styles */
 
 /* index.html Index */
 .index-title {
