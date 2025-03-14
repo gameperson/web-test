@@ -169,6 +169,7 @@ footer {
 }
 
 .site-nav li {
+    background-color: #f8f8f8;
     display: inline-block;
     margin-bottom: 1em;
     padding: 1em;
