@@ -35,6 +35,14 @@ a:hover {
     color: 555; /* Darker gray */ 
 }
 
+a[href^="mailto:"] {
+    color: 444;
+}
+
+a[href^="mailto:"]:hover {
+    color: 555;
+}
+
 footer {
     background-color: #e8e8e8; /* Slightly darker light gray */
     color: 444; /* Slightly darker gray links */
