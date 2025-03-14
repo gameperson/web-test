@@ -218,22 +218,23 @@ footer {
     }
 
 .return-link a {
-    border-radius: 5px;
-
+    display: block;
     padding: 0.8em 1.2em; 
     background-color: #f0f0f0; 
     color: #333; 
-    border-radius: 5px; 
     text-decoration: none;
     text-align: center;
     font-weight: normal;
-    /* transition: background-color 0.3s ease;
-    box-shadow: none; 
+    border-radius: 5px; 
+    /* box-shadow: none; 
     */
 }
 
 .return-link a:hover {
     background-color: #e0e0e0; 
+    text-decoration: none; 
+    font-weight: normal; /* Prevents text size shifting */
+    transition: background-color 0.3s ease;
 }
 
 /* Disclaimer Section */
