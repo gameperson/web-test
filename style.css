@@ -94,9 +94,9 @@ a:hover {
 
 /* Mailto Links */
 a[href^="mailto:"] {
-    text-decoration: underline; 
+    text-color: 333;
+    text-decoration: none; 
     font-weight: normal; /* Ensures weight consistency */
-    color: 333;
     transition: color 0.2s ease-in-out; /* Smooth color transition */
 }
 
