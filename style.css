@@ -199,26 +199,37 @@ footer {
 }
 
 /* Return Link */
-.return-link {
-    background-color: #f8f8f8;
-    display: block;
+.return-button {
+    padding: 0;
+    /* margin-bottom: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    */
+    margin: 0 auto;
     text-align: center;
-    margin-top: 2em;
-    padding: 3em;
 }
 
+.return-link { 
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    }
+
 .return-link a {
+    border-radius: 5px;
+
+    padding: 0.8em 1.2em; 
     background-color: #f0f0f0; 
     color: #333; 
-    padding: 0.8em 1.2em; 
     border-radius: 5px; 
     text-decoration: none;
-    transition: background-color 0.3s ease;
-    display: block;
-    border: 1px solid #ddd; 
-    font-weight: normal; 
-    box-shadow: none; 
     text-align: center;
+    font-weight: normal;
+    /* transition: background-color 0.3s ease;
+    box-shadow: none; 
+    */
 }
 
 .return-link a:hover {
