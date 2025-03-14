@@ -73,7 +73,7 @@ a {
 }
 
 a:hover {
-    text-decoration: none; 
+    text-decoration: underline; 
     font-weight: normal; /* Prevents text size shifting */
 }
 
@@ -94,7 +94,7 @@ a:hover {
 
 /* Mailto Links */
 a[href^="mailto:"] {
-    text-decoration: none; 
+    text-decoration: underline; 
     font-weight: normal; /* Ensures weight consistency */
     color: inherit; /* takes the color of parent */
     transition: color 0.2s ease-in-out; /* Smooth color transition */
@@ -105,7 +105,6 @@ a[href^="mailto:"]:hover {
     text-decoration: none; 
     font-weight: normal; /* Ensures weight consistency */
 }
-
 
 .container {
     max-width: 800px;
@@ -218,13 +217,13 @@ footer {
 
 .disclaimer-text a {
     display: inline;
-    color: #0066cc;
+    color: #555;
     text-decoration: none;
 }
 
 .disclaimer-text a:hover {
     text-decoration: underline;
-    color: #004499;
+    color: #444;
 }
 
 /* Disclaimer Button */
@@ -249,7 +248,7 @@ footer {
 }
 
 .disclaimer-link a:hover {
-    background-color: #e0e0e0;
+    background-color: #444;
 }
 
 /* Disclaimer Section */
@@ -262,13 +261,13 @@ footer {
 
 .disclaimer-text a {
     display: inline;
-    color: #0066cc;
+    color: #333;
     text-decoration: none;
 }
 
 .disclaimer-text a:hover {
     text-decoration: none;
-    color: #004499;
+    color: #444;
 }
 
 /* Disclaimer Button */
