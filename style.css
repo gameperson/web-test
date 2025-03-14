@@ -41,6 +41,10 @@ a[href^="mailto:"]:hover {
     color: #555;
 }
 
+nav {
+    background-color: #f0f0f0;
+}
+
 header {
     background-color: #f0f0f0;
 }
@@ -162,6 +166,7 @@ footer {
 
 /* Site Navigation */
 .nav-list {
+    background-color: #f0f0f0;    
     line-height: 1.5;
     list-style: none;
     padding: 0;
@@ -175,7 +180,8 @@ footer {
 }
 
 .site-nav li {
-    background-color: #f0f0f0;
+/*    background-color: #d0d0d0;
+*/
     display: inline-block;
     margin-bottom: 1em;
     padding: 0.2em;
