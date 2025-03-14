@@ -96,12 +96,12 @@ a:hover {
 a[href^="mailto:"] {
     text-decoration: underline; 
     font-weight: normal; /* Ensures weight consistency */
-    color: inherit; /* takes the color of parent */
+    color: 333;
     transition: color 0.2s ease-in-out; /* Smooth color transition */
 }
 
 a[href^="mailto:"]:hover {
-    color: inherit;
+    color: 444;
     text-decoration: none; 
     font-weight: normal; /* Ensures weight consistency */
 }
