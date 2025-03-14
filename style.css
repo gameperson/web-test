@@ -27,25 +27,25 @@ body {
 }
 
 a {
-    color: 444; /* Slightly darker gray links */
+    color: #444; /* Slightly darker gray links */
     /* color: #0066cc; */
 }
 
 a:hover {
-    color: 555; /* Darker gray */ 
+    color: #555; /* Darker gray */ 
 }
 
 a[href^="mailto:"] {
-    color: 444;
+    color: #444;
 }
 
 a[href^="mailto:"]:hover {
-    color: 555;
+    color: #555;
 }
 
 footer {
     background-color: #e8e8e8; /* Slightly darker light gray */
-    color: 444; /* Slightly darker gray links */
+    color: #444; /* Slightly darker gray links */
 }
 
 /* Typography */
@@ -81,7 +81,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline; 
+    text-decoration: none; 
     font-weight: normal; /* Prevents text size shifting */
 }
 
@@ -89,27 +89,27 @@ a:hover {
 .inline-link {
     display: inline; 
     text-decoration: none; 
-    color: inherit; /* takes the color of parent */
+    color: inherit; /* color: 444; */
 }
 
 .inline-link:hover,
 .inline-link:focus {
     text-decoration: none; 
     outline: none; 
-    color: inherit; /* takes the color of parent */
+    color: inherit; /* color: 555; */
     transition: color 0.2s ease-in-out; /* Smooth color transition */
 }
 
 /* Mailto Links */
 a[href^="mailto:"] {
-    color: inherit; /* text-color: 333; */
+    color: inherit; /* color: 444; */
     text-decoration: none; 
     font-weight: normal; /* Ensures weight consistency */
     transition: color 0.2s ease-in-out; /* Smooth color transition */
 }
 
 a[href^="mailto:"]:hover {
-    color: inherit; /* color: 444; */
+    color: inherit; /* color: 555; */
     text-decoration: none; 
     font-weight: normal; /* Ensures weight consistency */
 }
