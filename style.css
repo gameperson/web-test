@@ -186,6 +186,7 @@ footer {
 }
 
 /* Return */
+
 /* .return-button {
     padding: 0;
     margin: 0 auto;
@@ -220,6 +221,7 @@ footer {
 }
 
 /* Disclaimer Button */
+
 /* .disclaimer-button {
     padding: 0;
     margin: 0 auto;
@@ -262,7 +264,7 @@ footer {
     text-align: center;
 }
 
-.contact-link h3{
+.contact-link h3 {
     margin-top: 0;
 }
 
