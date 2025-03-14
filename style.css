@@ -169,7 +169,7 @@ footer {
 }
 
 .site-nav li {
-    background-color: #f8f8f8;
+    background-color: #f0f0f0;
     display: inline-block;
     margin-bottom: 1em;
     padding: 1em;
@@ -179,7 +179,7 @@ footer {
 }
 
 .site-nav li a { 
-    background-color: #f0f0f0;
+    background-color: #e0e0e0; 
     color: #333; 
     padding: 0.8em 1.2em;
     border-radius: 5px;
@@ -192,7 +192,7 @@ footer {
 }
 
 .site-nav li a:hover {
-    background-color: #e0e0e0; 
+    background-color: #d8d8d8 /* #e0e0e0; */
     text-decoration: none; 
     font-weight: normal; /* Prevents text size shifting */
     transition: background-color 0.3s ease;
