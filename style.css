@@ -26,20 +26,21 @@ body {
 }
 
 a {
-    color: #444; /* slightly-darker gray */
+    color: #666; /* slightly-darker gray */
 }
 
 a:hover {
-    color: #555; /* even-darker gray */ 
+    color: #444; /* even-darker gray */ 
 }
 
-a[href^="mailto:"] {
-    color: #444;
+/* a[href^="mailto:"] {
+    color: #666;
 }
 
 a[href^="mailto:"]:hover {
-    color: #555;
+    color: #333;
 }
+*/
 
 nav {
     background-color: #f0f0f0;
