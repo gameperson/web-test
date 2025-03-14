@@ -198,7 +198,7 @@ footer {
     transition: background-color 0.3s ease;
 }
 
-/* Return Link */
+/* Return */
 .return-button {
     padding: 0;
     /* margin-bottom: 1em;
@@ -239,8 +239,7 @@ footer {
 
 /* Disclaimer Section */
 
-/* Disclaimer Text */
-.disclaimer-text {
+/* .disclaimer-text {
     background-color: #f8f8f8;
     font-size: 14px;
     color: #555;
@@ -256,31 +255,39 @@ footer {
 .disclaimer-text a:hover {
     color: #444;
 }
+*/
 
 /* Disclaimer Button */
-.disclaimer-link {
-    background-color: #f8f8f8;
-    display: block;
+.disclaimer-button {
+    padding: 0;
+    margin: 0 auto;
     text-align: center;
-    margin-top: 20px;
+}
+
+.disclaimer-link {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .disclaimer-link a {
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 10px 20px; /* Fixed typo */
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
     display: block;
-    border: 1px solid #ddd;
-    font-weight: normal;
-    box-shadow: none;
+    padding: 0.8em 1.2em; 
+    background-color: #f0f0f0; 
+    color: #333; 
+    text-decoration: none;
     text-align: center;
+    font-weight: normal;
+    border-radius: 5px; 
 }
 
 .disclaimer-link a:hover {
-    background-color: #444;
+    background-color: #e0e0e0; 
+    text-decoration: none; 
+    font-weight: normal; /* Prevents text size shifting */
+    transition: background-color 0.3s ease;
 }
 
 /* Footer Section*/
