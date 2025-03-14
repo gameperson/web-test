@@ -179,7 +179,7 @@ footer {
 }
 
 .site-nav li a { 
-    background-color: #a0a0a0; 
+    background-color: #f6f6f6; 
     color: #333; 
     padding: 0.8em 1.2em;
     border-radius: 5px;
@@ -192,7 +192,7 @@ footer {
 }
 
 .site-nav li a:hover {
-    background-color: #a8a8a8; /* #e0e0e0; */
+    background-color: #f9f9f0; /* #e0e0e0; */
     text-decoration: none; 
     font-weight: normal; /* Prevents text size shifting */
     transition: background-color 0.3s ease;
