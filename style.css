@@ -141,6 +141,7 @@ img {
 
 footer {
     text-align: center;
+    border-top: 1px solid #ddd;
 }
 
 /* Site Navigation */
@@ -301,11 +302,13 @@ footer img {
     max-width: 100px;
     height: auto;
     margin-bottom: 10px;
+    margin-top: 10px; 
 }
 
 .site-footer {
     text-align: center;
     padding: 1rem;
+    border-top: 1px solid #ddd;
     background-color: inherit; /* #f0f0f0; */
 }
 
