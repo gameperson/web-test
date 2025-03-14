@@ -126,7 +126,8 @@ a:hover {
 
 .divider {
     border: 1px solid #ddd;
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .section-divider {
