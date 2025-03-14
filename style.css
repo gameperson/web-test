@@ -207,6 +207,38 @@ footer img {
 }
 
 /* ========================================================= */
+/* 📌 INDEX PAGE LINK LIST */
+/* ========================================================= */
+
+.index-list {
+    font-size: 1.3em;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 600px; /* Centers and limits width */
+}
+
+.index-list li {
+    margin-bottom: 1em;
+    padding: 0.7em;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.index-list li a {
+    display: block;
+    padding: 0.8em 1.2em;
+    background-color: var(--background-medium);
+    color: var(--text-primary);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.index-list li a:hover {
+    background-color: var(--background-dark);
+}
+
+/* ========================================================= */
 /* 📱 RESPONSIVE DESIGN */
 /* ========================================================= */
 
