@@ -118,14 +118,14 @@ a:hover {
 /* Mailto Links */
 a[href^="mailto:"] {
     color: #444; 
-    font-size: 1.3em;
-    text-decoration: none; 
-    font-weight: normal; /* Ensures weight consistency */
+    font-size: 1.2em;
+    text-decoration: underline; 
+    font-weight: normal;
 }
 
 a[href^="mailto:"]:hover {
     color: #555; 
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-decoration: none; 
     font-weight: normal; 
     transition: color 0.3s ease-in-out; 
