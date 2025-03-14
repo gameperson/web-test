@@ -204,6 +204,7 @@ footer {
     display: block;
     text-align: center;
     margin-top: 2em;
+    padding: 3em;
 }
 
 .return-link a {
