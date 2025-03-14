@@ -132,6 +132,7 @@ a:hover {
 .site-header {
     background-color: #f0f0f0;
     padding: 1rem;
+    border-bottom: 2px solid #ddd;
     text-align: center; 
 }
 img {
@@ -141,7 +142,7 @@ img {
 
 footer {
     text-align: center;
-    border-top: 1px solid #ddd;
+    border-top: 2px solid #ddd;
 }
 
 /* Site Navigation */
