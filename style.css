@@ -99,9 +99,9 @@ a:hover {
 
 /* Inline Links */
 .inline-link {
+    color: inherit; 
     display: inline; 
     text-decoration: none; 
-    color: inherit; 
 }
 
 .inline-link:hover,
@@ -114,15 +114,14 @@ a:hover {
 
 /* Mailto Links */
 a[href^="mailto:"] {
-    color: inherit; 
-    /* font-size: 1.2em; */
-    text-decoration: none; 
+    color: #777; 
+    text-decoration: bold; 
     font-weight: normal;
 }
 
 a[href^="mailto:"]:hover {
-    color: inherit; 
-    text-decoration: underline; 
+    color: #555; 
+    text-decoration: bold; 
     font-weight: normal; 
     transition: color 0.3s ease-in-out; 
 }
