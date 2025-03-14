@@ -50,7 +50,7 @@ header {
 }
 
 footer {
-    background-color: #e0e0e0;
+    background-color: #f0f0f0;
     color: #444;
 }
 
@@ -278,7 +278,7 @@ footer {
 
 /* Footer Section*/
 footer {
-    background-color: #e0e0e0;
+    background-color: inherit; /* #f0f0f0; */
     color: #444;
     padding: 20px;
     text-align: center;
@@ -294,7 +294,7 @@ footer img {
 .site-footer {
     text-align: center;
     padding: 1rem;
-    background-color: #e0e0e0;
+    background-color: inherit; /* #f0f0f0; */
 }
 
 .footer-content {
