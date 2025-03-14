@@ -25,6 +25,10 @@ body {
     color: #333; /* dark gray */
 }
 
+header {
+    background-color: #f0f0f0;
+}
+
 a {
     color: #777; /* slightly-darker gray */
 }
@@ -34,10 +38,6 @@ a:hover {
 }
 
 nav {
-    background-color: #f0f0f0;
-}
-
-header {
     background-color: #f0f0f0;
 }
 
@@ -186,11 +186,12 @@ footer {
 }
 
 /* Return */
-.return-button {
+/* .return-button {
     padding: 0;
     margin: 0 auto;
     text-align: center;
 }
+*/
 
 .return-link { 
     margin-bottom: 1em;
@@ -219,11 +220,12 @@ footer {
 }
 
 /* Disclaimer Button */
-.disclaimer-button {
+/* .disclaimer-button {
     padding: 0;
     margin: 0 auto;
     text-align: center;
 }
+*/
 
 .disclaimer-link {
     margin-bottom: 1em;
@@ -245,6 +247,33 @@ footer {
 }
 
 .disclaimer-link a:hover {
+    background-color: #e0e0e0; 
+    text-decoration: none; 
+    font-weight: normal; 
+    transition: background-color 0.3s ease;
+}
+
+/* Contact */
+.contact-link {
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.contact-link a {
+    display: block;
+    padding: 0.8em 1.2em; 
+    background-color: #f0f0f0; 
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    border-radius: 5px; 
+}
+
+.contact-link a:hover {
     background-color: #e0e0e0; 
     text-decoration: none; 
     font-weight: normal; 
