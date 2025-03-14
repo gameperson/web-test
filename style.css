@@ -262,6 +262,10 @@ footer {
     text-align: center;
 }
 
+.contact-link h3{
+    margin-top: 0;
+}
+
 .contact-link a {
     display: block;
     padding: 0.8em 1.2em; 
