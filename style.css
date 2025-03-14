@@ -169,7 +169,7 @@ footer {
 }
 
 .site-nav li {
-    background-color: #f0f0f0;
+    background-color: #f8f8f8;
     display: inline-block;
     margin-bottom: 1em;
     padding: 1em;
@@ -179,7 +179,7 @@ footer {
 }
 
 .site-nav li a { 
-    background-color: #e0e0e0; 
+    background-color: #f0f0f0; 
     color: #333; 
     padding: 0.8em 1.2em;
     border-radius: 5px;
