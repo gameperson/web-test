@@ -150,7 +150,7 @@ a:hover {
     padding: 2px;
     border: 1px solid var(--border-color); 
     border-top: 2px;
-    border-bottom: none; 
+    border-bottom: 0; 
     margin: 2rem 0;
 }
 
