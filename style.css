@@ -141,7 +141,7 @@ a:hover {
 
 /* Dividers */
 .divider, .section-divider {
-    border-top: 1px solid #aaa; /* var(--border-color); */
+    border-top: 1px solid var(--border-color); 
     margin: 2rem 0;
 }
 
@@ -195,9 +195,9 @@ footer img {
 
 .site-nav li {
     display: inline-block;
-    margin: 1em;
-    /* margin-bottom: 1em; */
-    padding: 0.8em; /* 0.4 */ 
+    /* margin: 1em; */
+    margin-bottom: 1em; 
+    padding: 0.7em; /* 0.4 */ 
     border: 1px solid var(--border-color);
     border-radius: 4px;
 }
