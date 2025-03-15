@@ -141,7 +141,7 @@ a:hover {
 
 /* Dividers */
 .divider, .section-divider {
-    border-top: 2px solid var(--border-color); */
+    border-top: 2px solid var(--border-color); 
     margin: 2rem 0;
 }
 
