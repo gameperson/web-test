@@ -140,15 +140,14 @@ a:hover {
 }
 
 /* Dividers */
-.divider, .section-divider {
-    border-top: 1px solid var(--border-color); 
-}
-
 .divider {
+    border-top: 1px solid var(--border-color); 
     margin: 1rem 0.5rem 2rem 0.5rem;
 }
 
 .section-divider {
+    border-top: 3px solid var(--border-color); 
+    border-bottom: 1px solid var(--border-color); 
     margin: 2rem 0;
 }
 
