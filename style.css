@@ -153,6 +153,9 @@ header, nav, .site-header {
     background-color: var(--background-medium);
     padding: 1rem;
     text-align: center;
+}
+
+header, .site-header {
     border-bottom: 2px solid var(--border-color);
 }
 
