@@ -196,7 +196,7 @@ footer img {
 .site-nav li {
     display: inline-block;
     margin-bottom: 1em;
-    padding: 0.4em;
+    padding: 0.6em; /* 0.4em; */
     border: 1px solid var(--border-color);
     border-radius: 4px;
 }
