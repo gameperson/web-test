@@ -171,10 +171,17 @@ header, nav, .site-header, .highlighted-section {
     text-align: center;
 }
 
-header, highlighted-section h3 {
+header {
+    font-size: 1.6em;
+}
+
+highlighted-section {
+    font-size: 1.4em;
+}
+
+highlighted-section h3 {
     font-weight: 600;
     line-height: 1.5;
-    font-size: 1.6em;
     text-align: center;
     margin-top: 1em;
     margin-bottom: 0.5em; 
@@ -202,9 +209,9 @@ footer img {
 
 .nav-list {
     background-color: var(--background-medium);
-    line-height: 1.5;
+    line-height: 1.2;
     padding: 0;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 .site-nav ul {
