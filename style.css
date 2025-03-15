@@ -175,7 +175,10 @@ header {
     font-size: 1.6em;
 }
 
-nav, highlighted-section {
+nav {
+    font-size: 1.2em;
+}
+highlighted-section {
     font-size: 1.4em;
 }
 
@@ -211,7 +214,6 @@ footer img {
     background-color: var(--background-medium);
     line-height: 1.2;
     padding: 0;
-    font-size: 1em;
 }
 
 .site-nav ul {
