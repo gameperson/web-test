@@ -148,8 +148,9 @@ a:hover {
 
 .section-divider {
     padding: 2px;
-    border: 1px solid var(--border-color); 
-    border-top: 2px;
+    border-top: 2px solid var(--border-color);
+    border-left: 1px solid var(--border-color); 
+    border-rignt: 1px solid var(--border-color); 
     border-bottom: 0; 
     margin: 2rem 0;
 }
