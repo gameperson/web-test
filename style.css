@@ -149,7 +149,7 @@ a:hover {
 .section-divider {
     padding: 3px;
     border: 2px solid var(--border-color); 
-    border-bottom: 0; 
+    border-bottom: none; 
     margin: 2rem 0;
 }
 
