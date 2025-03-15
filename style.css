@@ -25,18 +25,44 @@ body {
 /* 🎨 COLOR PALETTE */
 /* ========================================================= */
 
+/* ========================================================= */
+/* 🌞 LIGHT MODE (Default) */
+/* ========================================================= */
 :root {
-    --background-light: #f8f8f8;  /* Very light gray */
-    --background-medium: #f0f0f0; /* Light gray */
-    --background-dark: #e0e0e0;   /* Darker gray for hover */
+    --background-light: #f8f8f8;
+    --background-medium: #f0f0f0;
+    --background-dark: #e0e0e0;
     
-    --text-primary: #333;  /* Main text color */
-    --text-secondary: #444; /* Slightly darker text */
-    --text-muted: #777;  /* Lighter text for less emphasis */
+    --text-primary: #333;
+    --text-secondary: #444;
+    --text-muted: #777;
 
-    --border-color: #ddd;  /* Default border color */
-    --link-color: #777;  /* Default link color */
-    --link-hover: #444;  /* Darker hover effect */
+    --border-color: #ddd;
+    --link-color: #777;
+    --link-hover: #444;
+}
+
+/* ========================================================= */
+/* 🌙 DARK MODE */
+/* ========================================================= */
+.dark-mode {
+    --background-light: #121212; /* Dark gray */
+    --background-medium: #1e1e1e; /* Slightly lighter dark gray */
+    --background-dark: #333; /* Hover backgrounds */
+
+    --text-primary: #e0e0e0; /* Light text */
+    --text-secondary: #cccccc;
+    --text-muted: #999;
+
+    --border-color: #444;
+    --link-color: #bbb;
+    --link-hover: #fff;
+}
+
+/* Apply Backgrounds and Text Colors */
+body {
+    background-color: var(--background-light);
+    color: var(--text-primary);
 }
 
 /* ========================================================= */
