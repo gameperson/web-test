@@ -143,17 +143,17 @@ a:hover {
 .divider {
     padding: 1px;
     border-top: 2px solid var(--border-color);
-/*    border-left: 0; */
-/*    border-right: 0; */
-/*    border-bottom: 0; */
+    border-left: 0; 
+    border-right: 0; 
+    border-bottom: 0; 
     margin: 1.2rem;
     margin-top: 0.5rem;
 }
 
 .section-divider {
     padding: 2px;
-    border: 1px solid var(--border-color);
-    border-top: 2px solid var(--border-color);
+/*    border: 1px solid var(--border-color);
+*/    border-top: 2px solid var(--border-color);
     border-left: 1px solid var(--border-color); 
     border-right: 1px solid var(--border-color);  
     border-bottom: 0; 
