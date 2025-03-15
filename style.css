@@ -141,7 +141,7 @@ a:hover {
 
 /* Dividers */
 .divider, .section-divider {
-    border-top: 1px solid #aaa; /* var(--border-color); */
+    border-top: 1px solid var(--border-color); */
     margin: 2rem 0;
 }
 
@@ -163,7 +163,7 @@ footer {
     background-color: var(--background-medium);
     color: var(--text-secondary);
     padding: 20px;
-    border-top: 1px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
     text-align: center;
     margin-top: 30px;
 }
