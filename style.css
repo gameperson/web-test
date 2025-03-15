@@ -146,9 +146,9 @@ a:hover {
 }
 
 .section-divider {
-    padding: 2px;
-    border-top: 3px solid var(--border-color); 
-    border-bottom: 1px solid var(--border-color); 
+    padding: 3px;
+    border: 2px solid var(--border-color); 
+    border-bottom: 0; 
     margin: 2rem 0;
 }
 
