@@ -37,7 +37,7 @@ body {
     --text-secondary: #444;
     --text-muted: #777;
 
-    --border-color: #aaa; /*# ddd; */
+    --border-color: #bbb; /*# ddd; */
     --link-color: #777;
     --link-hover: #444;
 }
@@ -146,7 +146,7 @@ a:hover {
 }
 
 .divider {
-    margin: 1rem 1em;
+    margin: 2rem 1em;
 }
 
 /* ========================================================= */
