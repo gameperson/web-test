@@ -156,23 +156,28 @@ a:hover {
 }
 
 /* ========================================================= */
-/* 🔝 HEADERS & FOOTERS */
+/* 🔝 HEADERS INSETS & FOOTERS */
 /* ========================================================= */
 
-header, nav, .site-header {
+header, nav, .site-header, inset {
     background-color: var(--background-medium);
+    color: var(--text-secondary);
     padding: 1rem;
     text-align: center;
 }
 
-header, .site-header {
+header, .site-header, inset {
     border-bottom: 2px solid var(--border-color);
+}
+
+inset {
+    border-top: 2px solid var(--border-color);
 }
 
 footer {
     background-color: var(--background-medium);
     color: var(--text-secondary);
-    padding: 20px;
+    padding: 1rem;
     border-top: 2px solid var(--border-color);
     text-align: center;
     margin-top: 30px;
