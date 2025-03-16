@@ -153,8 +153,7 @@ a:hover {
 
 .section-divider {
     padding: 2px;
-/*    border: 1px solid var(--border-color);
-*/    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
     border-left: 1px solid var(--border-color); 
     border-right: 1px solid var(--border-color);  
     border-bottom: 0; 
@@ -213,7 +212,7 @@ footer img {
 
 .site-nav li {
     display: inline-block;
-    margin: 0.1em; 
+    margin: 0.5em; 
     margin-bottom: 0; 
     padding: 0.7em; 
     border: 1px solid var(--border-color);
