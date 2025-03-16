@@ -252,6 +252,7 @@ footer img {
 }
 
 .disclaimer-link {
+    background-color: var(--background-medium);
     margin: 1rem auto 1rem;
     padding: 1em;
     border: 1px solid var(--border-color);
