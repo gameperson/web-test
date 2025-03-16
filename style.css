@@ -260,7 +260,7 @@ highlighted-section h3 {
 
 
 highlighted-section a {
-    background-color: var(--background-medium);
+    background-color: var(--background-dark);
     color: var(--text-primary);
     padding: 0.8em 1.2em;
     border: 2px solid var(--border-color);
