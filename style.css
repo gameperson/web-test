@@ -305,6 +305,11 @@ highlighted-section a:hover {
     padding: 0;
 }
 
+/*.contact-link { 
+     margin: 1rem 0 0;
+     padding: 0;
+ } */
+
 /* ========================================================= */
 /* 📌 INDEX PAGE LINK LIST */
 /* ========================================================= */
@@ -312,9 +317,9 @@ highlighted-section a:hover {
 .index-list {
     font-size: 1.3em;
     padding: 0;
-    margin: 0 auto 2rem;
-/*    margin-bottom: 2em;
-*/    max-width: 800px; /* Centers and limits width */
+    margin: 0 auto;
+    margin-bottom: 2em;
+    max-width: 800px; /* Centers and limits width */
 }
 
 .index-list li {
