@@ -212,7 +212,7 @@ footer img {
 
 .site-nav li {
     display: inline-block;
-    margin: 0.5em; 
+    margin: 0.1em; 
     margin-bottom: 0; 
     padding: 0.7em; 
     border: 1px solid var(--border-color);
@@ -242,7 +242,7 @@ footer img {
     color: var(--text-secondary);
     text-align: center;
     padding: 1rem;
-    margin: 3em 0;
+    margin-top: 1em;
     margin-bottom: 0.5em; 
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
@@ -273,7 +273,7 @@ highlighted-section a:hover {
 /* ========================================================= */
 
 .return-link, .disclaimer-link, .contact-link {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     padding: 1em;
     border: 1px solid var(--border-color);
     border-radius: 5px;
