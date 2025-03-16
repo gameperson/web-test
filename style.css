@@ -162,7 +162,7 @@ a:hover {
 }
 
 /* ========================================================= */
-/* 🔝 HEADERS, NAVIGATION, HILIGHTED & FOOTERS */
+/* 🔝 HEADERS, NAVIGATION & FOOTERS */
 /* ========================================================= */
 
 header, nav, .site-header {
@@ -170,11 +170,11 @@ header, nav, .site-header {
     color: var(--text-secondary);
     padding: 1rem;
     text-align: center;
-    border-bottom: 2px solid var(--border-color);
 }
 
-header {
+header, .site-header {
     font-size: 1.6em;
+    border-bottom: 2px solid var(--border-color);
 }
 
 nav {
