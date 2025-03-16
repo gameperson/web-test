@@ -306,8 +306,9 @@ highlighted-section a:hover {
 .index-list {
     font-size: 1.3em;
     padding: 0;
-    margin: 0 0 0 2em;
-    max-width: 600px; /* Centers and limits width */
+    margin: 0 auto;
+    margin-bottom: 2em;
+    max-width: 800px; /* Centers and limits width */
 }
 
 .index-list li {
