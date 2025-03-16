@@ -258,17 +258,13 @@ highlighted-section h3 {
     padding: 0;
 }
 
-
 highlighted-section a {
+    display: block;
+    padding: 0.8em 1.2em;
     background-color: var(--background-dark);
     color: var(--text-primary);
-    padding: 0.8em 1.2em;
-    border: 2px solid var(--border-color);
-    border-left: 0; 
-    border-right: 0;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    display: inline-block;
 }
 
 highlighted-section a:hover {
