@@ -173,11 +173,15 @@ header, nav, .site-header {
 
 header, .site-header {
     font-size: 1.6em;
+    padding: 1rem;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--border-color);
 }
 
 nav {
     font-size: 0.7em;
-    border-bottom: 2px solid var(--border-color);
+/*    border-bottom: 2px solid var(--border-color);
+*/
 }
 
 footer {
