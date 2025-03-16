@@ -86,7 +86,7 @@ h1, h2, h3 {
 
 h1 { font-size: 2.6em; margin-bottom: 0.5em; }
 h2 { font-size: 2.0em; margin-top: 1em; margin-bottom: 0.5em; }
-h3 { font-size: 1.6em; margin-top: 1em; margin-bottom: 0.5em; }
+h3 { font-size: 1.5em; margin-top: 1em; margin-bottom: 0.5em; }
 
 p { margin-bottom: 1.2em; }
 ul, li { list-style: none; }
@@ -164,7 +164,7 @@ a:hover {
 /* 🔝 HEADERS, NAVIGATION, HILIGHTED & FOOTERS */
 /* ========================================================= */
 
-header, nav, .site-header, .highlighted-section {
+header, nav, .site-header {
     background-color: var(--background-medium);
     color: var(--text-secondary);
     padding: 1rem;
@@ -179,17 +179,34 @@ nav {
     font-size: 0.8em;
 }
 
-highlighted-section {
-    font-size: 1.4em;
-}
-
-highlighted-section h3 {
-    font-weight: 600;
-    line-height: 1.5;
+.highlighted-section {
+    background-color: var(--background-medium);
+    font-size: 1em;
+    color: var(--text-secondary);
     text-align: center;
+    padding: 1rem;
     margin-top: 1em;
     margin-bottom: 0.5em; 
     border-bottom: 2px solid var(--border-color);
+}
+
+highlighted-section h3 {
+    line-height: 1.5;
+    border-bottom: 2px solid var(--border-color);
+}
+
+highlighted-section a {
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+    padding: 0.8em 1.2em;
+    border: 2px 0 solid var(--border-color);
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+highlighted-section a:hover {
+    background-color: var(--background-medium);
 }
 
 footer {
@@ -215,7 +232,6 @@ footer img {
     background-color: var(--background-medium);
     line-height: 1.2;
     padding: 0;
-/*    font-size: 1em; */
 }
 
 .site-nav ul {
@@ -226,8 +242,8 @@ footer img {
 .site-nav li {
     display: inline-block;
     margin: 0.1em; 
-    margin-bottom: 0; /* 1em; */ 
-    padding: 0.7em; /* 0.4; */ 
+    margin-bottom: 0; 
+    padding: 0.7em; 
     border: 1px solid var(--border-color);
     border-radius: 4px;
 }
