@@ -167,14 +167,13 @@ a:hover {
 header, nav, .site-header {
     background-color: var(--background-medium);
     color: var(--text-secondary);
-    padding: 0; /*rem;*/
+    padding: 1rem;
+    margin: 0 auto;
     text-align: center;
 }
 
 header, .site-header {
     font-size: 1.6em;
-    padding: 1rem;
-    margin: 0 auto;
     border-bottom: 2px solid var(--border-color);
 }
 
@@ -212,7 +211,7 @@ footer img {
 
 .site-nav ul {
     list-style: none;
-    padding: 0.5em;
+    padding: 1rem;
 }
 
 .site-nav li {
