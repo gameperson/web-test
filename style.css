@@ -167,7 +167,7 @@ a:hover {
 header, nav, .site-header {
     background-color: var(--background-medium);
     color: var(--text-secondary);
-    padding: 1rem;
+    padding: 0; /*rem;*/
     text-align: center;
 }
 
