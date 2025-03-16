@@ -174,11 +174,11 @@ header, nav, .site-header {
 
 header, .site-header {
     font-size: 1.6em;
-    border-bottom: 2px solid var(--border-color);
 }
 
 nav {
-    font-size: 0.8em;
+    font-size: 0.7em;
+    border-bottom: 2px solid var(--border-color);
 }
 
 footer {
