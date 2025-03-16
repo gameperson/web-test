@@ -169,6 +169,7 @@ header, nav, .site-header {
     color: var(--text-secondary);
     padding: 1rem;
     text-align: center;
+    border-bottom: 2px solid var(--border-color);
 }
 
 header {
@@ -272,7 +273,7 @@ highlighted-section a:hover {
 /* ========================================================= */
 
 .return-link, .disclaimer-link, .contact-link {
-    margin-bottom: 1em;
+    margin-bottom: 3em;
     padding: 1em;
     border: 1px solid var(--border-color);
     border-radius: 5px;
