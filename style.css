@@ -206,9 +206,9 @@ footer img {
 .nav-list {
     background-color: var(--background-medium);
     line-height: 1.2;
-    padding: 0 auto;
+/*    padding: 0 auto;
     margin: 0 auto;
-}
+*/}
 
 .site-nav ul {
     list-style: none;
@@ -259,8 +259,9 @@ highlighted-section h3 {
     padding: 0;
 }
 
+
 highlighted-section a {
-    background-color: var(--background-dark);
+    background-color: var(--background-medium;
     color: var(--text-primary);
     padding: 0.8em 1.2em;
     border: 2px 0 solid var(--border-color);
@@ -297,11 +298,6 @@ highlighted-section a:hover {
 
 .return-link a:hover, .disclaimer-link a:hover, .contact-link a:hover {
     background-color: var(--background-dark);
-}
-
-.contact-link { 
-    margin: 1rem 0 0;
-    padding: 0;
 }
 
 .disclaimer-link h3, .contact-link h3 { 
