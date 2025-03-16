@@ -202,12 +202,13 @@ footer img {
 .nav-list {
     background-color: var(--background-medium);
     line-height: 1.2;
-    padding: 0;
+    padding: 1;
+    margin: 0 auto;
 }
 
 .site-nav ul {
     list-style: none;
-    padding: 0;
+    padding: 0.5em;
 }
 
 .site-nav li {
@@ -242,7 +243,7 @@ footer img {
     color: var(--text-secondary);
     text-align: center;
     padding: 1rem;
-    margin-top: 1em;
+    margin: 1em auto;
     margin-bottom: 0.5em; 
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
