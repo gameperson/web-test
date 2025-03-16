@@ -32,6 +32,7 @@ body {
     --background-light: #f8f8f8;
     --background-medium: #f0f0f0;
     --background-dark: #e0e0e0;
+    --background-darker: #d0d0d0;
     
     --text-primary: #333;
     --text-secondary: #444;
@@ -229,7 +230,7 @@ footer img {
 }
 
 .site-nav li a:hover {
-    background-color: var(--background-medium);
+    background-color: var(--background-darker);
 }
 
 /* ========================================================= */
