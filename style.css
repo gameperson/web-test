@@ -320,6 +320,7 @@ highlighted-section a:hover {
     padding: 0.7em;
     border: 1px solid var(--border-color);
     border-radius: 5px;
+    margin: 1.2rem; 
     text-align: center;
 }
 
@@ -329,7 +330,6 @@ highlighted-section a:hover {
     background-color: var(--background-dark);
     color: var(--text-primary);
     border-radius: 5px;
-    margin: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
