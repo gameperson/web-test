@@ -168,7 +168,8 @@ header, nav, .site-header {
     background-color: var(--background-medium);
     color: var(--text-secondary);
     padding: 1rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
