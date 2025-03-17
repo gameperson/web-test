@@ -267,7 +267,7 @@ highlighted-section a {
     border-right: 0;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    display: block;
+    display: inline-block;
 }
 
 highlighted-section a:hover {
@@ -278,7 +278,7 @@ highlighted-section a:hover {
 /* 📌 RETURN, CONTACT & DISCLAIMER BUTTONS */
 /* ========================================================= */
 
-.return-link, .contact-link, .disclaimer-link {
+.return-link, .disclaimer-link, .contact-link { 
     background-color: var(--background-medium);
     margin: 1rem auto 1rem;
     padding: 1em;
@@ -287,7 +287,7 @@ highlighted-section a:hover {
     text-align: center;
 }
 
-.return-link a, .contact-link a, .disclaimer-link a {
+.return-link a, .disclaimer-link a, .contact-link a {
     display: block;
     padding: 0.8em 1.2em;
     background-color: var(--background-dark);
@@ -296,7 +296,7 @@ highlighted-section a:hover {
     transition: background-color 0.3s ease; { 
 }
 
-.return-link a:hover, .contact-link a:hover, .disclaimer-link a:hover {
+.return-link a:hover, .disclaimer-link a:hover, .contact-link a:hover {
     background-color: var(--background-darker);
 }
 
@@ -311,13 +311,13 @@ highlighted-section a:hover {
 /* ========================================================= */
 
 .index-list {
-    background-color: var(--background-medium);
-    font-size: 1.3em;
+/*    background-color: var(--background-medium);
+*/    font-size: 1.3em;
     padding: 0;
     margin: 0 auto;
     max-width: 600px; /* Centers and limits width */
-    display: block;
-}
+/*    display: block;
+*/}
 
 .index-list li {
     margin-bottom: 1em;
@@ -330,7 +330,7 @@ highlighted-section a:hover {
 .index-list li a {
     display: block;
     padding: 0.8em 1.2em;
-    background-color: var(--background-dark);
+    background-color: var(--background-medium);
     color: var(--text-primary);
     border-radius: 5px;
     transition: background-color 0.3s ease;
