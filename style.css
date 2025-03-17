@@ -176,10 +176,9 @@ a:hover {
     margin: 1.2rem auto; 
     padding: 1px;
     border-top: 2px solid var(--border-color);
-/*=    border-left: 0; 
+    border-left: 0; 
     border-right: 0; 
     border-bottom: 0; 
-*/
 }
 
 .section-divider {
@@ -245,8 +244,7 @@ footer img {
 .nav-list {
     background-color: var(--background-medium);
     line-height: 1.2;
-/*    padding: 0;
-*/
+    padding: 0;
 }
 
 .site-nav {
@@ -262,8 +260,7 @@ footer img {
 .site-nav li {
     display: inline-block;
     margin: 0.1em; 
-/*    margin-bottom: 0; 
-*/
+    margin-bottom: 0; 
     padding: 0.7em; 
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -290,8 +287,7 @@ footer img {
 
 .highlighted-section {
     background-color: var(--background-medium);
-/*    font-size: 1em;
-*/
+    font-size: 1em;
     color: var(--text-secondary);
     margin: 1rem 0 0.5rem;
     padding: 2rem 1rem;
@@ -326,7 +322,7 @@ highlighted-section a:hover {
 /* ========================================================= */
 /* 📌 RETURN, CONTACT & DISCLAIMER BUTTONS */
 /* ========================================================= */
-/*
+
 .return-link, .disclaimer-link, .contact-link { 
     margin: 1rem auto 1rem;
     padding: 1em;
@@ -357,7 +353,6 @@ highlighted-section a:hover {
 .return-link a:hover, .disclaimer-link a:hover, .contact-link a:hover {
     background-color: var(--background-darker);
 }
-*/
 
 /* ========================================================= */
 /* 📌 INDEX PAGE LINK LIST */
