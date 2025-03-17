@@ -237,7 +237,7 @@ footer img {
 }
 
 /* ========================================================= */
-/* 📌 HIGHLIGHTED SECTION & DISCLAIMER */
+/* 📌 HIGHLIGHTED SECTION */
 /* ========================================================= */
 .highlighted-section {
     background-color: var(--background-medium);
@@ -251,22 +251,13 @@ footer img {
     border-bottom: 2px solid var(--border-color);
 }
 
-.disclaimer-link {
-    background-color: var(--background-medium);
-    margin: 1rem auto 1rem;
-    padding: 1em;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    text-align: center;
-}
-
-highlighted-section h3, .disclaimer-link h3 {
+highlighted-section h3 {
     line-height: 1.3;
     margin: 0;
     padding: 0;
 }
 
-highlighted-section a, .disclaimer-link a {
+highlighted-section a {
     display: block;
     padding: 0.8em 1.2em;
     background-color: var(--background-dark);
@@ -275,15 +266,16 @@ highlighted-section a, .disclaimer-link a {
     transition: background-color 0.3s ease;
 }
 
-highlighted-section a:hover, .disclaimer-link a:hover {
+highlighted-section a:hover {
     background-color: var(--background-darker);
 }
 
 /* ========================================================= */
-/* 📌 RETURN, CONTACT BUTTONS */
+/* 📌 RETURN, CONTACT & DISCLAIMER BUTTONS */
 /* ========================================================= */
 
-.return-link, .contact-link {
+.return-link, .contact-link, .disclaimer-link {
+    background-color: var(--background-medium);
     margin: 1rem auto 1rem;
     padding: 1em;
     border: 1px solid var(--border-color);
@@ -291,29 +283,27 @@ highlighted-section a:hover, .disclaimer-link a:hover {
     text-align: center;
 }
 
-.return-link a, .contact-link a {
-    display: block;
-    padding: 0.8em 1.2em;
-    background-color: var(--background-medium);
-    color: var(--text-primary);
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.return-link a:hover, .disclaimer-link a:hover, .contact-link a:hover {
-    background-color: var(--background-dark);
-}
-
-.disclaimer-link h3, .contact-link h3 { 
+.disclaimer-link h3, .contact-link h3 {
     line-height: 1.3;
     margin: 0;
     padding: 0;
 }
 
-/*.contact-link { 
-     margin: 1rem 0 0;
-     padding: 0;
- } */
+.return-link a, .contact-link a, .disclaimer-link a {
+    display: block;
+    padding: 0.8em 1.2em;
+    background-color: var(--background-dark);
+    color: var(--text-primary);
+    border-radius: 5px;
+    transition: background-color 0.3s ease; { 
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
+.return-link a:hover, .contact-link a:hover, .disclaimer-link a:hover {
+    background-color: var(--background-darker);
+}
 
 /* ========================================================= */
 /* 📌 INDEX PAGE LINK LIST */
