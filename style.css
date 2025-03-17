@@ -211,6 +211,7 @@ footer img {
 .site-nav ul {
     list-style: none;
     padding: 0;
+}
 
 .site-nav li {
     display: inline-block;
@@ -274,8 +275,9 @@ highlighted-section a:hover {
 /* ========================================================= */
 
 .return-link, .disclaimer-link, .contact-link { 
-    margin-bottom: 1em; 
-    padding: 1em;
+    margin: 1rem auto 1rem;
+/*    margin-bottom: 1em; 
+*/    padding: 1em;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     text-align: center;
