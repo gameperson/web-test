@@ -283,6 +283,16 @@ highlighted-section a:hover {
     text-align: center;
 }
 
+.contact-link { 
+    margin: 3rem auto 1rem;
+}
+
+.disclaimer-link h3, .contact-link h3 {
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
+}
+
 .return-link a, .disclaimer-link a, .contact-link a {
     display: block;
     padding: 0.8em 1.2em;
@@ -296,16 +306,6 @@ highlighted-section a:hover {
     background-color: var(--background-darker);
 }
 
-.disclaimer-link h3, .contact-link h3 {
-    line-height: 1.3;
-    margin: 0;
-    padding: 0;
-}
-
-/*.contact-link {
-    margin-top: 2rem;
-}*/
-    
 /* ========================================================= */
 /* 📌 INDEX PAGE LINK LIST */
 /* ========================================================= */
