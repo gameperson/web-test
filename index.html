@@ -27,7 +27,7 @@
     <link rel="icon" href="./images/bulb_A.svg" type="image/svg+xml">
     <link rel="icon" href="./images/bulb_A.ico" type="image/x-icon">
     <link rel="shortcut icon" href="./images/bulb_A.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="./images/bulb_A.png">
+    <link rel="apple-touch-icon" href="./images/bulb_A.png">    
 </head>
 <body>
     <header class="site-header">
@@ -86,7 +86,16 @@
                 <img src="./images/bulb_A_20.png" alt="Big Bright Brains">
                 <p class="footer-text">&copy; 2025 gameperson@github</p>
             </div>
-        </section>                
-    </footer>    
+        </section>
+        <section class="theme-toggle">
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </section>
+    </footer>
+<!-- JavaScript at the end of body -->
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
 </body>
 </html>
