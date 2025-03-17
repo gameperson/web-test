@@ -249,9 +249,9 @@ footer img {
     text-align: center;
     padding: 1rem;
     margin-top: 1em;
-/*    margin: 1em auto;
-*/    margin-bottom: 0.5em; 
-    border-top: 2px solid var(--border-color);
+    margin: 1em auto;
+/*    margin-bottom: 0.5em; 
+*/    border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
 }
 
@@ -315,11 +315,10 @@ highlighted-section a:hover {
 /* ========================================================= */
 
 .index-list {
-/*    background-color: var(--background-medium);
-*/    font-size: 1.3em;
+    background-color: var(--background-light);
+    font-size: 1.3em;
     padding: 0;
-/*    margin: 0 0 0 2em;
-*/    margin: 0 auto; 
+    margin: 0 auto; 
     max-width: 600px; /* Centers and limits width */
 }
 
@@ -334,7 +333,7 @@ highlighted-section a:hover {
 .index-list li a {
     display: block;
     padding: 0.8em 1.2em;
-    background-color: var(--background-medium);
+    background-color: var(--background-dark);
     color: var(--text-primary);
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -344,7 +343,7 @@ highlighted-section a:hover {
     background-color: var(--background-darker);
 }
 
-/* ========================================================= */
+/* =======================================================k== */
 /* 📱 RESPONSIVE DESIGN */
 /* ========================================================= */
 
