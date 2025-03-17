@@ -369,6 +369,16 @@ highlighted-section a:hover {
 /* 📌 ARTICLE STYLES */
 /* ========================================================= */
 
+.disclaimer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+    margin: 0;
+    padding: 1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
 .article {
     background-color: var(--secondary-bg);
     color: var(--secondary-text);
