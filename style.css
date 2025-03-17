@@ -142,8 +142,7 @@ a:hover {
 
 /* Dividers */
 .divider {
-/*    padding: 0.5rem 1.2rem 0rem 1.2rem;
-*/    padding: 1px;
+    padding: 1px;
     border-top: 2px solid var(--border-color);
     border-left: 0; 
     border-right: 0; 
@@ -278,8 +277,7 @@ highlighted-section a:hover {
 
 .return-link, .disclaimer-link, .contact-link { 
     margin: 1rem auto 1rem;
-/*    margin-bottom: 1em; 
-*/    padding: 1em;
+    padding: 1em;
     border: 1px solid var(--border-color);
     border-radius: 5px;
     text-align: center;
@@ -304,6 +302,10 @@ highlighted-section a:hover {
     padding: 0;
 }
 
+.contact-link h3 {
+    margin-top: 2rem;
+}
+    
 /* ========================================================= */
 /* 📌 INDEX PAGE LINK LIST */
 /* ========================================================= */
