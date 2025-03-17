@@ -313,8 +313,8 @@ highlighted-section a:hover {
     background-color: var(--background-medium);
     font-size: 1.3em;
     padding: 0;
-    margin: 1rem auto;
-    max-width: 800px; /* Centers and limits width */
+    margin: 0 auto;
+    max-width: 600px; /* Centers and limits width */
 }
 
 .index-list li {
