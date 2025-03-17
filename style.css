@@ -168,12 +168,13 @@ a:hover {
 
 /* Dividers */
 .divider {
+    max-width: 600px; 
+    margin: 1.2rem auto; 
     padding: 1px;
     border-top: 2px solid var(--border-color);
     border-left: 0; 
     border-right: 0; 
     border-bottom: 0; 
-    max-width: 600px;
 }
 
 .section-divider {
@@ -340,7 +341,7 @@ highlighted-section a:hover {
     font-size: 1.3em;
     padding: 0.5rem 1.2rem 0rem 1.2rem;
     margin: 1.2rem auto; 
-    max-width: 600px; /* Centers and limits width */
+    max-width: 600px;
 }
 
 .index-list li {
