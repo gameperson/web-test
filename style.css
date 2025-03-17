@@ -311,9 +311,8 @@ highlighted-section a:hover {
     background-color: var(--background-light);
     font-size: 1.3em;
     padding: 0;
-    margin: 1.2rem auto; 
-/*    margin: 0 auto; 
-*/    max-width: 600px; /* Centers and limits width */
+    margin: 0 auto; 
+    max-width: 600px; /* Centers and limits width */
 }
 
 .index-list li {
@@ -330,6 +329,7 @@ highlighted-section a:hover {
     background-color: var(--background-dark);
     color: var(--text-primary);
     border-radius: 5px;
+    margin: 1.2rem;
     transition: background-color 0.3s ease;
 }
 
