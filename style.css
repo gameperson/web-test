@@ -249,7 +249,7 @@ footer img {
     text-align: center;
     padding: 2rem 1rem;
 /*    margin-top: 1em;
-*/    margin: 1rem;
+*/    margin: 1rem 0 0.5rem;
 /*    margin-bottom: 0.5em; 
 */    border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
