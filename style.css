@@ -147,10 +147,10 @@ a:hover {
     border-left: 0; 
     border-right: 0; 
     border-bottom: 0; 
-    margin: 1.2rem;
-/*    margin-top: 0.5rem;
-    margin: 1.2rem auto; 
-*/    max-width: 600px; /* Centers and limits width */
+/*    margin: 1.2rem;
+    margin-top: 0.5rem;
+*/    margin: 1.2rem 0.5rem auto 1rem; 
+    max-width: 600px; /* Centers and limits width */
 }
 
 .section-divider {
