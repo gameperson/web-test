@@ -102,7 +102,8 @@ h1, h4 { margin-top: 0.5em; }
 
 p, ul, li {
     color: var(--text-primary);
-    margin: 0.5em 0;
+/*    margin: 0.5em 0;
+*/
 }
 
 p { 
@@ -175,11 +176,11 @@ a:hover {
     margin: 1.2rem auto; 
     padding: 1px;
     border-top: 2px solid var(--border-color);
-/*    border-left: 0; 
+/*=    border-left: 0; 
     border-right: 0; 
     border-bottom: 0; 
 */
-s}
+}
 
 .section-divider {
     padding: 2px;
@@ -399,8 +400,6 @@ highlighted-section a:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     background-color: var(--background-light);
     color: var(--text-primary);
-    margin: 0;
-
     margin: 1rem 0;
     border-radius: 4px;
     border: 1px solid var(--primary-text);
