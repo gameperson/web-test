@@ -168,7 +168,7 @@ header, nav, .site-header {
     background-color: var(--background-medium);
     color: var(--text-secondary);
     padding: 1rem;
-    margin: 0 auto;
+    margin: 0 auto 1rem;
     text-align: center;
 }
 
@@ -189,7 +189,7 @@ footer {
     padding: 1rem;
     border-top: 2px solid var(--border-color);
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 footer img {
