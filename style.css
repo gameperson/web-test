@@ -311,7 +311,7 @@ highlighted-section a:hover {
     background-color: var(--background-light);
     font-size: 1.3em;
     padding: 0;
-    margin: 0 auto; 
+    margin: 1.2rem auto; 
     max-width: 600px; /* Centers and limits width */
 }
 
@@ -320,7 +320,6 @@ highlighted-section a:hover {
     padding: 0.7em;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    margin: 1.2rem; 
     text-align: center;
 }
 
