@@ -1,4 +1,4 @@
-/* Organized style.css */
+e/* Organized style.css */
 
 /* ========================================================= */
 /* Global Styles */
@@ -311,8 +311,9 @@ highlighted-section a:hover {
     background-color: var(--background-light);
     font-size: 1.3em;
     padding: 0;
-    margin: 0 auto; 
-    max-width: 600px; /* Centers and limits width */
+    margin: 1.2rem auto; 
+/*    margin: 0 auto; 
+*/    max-width: 600px; /* Centers and limits width */
 }
 
 .index-list li {
