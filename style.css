@@ -178,7 +178,7 @@ header, .site-header {
 }
 
 nav {
-    font-size: 0.6em;
+    font-size: 0.7em;
     padding: 0 auto;
     margin: 0 auto;
 }
@@ -239,6 +239,7 @@ footer img {
 /* ========================================================= */
 /* 📌 HIGHLIGHTED SECTION */
 /* ========================================================= */
+
 .highlighted-section {
     background-color: var(--background-medium);
     font-size: 1em;
@@ -262,9 +263,9 @@ highlighted-section a {
     color: var(--text-primary);
     padding: 0.8em 1.2em;
     border: 2px solid var(--border-color);
-    border-left: 0; 
+/*    border-left: 0; 
     border-right: 0;
-    border-radius: 5px;
+*/    border-radius: 5px;
     transition: background-color 0.3s ease;
     display: block;
 }
@@ -295,7 +296,7 @@ highlighted-section a:hover {
     transition: background-color 0.3s ease; { 
 }
 
-.return-link a:hover, .contact-link a:hover, .disclaimer-link a:hover {
+.return-link a:hover,  .disclaimer-link a:hover, .contact-link a:hover {
     background-color: var(--background-darker);
 }
 
