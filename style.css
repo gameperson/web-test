@@ -370,10 +370,11 @@ highlighted-section a:hover { background-color: var(--background-darker); }
 }
 
 .disclaimer p, article p, .white-paper p {
+    color: var(--text-secondary);
     margin-top: 0.5em; 
     margin-bottom: 0.5rem; /* Space between paragraphs */
-    line-height: 1.5rem; /* Line height for paragraph text */
-    font-size: 1.2em; 
+    line-height: 1.2rem; /* Line height for paragraph text */
+    font-size: 1.1em; 
 }
 
 .disclaimer, .essay, {
