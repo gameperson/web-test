@@ -97,7 +97,8 @@ h5 { font-size: 1.4em; margin-bottom: 0.5em; }
 
 p, ul, li {
     color: var(--text-primary);
-    margin: 0.5em auto;
+/*    margin: 0.5em auto;
+*/
 }
 
 p { 
