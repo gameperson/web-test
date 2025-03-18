@@ -110,6 +110,12 @@ a {
 
 a:hover { color: var(--link-hover); }
 
+img {
+    max-width: 100px;
+    height: auto;
+    margin: 1rem;
+}
+
 /* ========================================================= */
 /* 🔗 BUTTON LINKS */
 /* ========================================================= */
@@ -122,7 +128,7 @@ a:hover { color: var(--link-hover); }
     margin: 1rem auto;
     border: 1px solid var(--border-color);
     border-radius: 5px;
-    padding: 0.8em 1.2em;
+    padding: 1em;
     text-align: center;
     transition: background-color 0.3s ease;
 }
@@ -136,7 +142,11 @@ a:hover { color: var(--link-hover); }
 /* 📐 LAYOUT & CONTAINERS */
 /* ========================================================= */
 
-.text-center { text-align: center; }
+.centered { text-align: center; }
+.justified { text-align: justify }
+.left { text-align: left }
+.right { text-align: right }
+
 .mb-16 { margin-bottom: 1rem; }
 .p-16 { padding: 1rem; }
 
@@ -152,7 +162,6 @@ a:hover { color: var(--link-hover); }
 
 .content-section { margin-bottom: 1rem; }
 
-/* Dividers */
 .divider {
     max-width: 600px; 
     margin: 1.2rem auto; 
