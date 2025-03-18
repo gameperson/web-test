@@ -328,9 +328,7 @@ highlighted-section a:hover { background-color: var(--background-darker); }
 }
 
 .index-list li {
-    margin: 2rem auto;
-/*    margin-bottom: 1em;
-*/
+    margin: 1em;
     padding: 0.7em;
     border: 1px solid var(--border-color);
     border-radius: 5px;
