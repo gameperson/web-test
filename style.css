@@ -359,30 +359,27 @@ highlighted-section a:hover { background-color: var(--background-darker); }
 /* 📌 SPECIFIC ARTICLE STYLES */
 /* ========================================================= */
 
-.disclaimer, article, .white-paper, .essay, .workbook {
+article, .disclaimer, .white-paper, .essay, .workbook {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     background-color: var(--background-light);
     color: var(--text-primary);
-    margin: 0;
+    max-width: 800px;
+    margin: 0 auto;
     border-radius: 4px;
     border: 1px solid var(--primary-text);
     padding: 1rem;
 }
 
-.disclaimer p, article p, .white-paper p {
+.disclaimer, .essay, .white-paper, .workbook {
+    text-align: justify;
+}
+
+.disclaimer p, .white-paper p, .essay p, .workbook p {
     color: var(--text-secondary);
     margin-top: 0.5em; 
     margin-bottom: 0.5rem; /* Space between paragraphs */
     line-height: 1.2rem; /* Line height for paragraph text */
     font-size: 1.1em; 
-}
-
-.disclaimer, .essay, {
-    text-align: justify;
-}
-
-.article, .white-paper, .workbook {
-    text-align: left;
 }
 
 /* Add specific styles for other sections as needed */
