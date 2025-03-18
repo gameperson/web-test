@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="./style.css"> 
 </head>
 <body>
-    <div class="container" id="top">
-        <header>
+    <div class="container">
+        <header id="top">
             <h2><small>Full Disclaimer</amall></h2>
             <p class="centered">gameperson@github</p>
             <nav class="site-nav">
@@ -21,7 +21,7 @@
         <main>
             <section id="full-disclaimer">
                 <div class="disclaimer">
-                    <h3>The content provided on this website is for informational and educational purposes only.</h3>
+                    <h3 class="justified">The content provided on this website is for informational and educational purposes only.</h3>
                     <p class="justified">It reflects the analysis and perspectives of ChatGPT, Google Gemini, and other sources edited and produced by gameperson@github. While we strive for accuracy, currency and reliability, the information presented may not always be up-to-date or comprehensive. The views expressed do not necessarily represent the opinions of all contributors or affiliated parties.</p>
                     <p class="justified">Much of this content is under development and will not necessarily be complete, accurate or representative of the finished articles. Your patience is appreciated.</p>
                     <p class="justified">Readers are always encouraged to conduct their own research and consult relevant sources before making any decisions based on any information provided. No matter our best efforts, we are not responsible for any errors or omissions, or for any actions taken as a result of this content.</p>
@@ -33,6 +33,10 @@
                     <p class="centered">Suggest Ideas or Report Issues <a href="mailto:gamesomeotherday@gmail.com">contact us</a>.</p>
 -->
                 </div>
+            </section>
+        </main>
+        <footer>
+            <section>
                 <div>
                     <nav class="site-nav">
                         <ul>
@@ -43,7 +47,24 @@
                     </nav>
                 </div>
             </section>
-        </main>
+            <section id="footer">
+            <div class="footer-content">
+                <img src="./images/bulb_A_20.png" alt="Big Bright Brains">
+                <p class="footer-text">&copy; 2025 gameperson@github</p>
+            </div>
+        </section>
+<!-- Toggle Button 
+        <section class="theme-toggle">
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </section>
+    </footer>
+-->
+<!-- JavaScript at the end of body -->
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
     </div>
 </body>
 </html>
