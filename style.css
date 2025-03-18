@@ -126,7 +126,6 @@ a:hover {
 /* 🔗 BUTTON LINKS */
 /* ========================================================= */
 
-/* Button Styles */
 .button-link, a.button-link { /* ,
 .return-link, .disclaimer-link, .contact-link,
 .index-list li a  { */
@@ -191,7 +190,7 @@ a:hover {
 /* 🔝 HEADERS, NAVIGATION & FOOTERS */
 /* ========================================================= */
 
-header, nav, footer, .site-header {
+header, nav,/* footer,*/ .site-header {
     background-color: var(--background-medium);
     color: var(--text-secondary);
     padding: 0.5rem 1rem 1rem;
@@ -212,13 +211,11 @@ nav {
 }
 
 footer {
-/*    background-color: var(--background-medium);
+    background-color: var(--background-medium);
     color: var(--text-secondary);
-*/
     padding: 1rem;
     border-top: 2px solid var(--border-color);
-/*    text-align: center;
-*/
+    text-align: center;
     margin-top: 2rem;
 }
 
@@ -243,15 +240,19 @@ footer img {
     line-height: 1.2;
 }
 
+/*
 .site-nav ul {
     list-style: none;
     padding: 0;
 }
+*/
 
 .site-nav li {
     display: inline-block;
-    margin: 0.1em; 
+    margin: 0.3em;
+/*    margin: 0.1em; 
     margin-bottom: 0; 
+*/
     padding: 0.7em; 
     border: 1px solid var(--border-color);
     border-radius: 4px;
@@ -263,8 +264,7 @@ footer img {
 */
     display: inline-block;
     padding: 0.8em 1.2em;
-/*    border-radius: 5px;
-*/
+    border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
@@ -284,8 +284,7 @@ footer img {
     padding: 2rem 1rem;
     border-top: 2px solid var(--border-color);
     border-bottom: 2px solid var(--border-color);
-/*    text-align: center;
-*/
+    text-align: center;
 }
 
 highlighted-section h3 {
@@ -294,7 +293,6 @@ highlighted-section h3 {
     padding: 0;
 }
 
-/*
 highlighted-section a {
     background-color: var(--background-dark);
     color: var(--text-primary);
@@ -308,7 +306,6 @@ highlighted-section a {
 highlighted-section a:hover {
     background-color: var(--background-darker);
 }
-*/
 
 /* ========================================================= */
 /* 📌 RETURN, CONTACT & DISCLAIMER BUTTONS */
@@ -386,15 +383,19 @@ highlighted-section a:hover {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     background-color: var(--background-light);
     color: var(--text-primary);
-    margin: 1rem 0;
+    margin: 0;
     border-radius: 4px;
     border: 1px solid var(--primary-text);
     padding: 1rem;
     line-height: 1.7;
 }
 
-.disclaimer, .article, .white-paper, .essay, .workbook {
+.disclaimer, .essay, {
     text-align: justify;
+}
+
+.article, .white-paper, .workbook {
+    text-align: left;
 }
 
 /* Add specific styles for other sections as needed */
