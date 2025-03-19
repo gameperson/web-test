@@ -24,7 +24,7 @@ body {
 /* 🎨 COLOR PALETTE */
 /* ========================================================= */
 
-/* 🌞 LIGHT MODE (Default) */
+/* 🌞 LIGHT THEME (Default) */
 
 :root {
     --background-light: #f8f8f8;
@@ -41,9 +41,9 @@ body {
     --link-hover: #444;
 }
 
-/* 🌙 DARK MODE */
+/* 🌙 DARK THEME */
 
-.dark-mode {
+.dark-theme {
     --background-light: #121212; /* Dark gray */
     --background-medium: #1e1e1e; /* Slightly lighter dark gray */
     --background-dark: #333; /* Hover backgrounds */
