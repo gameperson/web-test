@@ -114,35 +114,62 @@
     </main>
 
     <!-- Persistent Disclaimer -->
-    <section class="highlighted-section" id="disclaimer">
-        <a href="../gameperson_Disclaimer.html" aria-label="Full Site Disclaimer">
-            <h3>Disclaimer</h3>
-            The content here is for <strong>informational and thought-provoking purposes</strong>. Accuracy is a priority, but always verify independently.
-        </a>
+    <section class="highlighted-section">
+        <div class="disclaimer-link" id="disclaimer">
+<!-- relative link href="./gameperson_Disclaimer.html" CHANGE TO: ../gameperson_Disclaimer.html --> 
+            <a href="./gameperson_Disclaimer.html" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="This Content is for Informational Purposes and Should Not Be Considered Complete or Without Error"><h3>Disclaimer</h3><br>The content here is for <strong>informational and thought provoking purposes</strong>. Every effort is made to ensure accuracy, develop extensive coverage and provide competent analysis; however, information is subject to change and omissions or errors may be present. Users are encouraged to verify any information.<br><large><b>Full Site Disclaimer</b></large></a>
+        </div>
+        <div class="return-link">
+            <a href="#nav" aria-label="Back">Back</a>
+<!-- Alternate Return Link
+            <a href="#top" aria-label="Top of Page">Top of Page</a>
+-->
+        </div>
     </section>
-
+    
     <!-- About + Contact -->
     <section id="about">
         <h2>About gameperson@github</h2>
-        <p>Combining AI-assisted research with human editing for deep, actionable content about today's pressing realities.</p>
+        <p>Specialized content and in-depth analysis, combining AI-assisted research with human editing. Rich, insightful and thought-provoking content about today's pressing realities</p>
         <h3>Content Creation Contributors</h3>
-        <p><strong>Authors:</strong> ChatGPT, Google Gemini, Deep AI<br><strong>Editor:</strong> gameperson@github</p>
-        <div class="contact-link">
-            <a href="mailto:gamesomeotherday@gmail.com" aria-label="Contact via Email">
-                <h3>Contact</h3><br><strong>Send Feedback or Corrections</strong>
-            </a>
+        <p><b>Authors:</b> ChatGPT, Google Gemini, Deep AI<br>
+        <b>Editor and Producer:</b> gameperson@github<br></p>
+        <div class="contact-link" id="contact">
+            <a href="mailto:gamesomeotherday@gmail.com" data-tags="gameperson, gameperson@github, contact gameperson" aria-label="Contact: Send an Email"><h3>Contact</h3><br><b>Feedback is Welcome</b>: Report any typos, factual inaccuracies, missing information, suggestions for improvement or new topic ideas. <b><large>Send an Email</large></b></a>
         </div>
     </section>
-
+<!--        <div class="return-link">
+            <a href="#top" aria-label="Top of Page">Top of Page</a>
+<!-- Alternate Return Link
+            <a href="#nav" aria-label="Back">Back</a>
+        </div> 
+-->
+    
     <!-- Footer -->
     <footer>
         <section id="footer">
             <div class="footer-content">
-                <img src="../images/bulb_A_20.png" alt="Big Bright Brains">
-                <p class="footer-text">&copy; 2025 gameperson@github</p>
-            </div>
-        </section>
+            <nav class="site-nav">
+                <ul class="nav-list">
+                    <li><a href="#top">Top of Page</a></li>
+                    <li><a href="javascript:history.back();">Return to Previous Page</a></li>
+                    <li><a href="./index.html">Article Index</a></li> 
+                </ul>
+            </nav>
+            <img src="./images/bulb_A_20.png" alt="Big Bright Brains">
+            <p class="footer-text">&copy; 2025 gameperson@github</p>
+        </div>
+<!-- Theme Toggle Button
+        <div class="theme-toggle>
+            <button onclick="toggleTheme()">Toggle Theme</button>
+        </div>
+-->
     </footer>
-
+<!-- JavaScript at the end of body -->
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+        }
+    </script>
 </body>
 </html>
