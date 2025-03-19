@@ -292,6 +292,8 @@ img {
 .btn-large {
     font-size: var(--font-size-base);
     padding: var(--padding-large);
+    text-align: justify;
+    text-align-last: center;
 }
 
 .btn-large h3 {
