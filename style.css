@@ -96,15 +96,18 @@ body {
     --font-weight-bold: 700;
 
    /* Margins - Borders - Padding*/
-    --margin-base: 1rem; /* = 16px */
-    --margin-small: 0.5rem;/* = 8px */
-    --margin-large: 1.5rem;/* = 24px */
-    --margin-larger: 2rem;/* = 32px */
+    --margin-base: 1em; /* = 16px */
+    --margin-small: 0.5em;/* = 8px */
+    --margin-large: 1.5em;/* = 24px */
+    --margin-larger: 2em;/* = 32px */
+
     --border-radius-base: 5px;
     --border-radius-small: 4px;
-    --padding-base: 1rem; /* = 16px */   
-    --padding-small: 0.5rem; /* = 8px */
-    --padding-large: 1.5rem; /* = 24px */
+   
+    --padding-base: 1em; /* = 16px */ 
+    --padding-small: 0.75em; /* = 6px */
+    --padding-smaller: 0.5em; /* = 8px */
+    --padding-large: 1.5em; /* = 24px */
     --padding-none: 0;
     
     /* Text */
@@ -172,7 +175,7 @@ h6 {
 
 /* General Elements */
 p { 
-   margin-bottom: 1rem; /* 16px */
+   margin-bottom: 1em; /* 16px */
    color: var(--color-text-primary); 
 }
    
@@ -181,7 +184,7 @@ ul, li, ul li, ol li  { color: var(--color-text-primary); }
 
 ul, ol {
     list-style: none;   
-    padding-left: var(--padding-small);
+    padding-left: var(--padding-smaller);
     margin: var(--margin-base) 0;
 }
 
@@ -208,7 +211,7 @@ table {
 
 table th, table td {
     border: 1px solid var(--color-border-base);
-    padding: var(--padding-base);
+    padding: var(--padding-small);
     text-align: left;
 }
 
@@ -281,8 +284,8 @@ img {
     font-size: var(--font-size-small);
     display: inline-block;
     /* padding: 0.4em 0.8em; */
-    margin: var(--margin-small);
-    padding: var(--padding-small); 
+    margin: var(--margin-smaller);
+    padding: var(--padding-smaller); 
 }
 
 /* OTHER BUTTONS: .return-link, .disclaimer-link, .contact-link
@@ -335,14 +338,14 @@ img {
 
 .center-content {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
-.content-section { margin-bottom: 1rem; }
+.content-section { margin-bottom: 1em; }
 
 .divider {
     max-width: 600px; 
-    margin: 1.2rem auto; 
+    margin: 1.2em auto; 
     padding: 1px;
     border-top: 2px solid var(--color-border-base);
     border-left: 0; 
@@ -356,7 +359,7 @@ img {
     border-left: 1px solid var(--color-border-base); 
     border-right: 1px solid var(--color-border-base);  
     border-bottom: 0; 
-    margin: 2rem 0;
+    margin: 2em 0;
 }
 
 /* ========================================================= 
@@ -366,9 +369,9 @@ img {
 header, nav, footer, .site-header {
     background-color: var(--color-background-medium);
     color: var(--color-text-secondary);
-    padding: 0.5rem 1rem 1rem;
-    margin: 0 auto;
-    margin-bottom: 2rem;
+    padding: var(--padding-smaller) var(--padding-base) var(--padding-base);
+    margin: var(--margin-base) auto;
+    margin-bottom: var(--margin-base);
     text-align: center;
 }
 
@@ -384,9 +387,9 @@ nav {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 2em;
     border-top: 2px solid var(--color-border-base);
-    padding: 1rem;
+    padding: 1em;
 }
 
 footer nav {
@@ -399,7 +402,7 @@ footer img {
 /*    max-width: 100px;
     height: auto;
 */
-   margin: 0.5rem;
+   margin: 0.5em;
 }
 
 /* ========================================================= 
@@ -409,8 +412,8 @@ footer img {
 .highlighted-section {
     background-color: var(--color-background-medium);
     color: var(--color-text-secondary);
-    margin: 1rem 0 0.5rem;
-    padding: 2rem 1rem;
+    margin: 1em 0 0.5em;
+    padding: 2em 1em;
     border-top: 2px solid var(--color-border-base);
     border-bottom: 2px solid var(--color-border-base);
     font-size: 1em;
@@ -478,7 +481,7 @@ site-nav, .nav-list {
    ============================================================ */
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 /* Guide, Overview, Summary, etc. */
@@ -490,9 +493,9 @@ section {
 .glossary-section,
 .further-reading-section {
     background: var(--color-background-light);
-    padding: 1.5rem;
+    padding: 1.5em;
     border-radius: 5px;
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
 }
 
 /* Takeaways Special Styling */
@@ -508,7 +511,7 @@ section {
     font-weight: bold;
 }
 .glossary-section dd {
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1em 1em;
 }
 
 /* ============================================================
@@ -520,9 +523,9 @@ section {
     background-color: var(--color-background-light);
     color: var(--color-text-primary);
     max-width: 600px;
-    margin: 1.2rem auto; 
+    margin: 1.2em auto; 
     border: 1px solid var(--color-border-base);
-    padding: 0.5rem 1.2rem 0rem 1.2rem;
+    padding: 0.5em 1.2em 0em 1.2em;
     font-size: 1.3em;
     text-align: center;
 }
@@ -546,7 +549,7 @@ section {
     margin: 0 auto;
     border-radius: 4px;
     border: 1px solid var(--color-text-primary);
-    padding: 1rem;
+    padding: 1em;
     font-size: 1.1em; 
     text-align: justify;
 }
@@ -559,7 +562,7 @@ section {
     margin: 0 auto;
     border-radius: 4px;
     border: 1px solid var(--color-text-primary);
-    padding: 1rem;
+    padding: 1em;
     font-size: 1.1em; 
 }
 
@@ -583,7 +586,7 @@ section {
 }
 
 @media (max-width: 600px) {
-    .index-list li { display: block; margin: 0.5rem 0; }
+    .index-list li { display: block; margin: 0.5em 0; }
     .index-title { font-size: 1.9em; }
 }
 
