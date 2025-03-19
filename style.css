@@ -65,6 +65,11 @@ body {
     color: var(--text-primary);
 }
 
+/* Smooth scroll for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
 /* ========================================================= */
 /* 🔤 TYPOGRAPHY */
 /* ========================================================= */
