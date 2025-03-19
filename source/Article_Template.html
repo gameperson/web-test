@@ -321,19 +321,7 @@
     </footer>
 
     <!-- JavaScript at the end of body -->
-    <!-- Theme Switcher -->
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-        const toggleButton = document.getElementById("darkModeToggle");
-        const body = document.body;
-
-        toggleButton.addEventListener("click", () => {
-            body.classList.toggle("dark-mode");
-        });
-    });
-    </script>
-
-    <!-- Theme Switcher with Icon Switching - mot working 
+    <!-- Theme Switcher with non-functional Icon Switching -->
     <script>
         function toggleTheme() {
             document.body.classList.toggle('dark-theme');
@@ -364,6 +352,18 @@
             if (navIcon) navIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_A.png';
             if (footerIcon) footerIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_A.png';
         };
+    </script>
+
+    <!-- Theme Switcher ??
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const toggleButton = document.getElementById("darkModeToggle");
+        const body = document.body;
+
+        toggleButton.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+        });
+    });
     </script>
     -->
     
