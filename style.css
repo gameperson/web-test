@@ -10,6 +10,7 @@
    ============================================================ */
 
 /* Reset */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,11 +18,12 @@
 }
 
 /* Initial General Body Styling */
+
 body {
-    font-family: var(--font-family);
-    background: var(--color-bg);
-    color: var(--color-text);
-    line-height: var(--line-height);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.7;
     padding: 20px;
     text-align: center;
 }
@@ -72,15 +74,9 @@ body {
 /* Apply Backgrounds and Text Colors */
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     background-color: var(--background-light);
     color: var(--text-primary);
-}
-
-/* Smooth scroll for anchor links */
-
-html {
-    scroll-behavior: smooth;
+    border: 1px solid var(--color-border);
 }
 
 /* ============================================================
@@ -94,7 +90,23 @@ html {
     --line-height: 1.7;
 }
 
-/* Typography of HTML */
+/* Body Typography */
+
+body {
+    font-family: var(--font-family);
+    margin: 1rem auto;
+    border-radius: 5px;
+    padding: 1em;
+    line-height: var(--line-height);
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* Smooth Scroll */
+
+html { 
+    scroll-behavior: smooth;
+}
 
 /* Basic Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -113,9 +125,7 @@ h4 { font-size: 1.4em; margin-top: 0.5em; margin-bottom: 0.5em; }
 h5 { font-size: 1.4em; margin-bottom: 0.5em; }
 h6 { font-size: 1.2em; margin-top: 0.5em; margin-bottom: 0.5em; }
 
-/* ============================================================
-   📝 GENERAL CONTENT ELEMENTS
-   ============================================================ */
+/* 📝 GENERAL CONTENT ELEMENTS */
 
 p { 
    margin-bottom: 1.2em; 
@@ -426,7 +436,7 @@ section {
 
 /* Index Page Layout */
 .index-page, .index-list, .index-list li {
-    background-color: var(--background-light);
+    background-color: var(--background-light;
     color: var(--text-primary);
     max-width: 600px;
     margin: 1.2rem auto; 
@@ -436,7 +446,7 @@ section {
     text-align: center;
 }
 
-.index-list li { 
+.index-list li {    
     display: block;
     margin: 1em;
     padding: 0.7em;
