@@ -30,10 +30,6 @@ body {
    🌈 COLOR PALETTE (CSS VARIABLES)
    ============================================================ */
 
-/* ----------------------------- */
-/* 🌈 COLOR VARIABLES & THEME TOKENS */
-/* ----------------------------- */
-
 /* 🌞 LIGHT THEME (Default) */
 
 :root {
@@ -452,26 +448,28 @@ section {
 .index-list li a:hover { background-color: var(--background-darker); }
 
 /* Disclaimer Page Layout */
-.disclaimer-page { text-align: left; }
-
-.disclaimer-page, 
-.article-white-paper, .article-essay, .article-guide {
-/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+.disclaimer-page {
     background-color: var(--background-light);
     color: var(--text-primary);
-*/
     max-width: 800px;
     margin: 0 auto;
     border-radius: 4px;
     border: 1px solid var(--primary-text);
     padding: 1rem;
     font-size: 1.1em; 
+    text-align: justify;
 }
 
-.disclaimer-page { text-align: justify; }
-
+/* Article Layouts */
 .article-white-paper, .article-essay, .article-guide {
-    text-align: left;
+    background-color: var(--background-light);
+    color: var(--text-primary);
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid var(--primary-text);
+    padding: 1rem;
+    font-size: 1.1em; 
 }
 
 /* ============================================================
@@ -507,45 +505,3 @@ section {
 /* ============================================================
    🔔 END OF STYLESHEET
    ============================================================ */
-
-
-
-
-
-
-/* Article Layouts */
-.article-white-paper, 
-.article-essay, 
-.article-guide {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-}
-
-/* ----------------------------- */
-/* 📌 PLACEHOLDER FOR BUTTONS & LINKS (AS-IS) */
-/* ----------------------------- */
-
-/* You mentioned keeping your existing buttons/links untouched. */
-
-/* ----------------------------- */
-/* 📱 RESPONSIVE DESIGN */
-/* ----------------------------- */
-
-@media (max-width: 992px) {
-    body { padding: 15px; }
-}
-
-@media (max-width: 768px) {
-    body { padding: 10px; }
-    .index-page .index-list li { padding: 0.8em; }
-}
-
-@media (max-width: 600px) {
-    .index-page .index-list li { display: block; margin: 0.5rem 0; }
-}
-
-@media (max-width: 480px) {
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.5em; }
-}
