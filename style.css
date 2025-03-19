@@ -288,6 +288,11 @@ img {
     padding: var(--padding-smaller); 
 }
 
+.btn.justify {
+    text-align: justify;
+    text-align-last: center;
+}
+
 /* OTHER BUTTONS: .return-link, .disclaimer-link, .contact-link
 .return-link, .disclaimer-link, .contact-link { 
     margin: 1rem auto 1rem;
