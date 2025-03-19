@@ -8,7 +8,6 @@
    ============================================================ */
 
 /* Reset */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -16,7 +15,6 @@
 }
 
 /* Initial General Body Styling */
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     background-color: #f8f8f8;
@@ -26,7 +24,7 @@ body {
 }
 
 /* ============================================================
-   🌈 COLOR PALETTE (CSS VARIABLES)
+   🌈 COLOR PALETTE TOKENS
    ============================================================ */
 
 /* 🌞 LIGHT THEME (Default) */
@@ -69,7 +67,6 @@ body {
 }
 
 /* Apply Backgrounds and Text Colors */
-
 body {
     background-color: var(--background-light);
     color: var(--text-primary);
@@ -78,30 +75,64 @@ body {
 }
 
 /* ============================================================
-   🔤 TYPOGRAPHY
+   🔤 TYPOGRAPHY TOKENS 
    ============================================================ */
 
-/* Typography Tokens */
-
 :root {
+    /* Fonts */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
-    --line-height: 1.7;
+    --font-size-base: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-large: 1.25rem;
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* Layout */
+    --display-inline: inline-block;
+    --display-block: block;    
+
+   /* Margins */
+    --margin-base: 1rem auto;
+    --margin-small: 0.5rem auto;
+    --margin-large: 2rem auto;
+   
+   /* Borders */
+    --border-radius-base: 5px;
+    --border-radius-small: 4px;
+   
+    /* Padding */
+    --padding-base: 1em;
+    --padding-none: 0;
+    
+    /* Text */
+    --line-height-base: 1.7;
+    --line-height-small: 1.5;
+    --line-height-smaller: 1.3;
+/*    --text-left: left;
+    --text-right: right;
+    --text-center: center;
+    --text-justify: justify;
+*/
 }
 
-/* Body Typography */
+/* ============================================================
+   📝 PAGE TYPOGRAPHY 
+   ============================================================ */
 
 body {
-    font-family: var(--font-family);
-    margin: 1rem auto;
-    border-radius: 5px;
-    padding: 1em;
-    line-height: var(--line-height);
+    font-family: var(--font-family); 
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    margin: var(--margin-base); 
+    border-radius: var(--border-radius-base); 
+    padding: var(--padding-base); 
+    line-height: var(--line-height-base);
     text-align: center;
     transition: background-color 0.3s ease;
 }
 
 /* Smooth Scroll */
-
 html { 
     scroll-behavior: smooth;
 }
@@ -109,22 +140,45 @@ html {
 /* Basic Headings */
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-text);
-    margin: 1em;
-    padding: 0;
-    line-height: 1.3;
-    font-weight: 600;
+    margin: var(--margin-base);
+    padding: var(--padding-none)0
+    line-height: var(--line-height-smaller);
+    font-weight: var(--font-weight-semibold);
     text-align: center;
 }
 
-h1 { font-size: 2.6em; margin-top: 0.5em; margin-bottom: 0.5em; }
-h2 { font-size: 2.0em; margin-bottom: 0.5em; }
-h3 { font-size: 1.5em; margin-bottom: 0.5em; }
-h4 { font-size: 1.4em; margin-top: 0.5em; margin-bottom: 0.5em; }
-h5 { font-size: 1.4em; margin-bottom: 0.5em; }
-h6 { font-size: 1.2em; margin-top: 0.5em; margin-bottom: 0.5em; }
+h1 { 
+   font-size: 2.6em; 
+   font-weight: var(--font-weight-bold); 
+   margin: var(--margin-small); 
+}
+h2 { 
+   font-size: 2.0em;
+   font-weight: var(--font-weight-bold);
+   margin-bottom: 0.5em; 
+}
+h3 { 
+   font-size: 1.5em; 
+   font-weight: var(--font-weight-semibold);
+   margin-bottom: 0.5em; 
+}
+h4 { 
+   font-size: 1.4em; 
+   font-weight: var(--font-weight-bold);
+   margin: var(--margin-small); 
+}
+h5 { 
+   font-size: 1.4em;
+   font-weight: var(--font-weight-semibold);
+   margin-bottom: 0.5em; 
+}
+h6 { 
+   font-size: 1.2em; 
+   font-weight: var(--font-weight-semibold);
+   margin: var(--margin-small); 
+}
 
-/* 📝 GENERAL CONTENT ELEMENTS */
-
+/* General Elements */
 p { 
    margin-bottom: 1.2em; 
    color: var(--primary-text); 
