@@ -206,51 +206,34 @@
     
     <!-- JavaScript at the end of body -->
     <script>
-        function swapThemeIcons(isDark) {
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-mode');
+
             const navIcon = document.getElementById('theme-icon-nav');
             const footerIcon = document.getElementById('theme-icon-footer');
-
-    // relative links href="../"  
-            const newSrc = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
-            const newAlt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
-
-            if (navIcon) {
-                navIcon.src = newSrc;
-                navIcon.alt = newAlt;
-            }
-            
-            if (footerIcon) {
-                footerIcon.src = newSrc;
-                footerIcon.alt = newAlt;
-            }
-        }
-
-        function toggleTheme() {
-            document.body.classList.toggle('dark-mode');
-            const isDark = document.body.classList.contains('dark-mode');
-            swapThemeIcons(isDark);
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            const isDark = document.body.classList.contains('dark-mode');
-            swapThemeIcons(isDark);
-        } 
-        };
-        
-    </script>
     
-    <!--    // sync on page load
+            if (navIcon) {
+                navIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
+                navIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
+            }
+
+            if (footerIcon) {
+                footerIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
+                footerIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
+            }
+        }
+        // sync on page load
         window.onload = () => {
             const isDark = document.body.classList.contains('dark-mode');
             const navIcon = document.getElementById('theme-icon-nav');
             const footerIcon = document.getElementById('theme-icon-footer');
         
-    // relative links href="../"  
             if (navIcon) navIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
             if (footerIcon) footerIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
         };
     </script>
-    -->
+
     
 </body>
 </html>
