@@ -98,8 +98,9 @@ html {
     --line-height: 1.7;
 }
 
-/* Typography of HRML */
+/* Typography of HTML */
 
+/* Basic Headings */
 h1, h2, h3, h4, h5, h6 {
     color: var(--primary-text);
     margin: 1em;
@@ -116,22 +117,27 @@ h4 { font-size: 1.4em; margin-top: 0.5em; margin-bottom: 0.5em; }
 h5 { font-size: 1.4em; margin-bottom: 0.5em; }
 h6 { font-size: 1.2em; margin-top: 0.5em; margin-bottom: 0.5em; }
 
-p, ul, li, ul li, ol li  { color: var(--primary-text); }
+/* ============================================================
+   📝 GENERAL CONTENT ELEMENTS
+   ============================================================ */
 
-p { margin-bottom: 1.2em; }
+p { 
+   margin-bottom: 1.2em; 
+   color: var(--primary-text); 
+}
+   
+/* Lists */
+ul, li, ul li, ol li  { color: var(--primary-text); }
 
 ul, ol {
     list-style: none;   
     padding-left: 1.5rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 ul li, ol li { margin-bottom: 0.5rem; }
 
-/* ============================================================
-   🎨 LINKS & BUTTONS 
-   ============================================================ */
-
+/* Links */
 a {
     color: var(--color-link);
     text-decoration: none;
@@ -142,6 +148,40 @@ a {
 a:hover {
     color: var(--color-link-hover);
 }
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+table th, table td {
+    border: 1px solid var(--color-border);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* Code Blocks */
+pre, code {
+    background: var(--bg-alt);
+    padding: 1rem;
+    display: block;
+    overflow-x: auto;
+    font-family: monospace;
+    margin-bottom: 1.5rem;
+}
+
+/* Images */
+img {
+    max-width: 100px;
+    height: auto;
+    margin: 1rem;
+}
+
+/* ============================================================
+   🎨 BUTTON LINKS 
+   ============================================================ */
 
 .button-link, a.button-link { 
     background-color: var(--background-medium);
@@ -187,37 +227,6 @@ a:hover {
 
 .return-link a:hover, .disclaimer-link a:hover, .contact-link a:hover {
     background-color: var(--background-darker);
-}
-
-/* ============================================================
-   📝 GENERAL CONTENT ELEMENTS
-   ============================================================ */
-
-img {
-    max-width: 100px;
-    height: auto;
-    margin: 1rem;
-}
-                     
-pre, code {
-    background: var(--color-bg-alt);
-    padding: 1rem;
-    display: block;
-    overflow-x: auto;
-    font-family: monospace;
-    margin-bottom: 1.5rem;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-}
-
-table th, table td {
-    border: 1px solid var(--color-border);
-    padding: 0.5rem;
-    text-align: left;
 }
 
 /* ========================================================= 
@@ -385,6 +394,7 @@ section {
     margin-bottom: 2rem;
 }
 
+/* Guide, Overview, Summary, etc. */
 .guide-section,
 .overview-section,
 .summary-section,
@@ -392,15 +402,18 @@ section {
 .conclusion-section,
 .glossary-section,
 .further-reading-section {
-    background: var(--color-bg-alt);
+    background: var(--background-light);
     padding: 1.5rem;
     border-radius: 5px;
+    margin-bottom: 2rem;
 }
 
+/* Takeaways Special Styling */
 .takeaways-section ul {
     list-style-type: disc;
 }
 
+/* Glossary Styling */
 .glossary-section dl {
     margin: 0;
 }
@@ -415,6 +428,7 @@ section {
    🧩 PAGE TYPES
    ============================================================ */
 
+/* Index Page Layout */
 .index-page, .index-list, .index-list li {
     background-color: var(--background-light);
     color: var(--text-primary);
@@ -437,11 +451,15 @@ section {
 
 .index-list li a:hover { background-color: var(--background-darker); }
 
+/* Disclaimer Page Layout */
+.disclaimer-page { text-align: left; }
+
 .disclaimer-page, 
 .article-white-paper, .article-essay, .article-guide {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+/*    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     background-color: var(--background-light);
     color: var(--text-primary);
+*/
     max-width: 800px;
     margin: 0 auto;
     border-radius: 4px;
@@ -492,109 +510,8 @@ section {
 
 
 
-/* Basic Headings */
-h1, h2, h3, h4 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.2em; }
 
-p {
-    margin-bottom: 1.2em;
-}
-
-/* ----------------------------- */
-/* 📜 COMMON CONTENT TYPES */
-/* ----------------------------- */
-
-/* Lists */
-ul, ol {
-    margin: 1rem 0;
-    padding-left: 1.5rem;
-}
-
-ul li, ol li {
-    margin-bottom: 0.5rem;
-}
-
-/* Code Blocks */
-pre, code {
-    background: var(--bg-alt);
-    padding: 1rem;
-    display: block;
-    overflow-x: auto;
-    font-family: monospace;
-    margin-bottom: 1.5rem;
-}
-
-/* Tables */
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 1.5rem 0;
-}
-
-table th, table td {
-    border: 1px solid var(--border);
-    padding: 0.5rem;
-    text-align: left;
-}
-
-/* ----------------------------- */
-/* 🎯 SECTION TYPES */
-/* ----------------------------- */
-
-/* Guide, Overview, Summary, etc. */
-.guide-section,
-.overview-section,
-.summary-section,
-.takeaways-section,
-.conclusion-section,
-.glossary-section,
-.further-reading-section {
-    background: var(--bg-alt);
-    padding: 1.5rem;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-}
-
-/* Takeaways Special Styling */
-.takeaways-section ul {
-    list-style-type: disc;
-}
-
-/* Glossary Styling */
-.glossary-section dl {
-    margin: 0;
-}
-.glossary-section dt {
-    font-weight: bold;
-}
-.glossary-section dd {
-    margin: 0 0 1rem 1rem;
-}
-
-/* ----------------------------- */
-/* 🧩 PAGE TYPES */
-/* ----------------------------- */
-
-/* Index Page Layout */
-.index-page .index-list li {
-    border: 1px solid var(--border);
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-}
-
-/* Disclaimer Page Layout */
-.disclaimer-page {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
-}
 
 /* Article Layouts */
 .article-white-paper, 
