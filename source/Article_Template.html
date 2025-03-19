@@ -181,7 +181,7 @@
         <!-- Theme Toggle Button -->
         <div class="theme-toggle centered" style="margin-top: 1rem;">
     <!-- relative links href="../" --> 
-            <img id="theme-icon-footer" src="../images/bulb_black.png" 
+            <img id="theme-icon-footer" src="../images/bulb_A.png" 
                  alt="Theme Icon" 
                  style="width: 40px; cursor: pointer;" 
                  onclick="toggleTheme()" 
@@ -191,7 +191,7 @@
         <div class="theme-toggle">
             <button onclick="toggleTheme()" aria-label="Switch Theme">
     <!-- relative links href="../"  
-                <img id="theme-icon-footer" src="../images/bulb_black.png" alt="Theme Icon" style="width: 20px; vertical-align: middle; margin-right: 8px;">
+                <img id="theme-icon-footer" src="../images/bulb_A.png" alt="Theme Icon" style="width: 20px; vertical-align: middle; margin-right: 8px;">
                 <small>Toggle Theme</small>
             </button>
         </div>
@@ -214,12 +214,14 @@
             const footerIcon = document.getElementById('theme-icon-footer');
     
             if (navIcon) {
-                navIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
+    // relative links href="../"  
+                navIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_A.png';
                 navIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
             }
 
             if (footerIcon) {
-                footerIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
+    // relative links href="../"  
+                footerIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_A.png';
                 footerIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
             }
         }
@@ -229,8 +231,9 @@
             const navIcon = document.getElementById('theme-icon-nav');
             const footerIcon = document.getElementById('theme-icon-footer');
         
-            if (navIcon) navIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
-            if (footerIcon) footerIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_black.png';
+    // relative links href="../"  
+            if (navIcon) navIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_A.png';
+            if (footerIcon) footerIcon.src = isDark ? '../images/bulb_white.png' : '../images/bulb_A.png';
         };
     </script>
 
