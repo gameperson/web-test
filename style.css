@@ -291,7 +291,8 @@ img {
 /* Large Button */
 .btn.large {
     font-size: var(--font-size-base);
-    padding: var(--padding-large);
+    margin: var(--margin-large);
+    padding: var(--padding-base);
     text-align: justify;
     text-align-last: center;
 }
@@ -303,6 +304,11 @@ img {
 }
 
 /* Other Button Links*/ 
+
+.contact-link {
+    margin: var(--margin-large) auto 0;
+    padding: var(--padding-base); 
+}
 
 .disclaimer-link h3, .contact-link h3 {
     line-height: var(--line-height-smaller);
