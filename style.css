@@ -31,47 +31,47 @@ body {
 
 :root {
     /* Bckgroubds */
-    --background-light: #f8f8f8;
-    --background-medium: #f0f0f0;
-    --background-dark: #e0e0e0;
-    --background-darker: #d0d0d0;
+    --color-background-light: #f8f8f8;
+    --color-background-medium: #f0f0f0;
+    --color-background-dark: #e0e0e0;
+    --color-background-darker: #d0d0d0;
 
     /* Text Colors */
-    --text-primary: #333;
-    --text-secondary: #444;
-    --text-muted: #777;
-    --link-color: #666;
-    --link-hover: #444;
+    --color-text-primary: #333;
+    --color-text-secondary: #444;
+    --color-text-muted: #777;
+    --color-link-primary: #666;
+    --color-link-hover: #444;
 
     /* Borders */
-    --border-color: #ddd; 
+    --color-border-base: #ddd; 
 }
 
 /* 🌙 DARK THEME */
 
 .dark-theme {
     /* Bckgroubds */
-    --background-light: #121212; /* Dark gray */
-    --background-medium: #1e1e1e; /* Slightly lighter dark gray */
-    --background-dark: #333; /* Hover backgrounds */
+    --color-background-light: #121212; /* Dark gray */
+    --color-background-medium: #1e1e1e; /* Slightly lighter dark gray */
+    --color-background-dark: #333; /* Hover backgrounds */
 
     /* Text Colors */
-    --text-primary: #e0e0e0; /* Light text */
-    --text-secondary: #cccccc;
-    --text-muted: #999;
-    --link-color: #bbb;
-    --link-hover: #fff;
+    --color-text-primary: #e0e0e0; /* Light text */
+    --color-text-secondary: #cccccc;
+    --color-text-muted: #999;
+    --color-link-primary: #bbb;
+    --color-link-hover: #fff;
 
     /* Borders */
-    --border-color: #444;
+    --color-border-base: #444;
 }
 
 /* Apply Backgrounds and Text Colors */
 body {
-    background-color: var(--background-light);
-    color: var(--text-primary);
-    border-color: var(--color-border);
-<!--    border-color: 1px solid var(--color-border); -->    
+    background-color: var(--color-background-light);
+    color: var(--color-text-primary);
+    border-color: var(--color-border-base);
+<!--    border-color: 1px solid var(--color-border-base); -->    
 }
 
 /* ============================================================
@@ -88,20 +88,12 @@ body {
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
-    /* Layout */
-    --display-inline: inline-block;
-    --display-block: block;    
-
-   /* Margins */
+   /* Margins - Borders - Padding*/
     --margin-base: 1rem auto;
     --margin-small: 0.5rem auto;
     --margin-large: 2rem auto;
-   
-   /* Borders */
     --border-radius-base: 5px;
     --border-radius-small: 4px;
-   
-    /* Padding */
     --padding-base: 1em;
     --padding-none: 0;
     
@@ -109,11 +101,6 @@ body {
     --line-height-base: 1.7;
     --line-height-small: 1.5;
     --line-height-smaller: 1.3;
-/*    --text-left: left;
-    --text-right: right;
-    --text-center: center;
-    --text-justify: justify;
-*/
 }
 
 /* ============================================================
@@ -139,7 +126,7 @@ html {
 
 /* Basic Headings */
 h1, h2, h3, h4, h5, h6 {
-    color: var(--primary-text);
+    color: var(--color-text-primary);
     margin: var(--margin-base);
     padding: var(--padding-none)0
     line-height: var(--line-height-smaller);
@@ -181,11 +168,11 @@ h6 {
 /* General Elements */
 p { 
    margin-bottom: 1.2em; 
-   color: var(--primary-text); 
+   color: var(--color-text-primary); 
 }
    
 /* Lists */
-ul, li, ul li, ol li  { color: var(--primary-text); }
+ul, li, ul li, ol li  { color: var(--color-text-primary); }
 
 ul, ol {
     list-style: none;   
@@ -197,7 +184,7 @@ ul li, ol li { margin-bottom: 0.5rem; }
 
 /* Links */
 a {
-    color: var(--color-link);
+    color: var(--color-link-primary);
     text-decoration: none;
     font-weight: normal;
     transition: color 0.3s;
@@ -215,7 +202,7 @@ table {
 }
 
 table th, table td {
-    border: 1px solid var(--color-border);
+    border: 1px solid var(--color-border-base);
     padding: 0.5rem;
     text-align: left;
 }
@@ -243,11 +230,11 @@ img {
 
 /* bckup button css
 .button-link, a.button-link { 
-    background-color: var(--background-medium);
-    color: var(--text-primary);
+    background-color: var(--color-background-medium);
+    color: var(--color-text-primary);
     display: block;
     margin: 1rem auto;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border-base);
     border-radius: 5px;
     padding: 1em;
     text-align: center;
@@ -255,16 +242,16 @@ img {
 }
 
 .button-link:hover, a.button-link:hover {
-    background-color: var(--background-dark);
+    background-color: var(--color-background-dark);
 }
 */
 
 .btn {
-    background-color: var(--background-medium);
-    color: var(--text-primary);
+    background-color: var(--color-background-medium);
+    color: var(--color-text-primary);
     display: block;
     margin: 1rem auto;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border-base);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     /* padding: 1em; */
@@ -276,9 +263,15 @@ img {
 }
 
 .btn:hover {
-    background: var(--background-dark);
+    background: var(--color-background-dark);
 }
 
+/* Large Button */
+.btn-large {
+    font-size: var(--font-size-large);
+}
+
+/* Smaller nav Buttons */
 .nav .btn {
     font-size: var(--font-size-small);
     display: inline-block;
@@ -291,7 +284,7 @@ img {
 .return-link, .disclaimer-link, .contact-link { 
     margin: 1rem auto 1rem;
     padding: 1em;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border-base);
     border-radius: 5px;
     text-align: center;
 }
@@ -305,8 +298,8 @@ img {
 .contact-link { margin: 3rem auto 1rem; }
 
 .return-link a, .disclaimer-link a, .contact-link a {
-    background-color: var(--background-dark);
-    color: var(--text-primary);
+    background-color: var(--color-background-dark);
+    color: var(--color-text-primary);
     display: block;
     border-radius: 5px;
     padding: 0.8em 1.2em;
@@ -314,7 +307,7 @@ img {
 }
 
 .return-link a:hover, .disclaimer-link a:hover, .contact-link a:hover {
-    background-color: var(--background-darker);
+    background-color: var(--color-background-darker);
 }
 
 /* ========================================================= 
@@ -345,7 +338,7 @@ img {
     max-width: 600px; 
     margin: 1.2rem auto; 
     padding: 1px;
-    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--color-border-base);
     border-left: 0; 
     border-right: 0; 
     border-bottom: 0; 
@@ -353,9 +346,9 @@ img {
 
 .section-divider {
     padding: 2px;
-    border-top: 2px solid var(--border-color);
-    border-left: 1px solid var(--border-color); 
-    border-right: 1px solid var(--border-color);  
+    border-top: 2px solid var(--color-border-base);
+    border-left: 1px solid var(--color-border-base); 
+    border-right: 1px solid var(--color-border-base);  
     border-bottom: 0; 
     margin: 2rem 0;
 }
@@ -365,8 +358,8 @@ img {
    ========================================================= */
 
 header, nav, footer, .site-header {
-    background-color: var(--background-medium);
-    color: var(--text-secondary);
+    background-color: var(--color-background-medium);
+    color: var(--color-text-secondary);
     padding: 0.5rem 1rem 1rem;
     margin: 0 auto;
     margin-bottom: 2rem;
@@ -375,7 +368,7 @@ header, nav, footer, .site-header {
 
 header, .site-header {
     font-size: 1.6em;
-    border-bottom: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--color-border-base);
 }
 
 nav {
@@ -386,7 +379,7 @@ nav {
 
 footer {
     margin-top: 2rem;
-    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--color-border-base);
     padding: 1rem;
 }
 
@@ -408,12 +401,12 @@ footer img {
    ========================================================= */
 
 .highlighted-section {
-    background-color: var(--background-medium);
-    color: var(--text-secondary);
+    background-color: var(--color-background-medium);
+    color: var(--color-text-secondary);
     margin: 1rem 0 0.5rem;
     padding: 2rem 1rem;
-    border-top: 2px solid var(--border-color);
-    border-bottom: 2px solid var(--border-color);
+    border-top: 2px solid var(--color-border-base);
+    border-bottom: 2px solid var(--color-border-base);
     font-size: 1em;
     text-align: center;
 }
@@ -425,23 +418,23 @@ highlighted-section h3 {
 }
 
 highlighted-section a {
-    background-color: var(--background-dark);
-    color: var(--text-primary);
+    background-color: var(--color-background-dark);
+    color: var(--color-text-primary);
     display: inline-block;
-    border: 2px solid var(--border-color);
+    border: 2px solid var(--color-border-base);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
 }
 
-highlighted-section a:hover { background-color: var(--background-darker); }
+highlighted-section a:hover { background-color: var(--color-background-darker); }
 
 /* ========================================================= 
    🗺 NAVIGATION 
    ========================================================= */
 
 site-nav, .nav-list {
-    background-color: var(--background-medium);
+    background-color: var(--color-background-medium);
     line-height: 1.2;
     padding: 0;
 }
@@ -457,13 +450,13 @@ site-nav, .nav-list {
 /*    margin: 0.1em; margin-bottom: 0; 
 */
     padding: 0.7em; 
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border-base);
     border-radius: 4px;
 }
 
 .site-nav li a {
-    background-color: var(--background-dark);
-/*    color: var(--text-primary);
+    background-color: var(--color-background-dark);
+/*    color: var(--color-text-primary);
 */
     display: inline-block;
     padding: 0.8em 1.2em;
@@ -471,7 +464,7 @@ site-nav, .nav-list {
     transition: background-color 0.3s ease;
 }
 
-.site-nav li a:hover { background-color: var(--background-darker); }
+.site-nav li a:hover { background-color: var(--color-background-darker); }
 
 
 /* ============================================================
@@ -490,7 +483,7 @@ section {
 .conclusion-section,
 .glossary-section,
 .further-reading-section {
-    background: var(--background-light);
+    background: var(--color-background-light);
     padding: 1.5rem;
     border-radius: 5px;
     margin-bottom: 2rem;
@@ -518,11 +511,11 @@ section {
 
 /* Index Page Layout */
 .index-page, .index-list, .index-list li {
-    background-color: var(--background-light);
-    color: var(--text-primary);
+    background-color: var(--color-background-light);
+    color: var(--color-text-primary);
     max-width: 600px;
     margin: 1.2rem auto; 
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--color-border-base);
     padding: 0.5rem 1.2rem 0rem 1.2rem;
     font-size: 1.3em;
     text-align: center;
@@ -537,16 +530,16 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.index-list li a:hover { background-color: var(--background-darker); }
+.index-list li a:hover { background-color: var(--color-background-darker); }
 
 /* Disclaimer Page Layout */
 .disclaimer-page {
-    background-color: var(--background-light);
-    color: var(--text-primary);
+    background-color: var(--color-background-light);
+    color: var(--color-text-primary);
     max-width: 800px;
     margin: 0 auto;
     border-radius: 4px;
-    border: 1px solid var(--primary-text);
+    border: 1px solid var(--color-text-primary);
     padding: 1rem;
     font-size: 1.1em; 
     text-align: justify;
@@ -554,12 +547,12 @@ section {
 
 /* Article Layouts */
 .article-white-paper, .article-essay, .article-guide {
-    background-color: var(--background-light);
-    color: var(--text-primary);
+    background-color: var(--color-background-light);
+    color: var(--color-text-primary);
     max-width: 800px;
     margin: 0 auto;
     border-radius: 4px;
-    border: 1px solid var(--primary-text);
+    border: 1px solid var(--color-text-primary);
     padding: 1rem;
     font-size: 1.1em; 
 }
