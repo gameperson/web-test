@@ -1,0 +1,192 @@
+/* ============================================================
+   Global Stylesheet for Gameperson Web-Test
+   Purpose: Clean, simple, and flexible base for all pages
+   ============================================================ */
+
+/* ----------------------------- */
+/* 🌈 COLOR VARIABLES & THEME TOKENS */
+/* ----------------------------- */
+
+:root {
+    /* Base Colors */
+    --bg: #f8f8f8;
+    --bg-alt: #f0f0f0;
+    --bg-hover: #e0e0e0;
+
+    /* Text Colors */
+    --text: #333;
+    --text-secondary: #555;
+    --link: #777;
+    --link-hover: #444;
+
+    /* Borders */
+    --border: #ddd;
+
+    /* Typography */
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
+    --line-height: 1.7;
+}
+
+/* ----------------------------- */
+/* ✨ CSS RESET */
+/* ----------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ----------------------------- */
+/* 🏠 GLOBAL BODY & TYPOGRAPHY */
+/* ----------------------------- */
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: var(--line-height);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Basic Headings */
+h1, h2, h3, h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
+
+p {
+    margin-bottom: 1.2em;
+}
+
+/* ----------------------------- */
+/* 📜 COMMON CONTENT TYPES */
+/* ----------------------------- */
+
+/* Lists */
+ul, ol {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+ul li, ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Code Blocks */
+pre, code {
+    background: var(--bg-alt);
+    padding: 1rem;
+    display: block;
+    overflow-x: auto;
+    font-family: monospace;
+    margin-bottom: 1.5rem;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+}
+
+table th, table td {
+    border: 1px solid var(--border);
+    padding: 0.5rem;
+    text-align: left;
+}
+
+/* ----------------------------- */
+/* 🎯 SECTION TYPES */
+/* ----------------------------- */
+
+/* Guide, Overview, Summary, etc. */
+.guide-section,
+.overview-section,
+.summary-section,
+.takeaways-section,
+.conclusion-section,
+.glossary-section,
+.further-reading-section {
+    background: var(--bg-alt);
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+/* Takeaways Special Styling */
+.takeaways-section ul {
+    list-style-type: disc;
+}
+
+/* Glossary Styling */
+.glossary-section dl {
+    margin: 0;
+}
+.glossary-section dt {
+    font-weight: bold;
+}
+.glossary-section dd {
+    margin: 0 0 1rem 1rem;
+}
+
+/* ----------------------------- */
+/* 🧩 PAGE TYPES */
+/* ----------------------------- */
+
+/* Index Page Layout */
+.index-page .index-list li {
+    border: 1px solid var(--border);
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+
+/* Disclaimer Page Layout */
+.disclaimer-page {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Article Layouts */
+.article-white-paper, 
+.article-essay, 
+.article-guide {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+}
+
+/* ----------------------------- */
+/* 📌 PLACEHOLDER FOR BUTTONS & LINKS (AS-IS) */
+/* ----------------------------- */
+
+/* You mentioned keeping your existing buttons/links untouched. */
+
+/* ----------------------------- */
+/* 📱 RESPONSIVE DESIGN */
+/* ----------------------------- */
+
+@media (max-width: 992px) {
+    body { padding: 15px; }
+}
+
+@media (max-width: 768px) {
+    body { padding: 10px; }
+    .index-page .index-list li { padding: 0.8em; }
+}
+
+@media (max-width: 600px) {
+    .index-page .index-list li { display: block; margin: 0.5rem 0; }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.5em; }
+}
