@@ -289,7 +289,7 @@ img {
 }
 
 /* Large Button */
-.btn-large {
+.btn.large {
     font-size: var(--font-size-base);
     padding: var(--padding-large);
     text-align: justify;
