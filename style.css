@@ -2,8 +2,6 @@
    Global Stylesheet for Gameperson Web-Test (v1.0)
    Purpose: Modular, easy-to-theme, and responsive
    =========================================================== */
-/* Global Styles */
-/* =========================================================== */
 
 /* ============================================================
    🧼 RESET & BASE LAYOUT
@@ -25,7 +23,6 @@ body {
     color: #333;
     line-height: 1.7;
     padding: 20px;
-    text-align: center;
 }
 
 /* ============================================================
@@ -76,7 +73,8 @@ body {
 body {
     background-color: var(--background-light);
     color: var(--text-primary);
-    border: 1px solid var(--color-border);
+    border-color: var(--color-border);
+<!--    border-color: 1px solid var(--color-border); -->    
 }
 
 /* ============================================================
@@ -436,7 +434,7 @@ section {
 
 /* Index Page Layout */
 .index-page, .index-list, .index-list li {
-    background-color: var(--background-light;
+    background-color: var(--background-light);
     color: var(--text-primary);
     max-width: 600px;
     margin: 1.2rem auto; 
