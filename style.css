@@ -241,6 +241,7 @@ img {
    🎨 BUTTON LINKS 
    ============================================================ */
 
+/* bckup button css
 .button-link, a.button-link { 
     background-color: var(--background-medium);
     color: var(--text-primary);
@@ -256,8 +257,42 @@ img {
 .button-link:hover, a.button-link:hover {
     background-color: var(--background-dark);
 }
+*/
 
-/* OTHER BUTTONS: .return-link, .disclaimer-link, .contact-link, .index-list li a */
+.btn {
+    background-color: var(--background-medium);
+    color: var(--text-primary);
+    display: block;
+    margin: 1rem auto;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    padding: 0.8em 1.2em;
+    /* padding: 1em; */
+    text-decoration: none;
+    font-weight: var(--font-weight-normal);
+    text-align: center;
+    /* transition: background-color 0.3s ease; */
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--background-dark);
+}
+
+.nav .btn {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    font-size: var(--font-size-small);
+    margin: 0.2em;
+}
+
+
+
+
+
+
+
+/* OTHER BUTTONS: .return-link, .disclaimer-link, .contact-link*/
 .return-link, .disclaimer-link, .contact-link { 
     margin: 1rem auto 1rem;
     padding: 1em;
