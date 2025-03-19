@@ -255,14 +255,14 @@ img {
 */
 
 .btn {
-    background-color: var(--color-background-medium);
+    background-color: var(--color-background-dark);
     color: var(--color-text-primary);
     display: block;
     margin: var(--margin-base) auto;
     border: 1px solid var(--color-border-base);
     border-radius: --border-radius-base;
     /* padding: 0.8em 1.2em; */
-    padding: var(--padding-base);
+    padding: var(--padding-large);
     text-decoration: none;
     font-weight: var(--font-weight-normal);
     text-align: center;
@@ -271,12 +271,7 @@ img {
 }
 
 .btn:hover {
-    background: var(--color-background-dark);
-}
-
-/* Large Button */
-.btn-large {
-    font-size: var(--font-size-large);
+    background: var(--color-background-darker);
 }
 
 /* Smaller nav Buttons */
@@ -292,6 +287,27 @@ img {
     text-align: justify;
     text-align-last: center;
 }
+
+/* Large Button */
+.btn-large {
+    font-size: var(--font-size-base);
+    padding: var(--padding-large);
+}
+
+.btn-large h3 {
+    line-height: var(--line-height-smaller);
+    margin: 0;
+    padding: 0;
+}
+
+/* Other Button Links*/ 
+
+.disclaimer-link h3, .contact-link h3 {
+    line-height: var(--line-height-smaller);
+    margin: 0;
+    padding: 0;
+}
+
 
 /* OTHER BUTTONS: .return-link, .disclaimer-link, .contact-link
 .return-link, .disclaimer-link, .contact-link { 
