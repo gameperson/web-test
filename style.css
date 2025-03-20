@@ -71,6 +71,29 @@ body {
     --link-hover: #29629f;
 }
 
+/* Color Accents for Light Theme */
+.light-theme h1, .light-theme h2, .light-theme h3,
+.light-theme h4, .light-theme h5 .light-theme h6 {
+    color: #2a7886;
+}
+
+.light-theme .highlighted-section {
+    background-color: #e9ecef;
+    border-color: #d1d5db;
+}
+
+.light-theme a {
+    color: #4a86cf;
+}
+
+.light-theme a:hover {
+    color: #29629f;
+}
+
+.light-theme .divider, .light-theme .section-divider {
+    border-color: #d1d5db;
+}
+
 /* Old Light Theme 
 .light-theme {
     /* Bckgroubds 
