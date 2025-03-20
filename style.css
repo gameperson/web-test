@@ -37,7 +37,6 @@ body {
 
 /* 🌙 DARK THEME (Dfault) */
 
-/* .light-theme { */
     :root {
     /* Bckgroubds */
     --color-background-light: #121212; /* Dark gray */
@@ -57,24 +56,38 @@ body {
 
 /* 🌞 LIGHT THEME */
 
-/* :root { */
 .light-theme {
-    /* Bckgroubds */
+    --background-light: #f0f4f8; /* Softer, slightly blue-tinted light background */
+    --background-medium: #e8ecef; /* Slightly darker, muted background */
+    --background-dark: #d0d3d6; /* Hover backgrounds */
+    --background-darker: #c0c3c6;
+
+    --text-primary: #3a4750; /* Darker, slightly blue-gray text */
+    --text-secondary: #5a6770;
+    --text-muted: #8a97a0;
+
+    --border-color: #c0c3c6;
+    --link-color: #4a86cf; /* A more vibrant blue link color */
+    --link-hover: #29629f;
+}
+
+/* Old Light Theme 
+.light-theme {
+    /* Bckgroubds 
     --color-background-light: #f8f8f8;
     --color-background-medium: #f0f0f0;
     --color-background-dark: #e0e0e0;
     --color-background-darker: #d0d0d0;
-
-    /* Text Colors */
+    /* Text Colors 
     --color-text-primary: #333;
     --color-text-secondary: #444;
     --color-text-muted: #777;
     --color-link-primary: #666;
     --color-link-hover: #444;
-
-    /* Borders */
+    /* Borders 
     --color-border-base: #ddd; 
 }
+*/
 
 /* Apply Backgrounds and Text Colors */
 body {
