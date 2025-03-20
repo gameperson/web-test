@@ -83,7 +83,7 @@ body {
 }
 
 .light-theme a {
-    color: #4a86cf;
+    color: #2a7886; /* #4a86cf; */
 }
 
 .light-theme a:hover {
