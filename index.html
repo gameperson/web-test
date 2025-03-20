@@ -128,8 +128,8 @@
     <!-- Theme Switcher with non-functional Icon Switching -->
     <script>
         function toggleTheme() {
-            document.body.classList.toggle('dark-theme');
-            const isDark = document.body.classList.contains('dark-mode');
+            document.body.classList.toggle('light-theme');
+            const isDark = document.body.classList.contains('light-mode');
 
             const navIcon = document.getElementById('theme-icon-nav');
             const footerIcon = document.getElementById('theme-icon-footer');
@@ -137,24 +137,24 @@
             if (navIcon) {
     // relative links href="./"  
                 navIcon.src = isDark ? './images/bulb_white.png' : './images/bulb_A.png';
-                navIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
+                navIcon.alt = isDark ? 'Light Mode Icon' : 'Dark Mode Icon';
             }
 
             if (footerIcon) {
     // relative links href="./"  
-                footerIcon.src = isDark ? './images/bulb_white.png' : './images/bulb_A.png';
-                footerIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
+                footerIcon.src = isDark ? './images/bulb_black.png' : './images/bulb_white.png';
+                footerIcon.alt = isDark ? 'Light Mode Icon' : 'Light Mode Icon';
             }
         }
         // sync on page load
         window.onload = () => {
-            const isDark = document.body.classList.contains('dark-mode');
+            const isDark = document.body.classList.contains('light-mode');
             const navIcon = document.getElementById('theme-icon-nav');
             const footerIcon = document.getElementById('theme-icon-footer');
         
     // relative links href="./"  
-            if (navIcon) navIcon.src = isDark ? './images/bulb_white.png' : './images/bulb_A.png';
-            if (footerIcon) footerIcon.src = isDark ? './images/bulb_white.png' : './images/bulb_A.png';
+            if (navIcon) navIcon.src = isDark ? './images/bulb_black.png' : './images/bulb_white.png';
+            if (footerIcon) footerIcon.src = isDark ? './images/bulb_black.png' : './images/bulb_white.png';
         };
     </script>
 </body>
