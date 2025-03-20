@@ -66,8 +66,8 @@ body {
     --color-text-secondary: #5a6770;
     --color-text-muted: #8a97a0;
 
-    --color-link-primary: #4a86cf; /* Reset link color */ /* A more vibrant blue link color */
-    --color-link-hover: #29629f;
+    --color-link-primary: #386870; /* Muted teal color */
+    --color-link-hover: #3a4750; /* Darker, slightly blue-gray hover color */
 
     --color-border-primary: #c0c3c6; /* Reset border color */ /* #2a7886; */ 
 }
@@ -75,15 +75,15 @@ body {
 /* Color Accents for Light Theme - Limited to h1-h6, link-text, highlighted section */
 .light-theme h1, .light-theme h2, .light-theme h3,
 .light-theme h4, .light-theme h5, .light-theme h6 {
-    color: #386870; /* Muted teal color */ /* #2a7886; */
+    color: #386870; /* Teal Headers */
 }
 
 .light-theme a {
-    color: #4a86cf; /* Standard link color */ /* #2a7886; */
+    color: #386870; /* Muted teal color */
 }
 
 .light-theme a:hover {
-    color: #29629f; /* Standard link hover color */
+    color: ##3a4750; /* Darker, slightly blue-gray */
 }
 
 .light-theme .highlighted-section {
