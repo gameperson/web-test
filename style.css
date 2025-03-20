@@ -78,7 +78,7 @@ body {
 }
 
 .light-theme .highlighted-section {
-    background-color: #e9ecef;
+    background-color: #2a7886; /* #e9ecef; */
     border-color: #d1d5db;
 }
 
