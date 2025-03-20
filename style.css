@@ -51,48 +51,75 @@ body {
     --color-link-hover: #fff;
 
     /* Borders */
-    --color-border-base: #444;
+    --color-border-primary: #444;
 }
 
 /* 🌞 LIGHT THEME */
 
 .light-theme {
-    --background-light: #f0f4f8; /* Softer, slightly blue-tinted light background */
-    --background-medium: #e8ecef; /* Slightly darker, muted background */
-    --background-dark: #d0d3d6; /* Hover backgrounds */
-    --background-darker: #c0c3c6;
+    --color-background-light: #f0f4f8; /* Softer, slightly blue-tinted light background */
+    --color-background-medium: #e8ecef; /* Slightly darker, muted background */
+    --color-background-dark: #d0d3d6; /* Hover backgrounds */
+    --color-background-darker: #c0c3c6;
 
-    --text-primary: #3a4750; /* Darker, slightly blue-gray text */
-    --text-secondary: #5a6770;
-    --text-muted: #8a97a0;
+    --color-text-primary: #3a4750; /* Darker, slightly blue-gray text */
+    --color-text-secondary: #5a6770;
+    --color-text-muted: #8a97a0;
 
-    --border-color: #2a7886; /* #c0c3c6; */
-    --link-color: #4a86cf; /* A more vibrant blue link color */
-    --link-hover: #29629f;
+    --color-link-primary: #4a86cf; /* Reset link color */ /* A more vibrant blue link color */
+    --color-link-hover: #29629f;
+
+    --color-border-primary: #c0c3c6; /* Reset border color */ /* #2a7886; */ 
 }
 
-/* Color Accents for Light Theme */
+/* Color Accents for Light Theme - Limited to h1-h6, link-text, highlighted section */
 .light-theme h1, .light-theme h2, .light-theme h3,
-.light-theme h4, .light-theme h5 .light-theme h6 {
-    color: #2a7886;
-}
-
-.light-theme .highlighted-section {
-    background-color: #386870; /* #e9ecef; - super bright */
-    border-color: #d1d5db;
+.light-theme h4, .light-theme h5, .light-theme h6 {
+    color: #386870; /* Muted teal color */ /* #2a7886; */
 }
 
 .light-theme a {
-    color: #2a7886; /* #4a86cf; */
+    color: #4a86cf; /* Standard link color */ /* #2a7886; */
 }
 
 .light-theme a:hover {
-    color: #29629f;
+    color: #29629f; /* Standard link hover color */
 }
 
-.light-theme .divider, .light-theme .section-divider {
-    border-color: #386870; /*  #d1d5db; */
+.light-theme .highlighted-section {
+    background-color: #d0d8dd; /* Darker background for contrast */ /* #e9ecef; - super bright */
+    border-color: #386870; /* Muted teal border */ /* #d1d5db; */
 }
+
+/* Apply button link styles in highlighted section */
+.light-theme .highlighted-section a.button-link {
+    background-color: var(--color-background-medium);
+    color: var(--text-primary);
+    border: 1px solid var(--color-border-primary);
+}
+
+.light-theme .highlighted-section a.button-link:hover {
+    background-color: var(--color-background-dark);
+}
+
+/* Button links should not change text color, so we are just using the standard button link styles */
+.button-link {
+    display: block;
+    padding: 0.8em 1.2em;
+    background-color: var(--color-background-medium);
+    color: var(--color-text-primary);
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid var(--color-border-primary);
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: var(--background-dark);
+}
+
+/* .light-theme .divider, .light-theme .section-divider {
+    border-color: #386870; /* #d1d5db; / } */
 
 /* Old Light Theme 
 .light-theme {
@@ -108,7 +135,7 @@ body {
     --color-link-primary: #666;
     --color-link-hover: #444;
     /* Borders 
-    --color-border-base: #ddd; 
+    --color-border-primary: #ddd; 
 }
 */
 
@@ -116,7 +143,7 @@ body {
 body {
     background-color: var(--color-background-light);
     color: var(--color-text-primary);
-    border-color: var(--color-border-base);
+    border-color: var(--color-border-primary);
 }
 
 /* ============================================================
@@ -248,7 +275,7 @@ table {
 }
 
 table th, table td {
-    border: 1px solid var(--color-border-base);
+    border: 1px solid var(--color-border-primary);
     padding: var(--padding-small);
     text-align: left;
 }
@@ -280,7 +307,7 @@ img {
     color: var(--color-text-primary);
     display: block;
     margin: 1rem auto;
-    border: 1px solid var(--color-border-base);
+    border: 1px solid var(--color-border-primary);
     border-radius: 5px;
     padding: 1em;
     text-align: center;
@@ -297,7 +324,7 @@ img {
     color: var(--color-text-primary);
     display: block;
     margin: var(--margin-base) auto;
-    border: 1px solid var(--color-border-base);
+    border: 1px solid var(--color-border-primary);
     border-radius: --border-radius-base;
     /* padding: 0.8em 1.2em; */
     padding: var(--padding-large);
@@ -359,7 +386,7 @@ img {
 .return-link, .disclaimer-link, .contact-link { 
     margin: 1rem auto 1rem;
     padding: 1em;
-    border: 1px solid var(--color-border-base);
+    border: 1px solid var(--color-border-primary);
     border-radius: 5px;
     text-align: center;
 }
@@ -414,7 +441,7 @@ img {
     max-width: 600px; 
     margin: 1.2em auto; 
     padding: 1px;
-    border-top: 2px solid var(--color-border-base);
+    border-top: 2px solid var(--color-border-primary);
     border-left: 0; 
     border-right: 0; 
     border-bottom: 0; 
@@ -422,9 +449,9 @@ img {
 
 .section-divider {
     padding: 2px;
-    border-top: 2px solid var(--color-border-base);
-    border-left: 1px solid var(--color-border-base); 
-    border-right: 1px solid var(--color-border-base);  
+    border-top: 2px solid var(--color-border-primary);
+    border-left: 1px solid var(--color-border-primary); 
+    border-right: 1px solid var(--color-border-primary);  
     border-bottom: 0; 
     margin: 2em 0;
 }
@@ -444,7 +471,7 @@ header, nav, footer, .site-header {
 
 header, .site-header {
     font-size: 1.6em;
-    border-bottom: 2px solid var(--color-border-base);
+    border-bottom: 2px solid var(--color-border-primary);
 }
 
 nav {
@@ -455,7 +482,7 @@ nav {
 
 footer {
     margin-top: 2em;
-    border-top: 2px solid var(--color-border-base);
+    border-top: 2px solid var(--color-border-primary);
     padding: 1em;
 }
 
@@ -481,8 +508,8 @@ footer img {
     color: var(--color-text-secondary);
     margin: 1em 0 0.5em;
     padding: 2em 1em;
-    border-top: 2px solid var(--color-border-base);
-    border-bottom: 2px solid var(--color-border-base);
+    border-top: 2px solid var(--color-border-primary);
+    border-bottom: 2px solid var(--color-border-primary);
     font-size: 1em;
     text-align: center;
 }
@@ -497,7 +524,7 @@ highlighted-section a {
     background-color: var(--color-background-dark);
     color: var(--color-text-primary);
     display: inline-block;
-    border: 2px solid var(--color-border-base);
+    border: 2px solid var(--color-border-primary);
     border-radius: 5px;
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
@@ -526,7 +553,7 @@ site-nav, .nav-list {
 /*    margin: 0.1em; margin-bottom: 0; 
 */
     padding: 0.7em; 
-    border: 1px solid var(--color-border-base);
+    border: 1px solid var(--color-border-primary);
     border-radius: 4px;
 }
 
@@ -591,7 +618,7 @@ section {
     color: var(--color-text-primary);
     max-width: 600px;
     margin: var(--margin-base) auto; 
-    border: 1px solid var(--color-border-base);
+    border: 1px solid var(--color-border-primary);
     padding: 0.5em 1.2em 0em 1.2em;
     font-size: var(--font-size-small);
     text-align: center;
