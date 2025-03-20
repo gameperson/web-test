@@ -35,9 +35,30 @@ body {
    🌈 COLOR PALETTE TOKENS
    ============================================================ */
 
-/* 🌞 LIGHT THEME (Default) */
+/* 🌙 DARK THEME (Dfault) */
 
-:root {
+/* .light-theme { */
+    :root {
+    /* Bckgroubds */
+    --color-background-light: #121212; /* Dark gray */
+    --color-background-medium: #1e1e1e; /* Slightly lighter dark gray */
+    --color-background-dark: #333; /* Hover backgrounds */
+
+    /* Text Colors */
+    --color-text-primary: #e0e0e0; /* Light text */
+    --color-text-secondary: #cccccc;
+    --color-text-muted: #999;
+    --color-link-primary: #bbb;
+    --color-link-hover: #fff;
+
+    /* Borders */
+    --color-border-base: #444;
+}
+
+/* 🌞 LIGHT THEME */
+
+/* :root { */
+.light-theme {
     /* Bckgroubds */
     --color-background-light: #f8f8f8;
     --color-background-medium: #f0f0f0;
@@ -53,25 +74,6 @@ body {
 
     /* Borders */
     --color-border-base: #ddd; 
-}
-
-/* 🌙 DARK THEME */
-
-.dark-theme {
-    /* Bckgroubds */
-    --color-background-light: #121212; /* Dark gray */
-    --color-background-medium: #1e1e1e; /* Slightly lighter dark gray */
-    --color-background-dark: #333; /* Hover backgrounds */
-
-    /* Text Colors */
-    --color-text-primary: #e0e0e0; /* Light text */
-    --color-text-secondary: #cccccc;
-    --color-text-muted: #999;
-    --color-link-primary: #bbb;
-    --color-link-hover: #fff;
-
-    /* Borders */
-    --color-border-base: #444;
 }
 
 /* Apply Backgrounds and Text Colors */
