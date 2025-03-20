@@ -66,7 +66,7 @@ body {
     --text-secondary: #5a6770;
     --text-muted: #8a97a0;
 
-    --border-color: #c0c3c6;
+    --border-color: #2a7886; /* #c0c3c6; */
     --link-color: #4a86cf; /* A more vibrant blue link color */
     --link-hover: #29629f;
 }
@@ -91,7 +91,7 @@ body {
 }
 
 .light-theme .divider, .light-theme .section-divider {
-    border-color: #d1d5db;
+    border-color: #386870; /*  #d1d5db; */
 }
 
 /* Old Light Theme 
