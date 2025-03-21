@@ -79,7 +79,7 @@ body {
 }
 
 .light-theme a:hover {
-    color: ##3a4750; /* Darker, slightly blue-gray */
+    color: #3a4750; /* Darker, slightly blue-gray */
 }
 
 .light-theme .highlighted-section {
@@ -714,6 +714,29 @@ section {
 #toc, #overview, #conclusion, #image-example, 
 .image-example, img, figure, figcaption {
     text-align: center;
+}
+
+/* Border and padding similar to table styling */
+#image-example figure {
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-base);
+    padding: var(--padding-base);
+    background-color: var(--color-background-medium);
+    display: inline-block;
+    max-width: 100%;
+}
+
+#image-example img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#image-example figcaption {
+    margin-top: var(--margin-small);
+    font-style: italic;
+    text-align: center;
+    color: var(--color-text-muted);
 }
 
 /* ============================================================
