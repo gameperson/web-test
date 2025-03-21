@@ -21,8 +21,6 @@ html {
 html { 
 }
 
-}
-
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     background-color: #f8f8f8;
@@ -65,7 +63,6 @@ body {
     --color-text-primary: #3a4750;
     --color-text-secondary: #5a6770;
     --color-text-muted: #8a97a0;
-
     --color-link-primary: #386870;
     --color-link-hover: #3a4750;
 
@@ -77,6 +74,12 @@ body {
 /*    --color-background-medium: #d8dde2; /* Slightly darker, muted warm gray-blue */
 /*    --color-background-dark: #c8ced3; /* Darker hover backgrounds */
 /*    --color-background-darker: #b8bec3;
+
+/*    --color-text-primary: #3a4750;
+/*    --color-text-secondary: #5a6770;
+/*    --color-text-muted: #8a97a0;
+/*    --color-link-primary: #386870;
+/*    --color-link-hover: #3a4750;
 */
 
 /* Color Accents for Light Theme - Limited to h1-h6, link-text, highlighted section */
