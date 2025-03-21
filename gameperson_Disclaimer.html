@@ -80,33 +80,30 @@
                 </p>
                 </div>
         </section>
-        <section class="return-link">
-            <a href="javascript:history.back();" class="button-link">Return to Previous Page</a>
-        </section>
     </main>
-        <footer>
-            <section id="footer">
-                <div class="footer-content">
-                    <nav class="site-nav">
-                        <ul class="nav-list">
-                            <li><a href="javascript:history.back();">Back</a></li> 
-                            <li><a href="#top">Top of Page</a></li>
-                            <li><a href="./index.html" aria-label="Site Index">Article Index Page</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            <div class="theme-toggle centered" style="margin-top: 1rem;">
-                <img id="theme-icon-footer" src="./images/bulb_A.png" 
-                     alt="Theme Icon" 
-                     style="width: 40px; cursor: pointer;" 
-                     onclick="toggleTheme()" 
-                     aria-label="Toggle Theme (Footer)">
+     <footer>
+        <section id="footer">
+            <div class="footer-content">
+                <nav class="site-nav">
+                    <ul class="nav-list">
+                        <li><a href="javascript:history.back();">Back</a></li> 
+                        <li><a href="#top">Top of Page</a></li>
+                        <li><a href="./index.html" aria-label="Site Index">Article Index Page</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <p class="footer-text">&copy; 2025 gameperson@github</p>
-            </div>
-        </footer>
-        <script>
+        <div class="theme-toggle centered" style="margin-top: 1rem;">
+            <img id="theme-icon-footer" src="./images/bulb_A.png" 
+                 alt="Theme Icon" 
+                 style="width: 40px; cursor: pointer;" 
+                 onclick="toggleTheme()" 
+                 aria-label="Toggle Theme (Footer)">
+        </div>
+        <div>
+            <p class="footer-text">&copy; 2025 gameperson@github</p>
+        </div>
+    </footer>
+    <script>
         function toggleTheme() {
             document.body.classList.toggle('light-theme'); // Toggle the light-theme class
             const isDark = document.body.classList.contains('light-mode'); // Check if light-theme is present
