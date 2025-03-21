@@ -433,6 +433,14 @@ footer .site-nav li a {
     text-align: center;
 }
 
+/* Modify the header button (Full Disclaimer) */
+header .btn, header .button-link, .site-header .btn, .site-header .button-link {
+    display: block;
+    margin: 1em auto; /* Apply the same margin */
+    text-align: center;
+    text-align-last: center;
+}
+
 /* ========================================================= 
    8. HIGHLIGHTED SECTION 
    ========================================================= */
@@ -589,6 +597,7 @@ section {
     margin: 0 0 1em 1em;
 }
 
+/* ------------ */
 /* Custom utility for disclaimer and contact blocks */
 .contact-link, .disclaimer-link {
     text-align: justify;
