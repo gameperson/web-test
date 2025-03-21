@@ -575,6 +575,12 @@ site-nav, .nav-list {
     text-align: center;
 }
 
+.disclaimer-link .btn, .contact-link .btn {
+    display: block;
+    margin: 1em auto;
+    text-align: center;
+}
+
 /* ============================================================
    🗂 SECTION TYPES
    ============================================================ */
