@@ -4,102 +4,86 @@
    =========================================================== */
 
 /* ============================================================
-   🧼 RESET & BASE LAYOUT
+   1. RESET & BASE STYLES
    ============================================================ */
 
-/* Reset */
+/* Reset Box Model and Margins */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Initial General Styling */
+/* Base HTML and Body Styles */
 html {
     font-size: 16px; /* 1rem = 16px */
-    scroll-behavior: smooth; /* Smooth Scroll */
+    scroll-behavior: smooth; /* Smooth scrolling */
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #333;
     line-height: 1.7;
-    padding: 1.25rem; /* = 20px */
+    padding: 1.25rem; /* 20px */
+    transition: background-color 0.3s ease; /* For smooth theme transitions */
 }
 
 /* ============================================================
-   🌈 COLOR PALETTE TOKENS
+   2. COLOR PALETTE TOKENS (CSS Variables)
    ============================================================ */
 
-/* 🌙 DARK THEME (Dfault) */
-
-    :root {
-    /* Bckgroubds */
-    --color-background-light: #121212; /* Dark gray */
-    --color-background-medium: #1e1e1e; /* Slightly lighter dark gray */
-    --color-background-dark: #333; /* Hover backgrounds */
-
-    /* Text Colors */
-    --color-text-primary: #e0e0e0; /* Light text */
+:root {
+    /* DARK THEME (Default) */
+    --color-background-light: #121212;
+    --color-background-medium: #1e1e1e;
+    --color-background-dark: #333;
+    --color-text-primary: #e0e0e0;
     --color-text-secondary: #cccccc;
     --color-text-muted: #999;
     --color-link-primary: #bbb;
     --color-link-hover: #fff;
-
-    /* Borders */
     --color-border-primary: #444;
 }
 
-/* 🌞 LIGHT THEME */
-
 .light-theme {
-    --color-background-light: #b0b8bf; /* Darker warm gray-blue */
-    --color-background-medium: #a8b0b8; /* Darker muted warm gray-blue */
-    --color-background-dark: #98a0a8; /* Darker hover backgrounds */
+    /* LIGHT THEME */
+    --color-background-light: #b0b8bf;
+    --color-background-medium: #a8b0b8;
+    --color-background-dark: #98a0a8;
     --color-background-darker: #889098;
-
     --color-text-primary: #3a4750;
     --color-text-secondary: #5a6770;
     --color-text-muted: #8a97a0;
     --color-link-primary: #386870;
     --color-link-hover: #3a4750;
-
     --color-border-primary: #c0c3c6;
 }
 
-/* Color Accents for Light Theme - Limited to h1-h6, link-text, highlighted section */
-.light-theme h1, .light-theme h2, .light-theme h3,
-.light-theme h4, .light-theme h5, .light-theme h6 {
-    color: #386870; /* Teal Headers */
+/* Apply Background and Text Colors based on theme */
+body {
+    background-color: var(--color-background-light);
+    color: var(--color-text-primary);
+    border-color: var(--color-border-primary);
 }
 
+/* Light Theme Color Accents */
+.light-theme h1, .light-theme h2, .light-theme h3,
+.light-theme h4, .light-theme h5, .light-theme h6,
 .light-theme a {
-    color: #386870; /* Muted teal color */
+    color: var(--color-link-primary); /* Teal Headers and links */
 }
 
 .light-theme a:hover {
-    color: #3a4750; /* Darker, slightly blue-gray */
+    color: var(--color-link-hover);
 }
 
 .light-theme .highlighted-section {
-    background-color: #d0d8dd; /* Darker background for contrast */ /* #e9ecef; - super bright */
-    border-color: #386870; /* Muted teal border */ /* #d1d5db; */
+    background-color: #d0d8dd; /* Darker background for contrast */
+    border-color: var(--color-link-primary); /* Teal border */
 }
 
-/* Apply button link styles in highlighted section */
-.light-theme .highlighted-section a.button-link {
-    background-color: var(--color-background-medium);
-    color: var(--text-primary);
-    border: 1px solid var(--color-border-primary);
-}
-
-.light-theme .highlighted-section a.button-link:hover {
-    background-color: var(--color-background-dark);
-}
-
-/* Button links should not change text color, so we are just using the standard button link styles */
+.light-theme .highlighted-section a.button-link,
 .button-link {
+    /* Button Styles, applies to both themes */
     display: block;
     padding: 0.8em 1.2em;
     background-color: var(--color-background-medium);
@@ -110,70 +94,63 @@ body {
     transition: background-color 0.3s ease;
 }
 
+.light-theme .highlighted-section a.button-link:hover,
 .button-link:hover {
-    background-color: var(--background-dark);
-}
-
-/* Apply Backgrounds and Text Colors */
-body {
-    background-color: var(--color-background-light);
-    color: var(--color-text-primary);
-    border-color: var(--color-border-primary);
+    background-color: var(--color-background-dark);
 }
 
 /* ============================================================
-   🔤 TYPOGRAPHY TOKENS 
+   3. TYPOGRAPHY TOKENS (CSS Variables)
    ============================================================ */
 
 :root {
-    /* Fonts */
+    /* Font Families and Sizes */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
-    --font-size-base: 1rem; /* = 16px */
-    --font-size-small: 0.875rem; /* = 14px */
-    --font-size-large: 1.25rem; /* = 20px */
+    --font-size-base: 1rem;
+    --font-size-small: 0.875rem;
+    --font-size-large: 1.25rem;
+
+    /* Font Weights */
     --font-weight-normal: 400;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
 
-   /* Margins - Borders - Padding*/
-    --margin-base: 1em; /* = 16px */
-    --margin-small: 0.5em;/* = 8px */
-    --margin-large: 1.5em;/* = 24px */
-    --margin-larger: 2em;/* = 32px */
+    /* Spacing (Margins, Padding) */
+    --margin-base: 1em;
+    --margin-small: 0.5em;
+    --margin-large: 1.5em;
+    --margin-larger: 2em;
+    --padding-base: 1em;
+    --padding-small: 0.75em;
+    --padding-smaller: 0.5em;
+    --padding-large: 1.5em;
+    --padding-none: 0;
 
+    /* Borders and Line Heights */
     --border-radius-base: 5px;
     --border-radius-small: 4px;
-   
-    --padding-base: 1em; /* = 16px */ 
-    --padding-small: 0.75em; /* = 6px */
-    --padding-smaller: 0.5em; /* = 8px */
-    --padding-large: 1.5em; /* = 24px */
-    --padding-none: 0;
-    
-    /* Text */
     --line-height-base: 1.75;
     --line-height-small: 1.5;
     --line-height-smaller: 1.2;
 }
 
 /* ============================================================
-   📝 PAGE TYPOGRAPHY 
+   4. PAGE TYPOGRAPHY
    ============================================================ */
 
 body {
-    font-family: var(--font-family); 
+    font-family: var(--font-family);
     font-size: var(--font-size-base);
     font-weight: var(--font-weight-normal);
-    margin: var(--margin-base); 
-    border-radius: var(--border-radius-base); 
-    padding: var(--padding-base); 
+    margin: var(--margin-base);
+    border-radius: var(--border-radius-base);
+    padding: var(--padding-base);
     line-height: var(--line-height-base);
     text-align: left;
     text-align-last: left;
-    transition: background-color 0.3s ease;
 }
 
-/* Basic Headings */
+/* Headings */
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-primary);
     margin: var(--margin-base);
@@ -183,59 +160,21 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-h1 { 
-   font-size: 2.5rem; /* = 40px */ 
-   font-weight: var(--font-weight-bold); 
-   margin: var(--margin-small); 
-}
-h2 { 
-   font-size: 2.0em; /* = 36px */
-   font-weight: var(--font-weight-bold);
-   margin-bottom: 0.5em; 
-}
-h3 { 
-   font-size: 1.5em;  /* = 24px */
-   font-weight: var(--font-weight-semibold);
-   margin-bottom: 0.5em; 
-}
-h4 { 
-   font-size: 1.4em; /* = 22px */ 
-   font-weight: var(--font-weight-bold);
-   margin: var(--margin-small); 
-}
-h5 { 
-   font-size: 1.4em; /* = 22px */ 
-   font-weight: var(--font-weight-semibold);
-   margin-bottom: 0.5em; 
-}
-h6 { 
-   font-size: 1.25em; /* = 20px */ 
-   font-weight: var(--font-weight-semibold);
-   margin: var(--margin-small); 
-}
+h1 { font-size: 2.5rem; font-weight: var(--font-weight-bold); margin: var(--margin-small); }
+h2 { font-size: 2.0em; font-weight: var(--font-weight-bold); margin-bottom: 0.5em; }
+h3 { font-size: 1.5em; font-weight: var(--font-weight-semibold); margin-bottom: 0.5em; }
+h4, h5 { font-size: 1.4em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
+h6 { font-size: 1.25em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
 
-/* General Elements */
-
-p, ul, ol, li, table, dl {
-    text-align: justify;
-    text-align-last: left;
-}
-
-p { 
-   margin-bottom: 1em; /* 16px */
-   color: var(--color-text-primary); 
-}
-   
-/* Lists */
-ul, li, ul li, ol li  { color: var(--color-text-primary); }
-
-ul, ol {
-    list-style: none;   
-    padding-left: var(--padding-smaller);
-    margin: var(--margin-base) 0;
-}
-
+/* Paragraphs and Lists */
+p, ul, ol, li, table, dl { text-align: justify; text-align-last: left; }
+p { margin-bottom: 1em; }
+ul, ol { list-style: none; padding-left: var(--padding-smaller); margin: var(--margin-base) 0; }
 ul li, ol li { margin-bottom: var(--margin-small); }
+
+/* ============================================================
+   4. PAGE TYPOGRAPHY (Continued)
+   ============================================================ */
 
 /* Links */
 a {
@@ -268,7 +207,7 @@ table th, table td {
 
 /* Code Blocks */
 pre, code {
-    background: var(--bg-alt);
+    background: var(--color-background-medium); /* Changed from --bg-alt */
     padding: var(--padding-base);
     display: block;
     overflow-x: auto;
@@ -290,14 +229,13 @@ figcaption {
 }
 
 /* ========================================================= 
-   📐 LAYOUT & CONTAINERS 
+   5. LAYOUT & CONTAINERS 
    ========================================================= */
 
 .centered { text-align: center; }
-.justified { text-align: justify }
-.left { text-align: left }
-.right { text-align: right }
-
+.justified { text-align: justify; }
+.left { text-align: left; }
+.right { text-align: right; }
 .mb-16 { margin-bottom: 1rem; }
 .p-16 { padding: 1rem; }
 
@@ -311,62 +249,57 @@ figcaption {
     margin-top: 1em;
 }
 
-.content-section { margin-bottom: 1em; }
+.content-section {
+    margin-bottom: 1em;
+}
 
 .divider {
-    max-width: 600px; 
-    margin: 1.2em auto; 
+    max-width: 600px;
+    margin: 1.2em auto;
     padding: 1px;
     border-top: 2px solid var(--color-border-primary);
-    border-left: 0; 
-    border-right: 0; 
-    border-bottom: 0; 
 }
 
 .section-divider {
     padding: 2px;
     border-top: 2px solid var(--color-border-primary);
-    border-left: 1px solid var(--color-border-primary); 
-    border-right: 1px solid var(--color-border-primary);  
-    border-bottom: 0; 
+    border-left: 1px solid var(--color-border-primary);
+    border-right: 1px solid var(--color-border-primary);
     margin: 2em 0;
 }
 
 /* ============================================================
-   🎨 BUTTON LINKS 
+   6. BUTTON LINKS 
    ============================================================ */
 
-.btn {
+.btn, .button-link { /* Combined .btn and .button-link */
     background-color: var(--color-background-dark);
     color: var(--color-text-primary);
     display: block;
     margin: var(--margin-base) auto;
     border: 1px solid var(--color-border-primary);
     border-radius: var(--border-radius-base);
-    /* padding: 0.8em 1.2em; */
     padding: var(--padding-large);
     text-decoration: none;
     font-weight: var(--font-weight-normal);
     text-align: center;
-    /* transition: background-color 0.3s ease; */
     transition: background 0.3s ease;
 }
 
-.btn:hover {
+.btn:hover, .button-link:hover { /* Combined .btn:hover and .button-link:hover */
     background: var(--color-background-darker);
 }
 
 /* Smaller nav Buttons */
-.nav .btn {
+.nav .btn, .nav .button-link {
     font-size: var(--font-size-small);
     display: inline-block;
-    /* padding: 0.4em 0.8em; */
+    padding: var(--padding-smaller);
     margin: var(--margin-smaller);
-    padding: var(--padding-smaller); 
 }
 
 /* Large Button */
-.btn.large {
+.btn.large, .button-link.large { /* Combined .btn.large and .button-link.large */
     font-size: var(--font-size-base);
     margin: var(--margin-large) auto;
     padding: var(--padding-base);
@@ -374,19 +307,19 @@ figcaption {
     text-align-last: center;
 }
 
-.btn-large h3 {
+.btn.large h3, .button-link.large h3 {
     line-height: var(--line-height-smaller);
     margin: 0;
     padding: 0;
 }
 
 /* Button Text Alignment */
-.btn, .btn.large, .btn.justify {
+.btn.justify, .button-link.justify {
     text-align: center !important;
     text-align-last: center !important;
 }
 
-.btn.large.full-block-button {
+.btn.large.full-block-button, .button-link.large.full-block-button {
     display: block;
     text-align: justify;
     text-align-last: center;
@@ -395,18 +328,21 @@ figcaption {
 
 .btn.large.full-block-button h3,
 .btn.large.full-block-button p,
-.btn.large.full-block-button span {
+.btn.large.full-block-button span,
+.button-link.large.full-block-button h3,
+.button-link.large.full-block-button p,
+.button-link.large.full-block-button span {
     margin: 0.5em 0;
     color: var(--color-text-primary);
 }
 
 /* Ensure button hover styles still apply */
-.btn.large.full-block-button:hover {
+.btn.large.full-block-button:hover, .button-link.large.full-block-button:hover {
     background: var(--color-background-darker);
 }
 
 /* ========================================================= 
-   🔝 HEADERS, NAVIGATION & FOOTERS 
+   7. HEADERS, NAVIGATION & FOOTERS 
    ========================================================= */
 
 header, nav, footer, .site-header {
@@ -442,7 +378,7 @@ footer nav {
 }
 
 footer img {
-   margin: 0.5em;
+    margin: 0.5em;
 }
 
 /* Footer Text Alignment */
@@ -498,7 +434,7 @@ footer .site-nav li a {
 }
 
 /* ========================================================= 
-   📌 HIGHLIGHTED SECTION 
+   8. HIGHLIGHTED SECTION 
    ========================================================= */
 
 .highlighted-section {
@@ -513,13 +449,13 @@ footer .site-nav li a {
     text-align-last: left;
 }
 
-highlighted-section h3 {
+.highlighted-section h3 {
     line-height: 1.3;
     margin: 0;
     padding: 0;
 }
 
-highlighted-section a {
+.highlighted-section a {
     background-color: var(--color-background-dark);
     color: var(--color-text-primary);
     display: inline-block;
@@ -529,13 +465,15 @@ highlighted-section a {
     transition: background-color 0.3s ease;
 }
 
-highlighted-section a:hover { background-color: var(--color-background-darker); }
+.highlighted-section a:hover {
+    background-color: var(--color-background-darker);
+}
 
 /* ========================================================= 
-   🗺 NAVIGATION 
+   9. NAVIGATION 
    ========================================================= */
 
-site-nav, .nav-list {
+.site-nav, .nav-list {
     background-color: var(--color-background-medium);
     line-height: 1.2;
     padding: 0;
@@ -549,7 +487,7 @@ site-nav, .nav-list {
 .site-nav li {
     display: inline-block;
     margin: 0.3em;
-    padding: 0.7em; 
+    padding: 0.7em;
     border: 1px solid var(--color-border-primary);
     border-radius: 4px;
 }
@@ -562,10 +500,12 @@ site-nav, .nav-list {
     transition: background-color 0.3s ease;
 }
 
-.site-nav li a:hover { background-color: var(--color-background-darker); }
+.site-nav li a:hover {
+    background-color: var(--color-background-darker);
+}
 
 /* Nav Text Alignment */
-.site-nav, .site-nav li, .site-nav li a, 
+.site-nav, .site-nav li, .site-nav li a,
 .nav-list, .nav-list li, .nav-list li a {
     text-align: center;
 }
@@ -601,7 +541,7 @@ site-nav, .nav-list {
 }
 
 /* ============================================================
-   🗂 SECTION TYPES
+   10. SECTION TYPES
    ============================================================ */
 
 section {
@@ -622,10 +562,10 @@ section {
     margin-bottom: 2em;
 }
 
-.summary-section, 
-.takeaways-section, 
-.guide-section, 
-.glossary-section, 
+.summary-section,
+.takeaways-section,
+.guide-section,
+.glossary-section,
 .further-reading-section {
     text-align: justify;
     text-align-last: left;
@@ -640,15 +580,17 @@ section {
 .glossary-section dl {
     margin: 0;
 }
+
 .glossary-section dt {
     font-weight: bold;
 }
+
 .glossary-section dd {
     margin: 0 0 1em 1em;
 }
 
 /* ============================================================
-   🧩 PAGE TYPES
+   11. PAGE TYPES
    ============================================================ */
 
 /* Index Page Layout */
@@ -656,7 +598,7 @@ section {
     background-color: var(--color-background-light);
     color: var(--color-text-primary);
     max-width: 600px;
-    margin: var(--margin-base) auto; 
+    margin: var(--margin-base) auto;
     border: 1px solid var(--color-border-primary);
     border-radius: var(--border-radius-base);
     padding: 0.5em 1.2em 0em 1.2em;
@@ -664,7 +606,7 @@ section {
     text-align: center;
 }
 
-.index-list li {    
+.index-list li {
     display: block;
     margin: var(--margin-base);
     padding: 0.7em;
@@ -673,9 +615,13 @@ section {
     transition: background-color 0.3s ease;
 }
 
-.index-list li a { border-radius: var(--border-radius-base); }
+.index-list li a {
+    border-radius: var(--border-radius-base);
+}
 
-.index-list li a:hover { background-color: var(--color-background-darker); }
+.index-list li a:hover {
+    background-color: var(--color-background-darker);
+}
 
 /* Disclaimer Page Layout */
 .disclaimer-page {
@@ -686,7 +632,7 @@ section {
     border-radius: 4px;
     border: 1px solid var(--color-text-primary);
     padding: 1em;
-    font-size: 1.1em; 
+    font-size: 1.1em;
     text-align: justify;
 }
 
@@ -699,7 +645,7 @@ section {
     border: 1px solid var(--color-text-primary);
     border-radius: var(--border-radius-small);
     padding: 1em;
-    font-size: 1.1em; 
+    font-size: 1.1em;
 }
 
 .article-white-paper {
@@ -711,7 +657,7 @@ section {
 }
 
 /* Center these specific sections */
-#toc, #overview, #conclusion, #image-example, 
+#toc, #overview, #conclusion, #image-example,
 .image-example, img, figure, figcaption {
     text-align: center;
 }
@@ -741,35 +687,70 @@ section {
 }
 
 /* ============================================================
-   📱 RESPONSIVE DESIGN
+   12. RESPONSIVE DESIGN
    ============================================================ */
 
 @media (max-width: 992px) {
-    body { padding: 15px; }
-    .container { max-width: 95%; }
+    body {
+        padding: 15px;
+    }
+
+    .container {
+        max-width: 95%;
+    }
 }
 
 @media (max-width: 768px) {
-    body { padding: 10px; }
-    .container { max-width: 100%; }
-    .index-page .index-list li { padding: 0.8em; }
-    .index-title { font-size: 2.2em; }
-    .index-subtitle { font-size: 1.4em; }
-    footer { padding: 15px; }
+    body {
+        padding: 10px;
+    }
 
+    .container {
+        max-width: 100%;
+    }
+
+    .index-page .index-list li {
+        padding: 0.8em;
+    }
+
+    .index-title {
+        font-size: 2.2em;
+    }
+
+    .index-subtitle {
+        font-size: 1.4em;
+    }
+
+    footer {
+        padding: 15px;
+    }
 }
 
 @media (max-width: 600px) {
-    .index-list li { display: block; margin: 0.5em 0; }
-    .index-title { font-size: 1.9em; }
+    .index-list li {
+        display: block;
+        margin: 0.5em 0;
+    }
+
+    .index-title {
+        font-size: 1.9em;
+    }
 }
 
 @media (max-width: 480px) {
-    .index-title { font-size: 1.7em; }
-    h1 { font-size: 2em; }
-    h2 { font-size: 1.5em; }
+    .index-title {
+        font-size: 1.7em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
 }
 
 /* ============================================================
-   🔔 END OF STYLESHEET
+   13. END OF STYLESHEET
    ============================================================ */
