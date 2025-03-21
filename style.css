@@ -433,8 +433,8 @@ footer .site-nav li a {
     text-align: center;
 }
 
-/* Modify the header button (Full Disclaimer) */
-header .btn, header .button-link, .site-header .btn, .site-header .button-link {
+/* Modify the header link (Full Disclaimer) */
+header a, .site-header a {
     display: block;
     margin: 1em auto; /* Apply the same margin */
     text-align: center;
@@ -595,27 +595,6 @@ section {
 
 .glossary-section dd {
     margin: 0 0 1em 1em;
-}
-
-/* ------------ */
-/* Custom utility for disclaimer and contact blocks */
-.contact-link, .disclaimer-link {
-    text-align: justify;
-    text-align-last: left;
-    padding: 1em;
-}
-
-/* Ensure headings stay centered */
-.contact-link h3, .disclaimer-link h3 {
-    text-align: center;
-}
-
-.disclaimer-link .btn, .contact-link .btn, .disclaimer-link .button-link, .contact-link .button-link, 
-.return-link .btn, .return-link .button-link { /* Added .return-link selectors */
-    display: block;
-    margin: 1em auto;
-    text-align: center;
-    text-align-last: center;
 }
 
 /* ============================================================
