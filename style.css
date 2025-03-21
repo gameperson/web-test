@@ -543,6 +543,18 @@ site-nav, .nav-list {
     text-align: center;
 }
 
+/* Custom utility for disclaimer and contact blocks */
+.contact-link, .disclaimer-link {
+    text-align: justify;
+    text-align-last: left;
+    padding: 1em;
+}
+
+/* Ensure headings stay centered */
+.contact-link h3, .disclaimer-link h3 {
+    text-align: center;
+}
+
 /* ============================================================
    🗂 SECTION TYPES
    ============================================================ */
