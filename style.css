@@ -168,7 +168,8 @@ body {
     border-radius: var(--border-radius-base); 
     padding: var(--padding-base); 
     line-height: var(--line-height-base);
-    text-align: center;
+    text-align: left;
+    text-align-last: left;
     transition: background-color 0.3s ease;
 }
 
@@ -214,6 +215,12 @@ h6 {
 }
 
 /* General Elements */
+
+p, ul, ol, li, table, dl {
+    text-align: justify;
+    text-align-last: left;
+}
+
 p { 
    margin-bottom: 1em; /* 16px */
    color: var(--color-text-primary); 
@@ -271,6 +278,12 @@ img {
     max-width: 100px;
     height: auto;
     margin: var(--margin-base);
+}
+
+figcaption {
+    margin-top: 0.5em;
+    font-style: italic;
+    text-align: center;
 }
 
 /* ============================================================
@@ -421,7 +434,8 @@ footer img {
     border-top: 2px solid var(--color-border-primary);
     border-bottom: 2px solid var(--color-border-primary);
     font-size: 1em;
-    text-align: center;
+    text-align: justify;
+    text-align-last: left;
 }
 
 highlighted-section h3 {
@@ -498,6 +512,15 @@ section {
     margin-bottom: 2em;
 }
 
+.summary-section, 
+.takeaways-section, 
+.guide-section, 
+.glossary-section, 
+.further-reading-section {
+    text-align: justify;
+    text-align-last: left;
+}
+
 /* Takeaways Special Styling */
 .takeaways-section ul {
     list-style-type: disc;
@@ -570,6 +593,14 @@ section {
     padding: 2em;
     border-radius: var(--border-radius-base);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    text-align-last: left;
+}
+
+/* Center these specific sections */
+#toc, #overview, #conclusion, #image-example, 
+.image-example, img, figure, figcaption {
+    text-align: center;
 }
 
 /* ============================================================
