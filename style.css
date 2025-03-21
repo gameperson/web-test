@@ -176,7 +176,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-text-primary);
     margin: var(--margin-base);
-    padding: var(--padding-none)0
+    padding: var(--padding-none);
     line-height: var(--line-height-smaller);
     font-weight: var(--font-weight-semibold);
     text-align: center;
@@ -250,6 +250,7 @@ table {
 }
 
 table th, table td {
+    background: var(--color-background-medium);
     border: 1px solid var(--color-border-primary);
     padding: var(--padding-small);
     text-align: left;
@@ -559,10 +560,16 @@ section {
     color: var(--color-text-primary);
     max-width: 800px;
     margin: 0 auto;
-    border-radius: 4px;
     border: 1px solid var(--color-text-primary);
+    border-radius: var(--border-radius-small);
     padding: 1em;
     font-size: 1.1em; 
+}
+
+.article-white-paper {
+    padding: 2em;
+    border-radius: var(--border-radius-base);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================================
