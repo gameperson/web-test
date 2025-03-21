@@ -251,9 +251,12 @@ a:hover {
 
 /* Tables */
 table {
+    background-color: var(--color-background-medium);
     width: 100%;
-    border-collapse: collapse;
-    margin: var(--margin-large) 0;
+    margin: var(--margin-large) auto;
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-base);
+    padding: var(--padding-base);
 }
 
 table th, table td {
@@ -565,6 +568,7 @@ section {
     max-width: 600px;
     margin: var(--margin-base) auto; 
     border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-base);
     padding: 0.5em 1.2em 0em 1.2em;
     font-size: var(--font-size-small);
     text-align: center;
