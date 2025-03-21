@@ -718,12 +718,13 @@ section {
 
 /* Border and padding similar to table styling */
 #image-example figure {
-    border: 1px solid var(--color-border-primary);
-    border-radius: var(--border-radius-base);
-    padding: var(--padding-base);
     background-color: var(--color-background-medium);
     display: inline-block;
     max-width: 100%;
+    display: inline-block;
+    border: 1px solid var(--color-border-primary);
+    border-radius: var(--border-radius-base);
+    padding: var(--padding-base);
 }
 
 #image-example img {
@@ -733,10 +734,10 @@ section {
 }
 
 #image-example figcaption {
-    margin-top: var(--margin-small);
-    font-style: italic;
-    text-align: center;
     color: var(--color-text-muted);
+    font-style: italic;
+    margin-top: var(--margin-small);
+    text-align: center;
 }
 
 /* ============================================================
