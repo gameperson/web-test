@@ -286,59 +286,6 @@ figcaption {
     text-align: center;
 }
 
-/* ============================================================
-   🎨 BUTTON LINKS 
-   ============================================================ */
-
-.btn {
-    background-color: var(--color-background-dark);
-    color: var(--color-text-primary);
-    display: block;
-    margin: var(--margin-base) auto;
-    border: 1px solid var(--color-border-primary);
-    border-radius: --border-radius-base;
-    /* padding: 0.8em 1.2em; */
-    padding: var(--padding-large);
-    text-decoration: none;
-    font-weight: var(--font-weight-normal);
-    text-align: center;
-    /* transition: background-color 0.3s ease; */
-    transition: background 0.3s ease;
-}
-
-.btn:hover {
-    background: var(--color-background-darker);
-}
-
-/* Smaller nav Buttons */
-.nav .btn {
-    font-size: var(--font-size-small);
-    display: inline-block;
-    /* padding: 0.4em 0.8em; */
-    margin: var(--margin-smaller);
-    padding: var(--padding-smaller); 
-}
-
-.btn.justify {
-    text-align: justify;
-    text-align-last: center;
-}
-
-/* Large Button */
-.btn.large {
-    font-size: var(--font-size-base);
-    margin: var(--margin-large) auto;
-    padding: var(--padding-base);
-    text-align: justify;
-    text-align-last: center;
-}
-
-.btn-large h3 {
-    line-height: var(--line-height-smaller);
-    margin: 0;
-    padding: 0;
-}
-
 /* ========================================================= 
    📐 LAYOUT & CONTAINERS 
    ========================================================= */
@@ -382,6 +329,60 @@ figcaption {
     margin: 2em 0;
 }
 
+/* ============================================================
+   🎨 BUTTON LINKS 
+   ============================================================ */
+
+.btn {
+    background-color: var(--color-background-dark);
+    color: var(--color-text-primary);
+    display: block;
+    margin: var(--margin-base) auto;
+    border: 1px solid var(--color-border-primary);
+    border-radius: --border-radius-base;
+    /* padding: 0.8em 1.2em; */
+    padding: var(--padding-large);
+    text-decoration: none;
+    font-weight: var(--font-weight-normal);
+    text-align: center;
+    /* transition: background-color 0.3s ease; */
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--color-background-darker);
+}
+
+/* Smaller nav Buttons */
+.nav .btn {
+    font-size: var(--font-size-small);
+    display: inline-block;
+    /* padding: 0.4em 0.8em; */
+    margin: var(--margin-smaller);
+    padding: var(--padding-smaller); 
+}
+
+/* Large Button */
+.btn.large {
+    font-size: var(--font-size-base);
+    margin: var(--margin-large) auto;
+    padding: var(--padding-base);
+    text-align: justify;
+    text-align-last: center;
+}
+
+.btn-large h3 {
+    line-height: var(--line-height-smaller);
+    margin: 0;
+    padding: 0;
+}
+
+/* Button Text Alignment */
+.btn, .btn.large, .btn.justify {
+    text-align: center !important;
+    text-align-last: center !important;
+}
+
 /* ========================================================= 
    🔝 HEADERS, NAVIGATION & FOOTERS 
    ========================================================= */
@@ -420,6 +421,17 @@ footer nav {
 
 footer img {
    margin: 0.5em;
+}
+
+/* Footer Text Alignment */
+footer, footer nav, .footer-content, .footer-content ul, .footer-content li, footer .btn {
+    text-align: center;
+}
+
+/* Ensure any buttons inside footer nav are also centered */
+footer .site-nav li a {
+    text-align: center;
+    display: inline-block;
 }
 
 /* ========================================================= 
@@ -489,6 +501,11 @@ site-nav, .nav-list {
 
 .site-nav li a:hover { background-color: var(--color-background-darker); }
 
+/* Nav Text Alignment */
+.site-nav, .site-nav li, .site-nav li a, 
+.nav-list, .nav-list li, .nav-list li a {
+    text-align: center;
+}
 
 /* ============================================================
    🗂 SECTION TYPES
