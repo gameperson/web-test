@@ -589,6 +589,27 @@ section {
     margin: 0 0 1em 1em;
 }
 
+/* ... (Existing CSS) ... */
+/* Custom utility for disclaimer and contact blocks */
+.contact-link, .disclaimer-link {
+    text-align: justify;
+    text-align-last: left;
+    padding: 1em;
+}
+
+/* Ensure headings stay centered */
+.contact-link h3, .disclaimer-link h3 {
+    text-align: center;
+}
+
+.disclaimer-link .btn, .contact-link .btn, .disclaimer-link .button-link, .contact-link .button-link {
+    display: block;
+    margin: 1em auto;
+    text-align: center; /* Changed to center */
+    text-align-last: center; /* Added for consistency */
+}
+/* ... (Rest of the CSS) ... */
+
 /* ============================================================
    11. PAGE TYPES
    ============================================================ */
