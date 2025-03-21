@@ -386,6 +386,25 @@ figcaption {
     text-align-last: center !important;
 }
 
+.btn.large.full-block-button {
+    display: block;
+    text-align: justify;
+    text-align-last: center;
+    padding: 2em 1em;
+}
+
+.btn.large.full-block-button h3,
+.btn.large.full-block-button p,
+.btn.large.full-block-button span {
+    margin: 0.5em 0;
+    color: var(--color-text-primary);
+}
+
+/* Ensure button hover styles still apply */
+.btn.large.full-block-button:hover {
+    background: var(--color-background-darker);
+}
+
 /* ========================================================= 
    🔝 HEADERS, NAVIGATION & FOOTERS 
    ========================================================= */
