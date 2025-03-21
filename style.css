@@ -57,10 +57,10 @@ body {
 /* 🌞 LIGHT THEME */
 
 .light-theme {
-    --color-background-light: #e0e6eb; /* Slightly darker, warm gray-blue */
-    --color-background-medium: #d8dde2; /* Slightly darker, muted warm gray-blue */
-    --color-background-dark: #c8ced3; /* Darker hover backgrounds */
-    --color-background-darker: #b8bec3;
+    --color-background-light: #b0b8bf; /* Darker warm gray-blue */
+    --color-background-medium: #a8b0b8; /* Darker muted warm gray-blue */
+    --color-background-dark: #98a0a8; /* Darker hover backgrounds */
+    --color-background-darker: #889098;
 
     --color-text-primary: #3a4750;
     --color-text-secondary: #5a6770;
@@ -71,23 +71,12 @@ body {
 
     --color-border-primary: #c0c3c6;
 }
-/* Last .light-theme */
 
-/*.light-theme {
-/*    --color-background-light: #f0f4f8; /* Softer, slightly blue-tinted light background */
-/*    --color-background-medium: #e8ecef; /* Slightly darker, muted background */
-/*    --color-background-dark: #d0d3d6; /* Hover backgrounds */
-/*    --color-background-darker: #c0c3c6;
-
-/*    --color-text-primary: #3a4750; /* Darker, slightly blue-gray text */
-/*    --color-text-secondary: #5a6770;
-/*    --color-text-muted: #8a97a0;
-
-/*    --color-link-primary: #386870; /* Muted teal color */
-/*    --color-link-hover: #3a4750; /* Darker, slightly blue-gray hover color */
-
-/*    --color-border-primary: #c0c3c6; /* Reset border color */ /* #2a7886; */ 
-/*}
+/* Last .light-theme backgrounds
+/*    --color-background-light: #e0e6eb; /* Slightly darker, warm gray-blue */
+/*    --color-background-medium: #d8dde2; /* Slightly darker, muted warm gray-blue */
+/*    --color-background-dark: #c8ced3; /* Darker hover backgrounds */
+/*    --color-background-darker: #b8bec3;
 */
 
 /* Color Accents for Light Theme - Limited to h1-h6, link-text, highlighted section */
