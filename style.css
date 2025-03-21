@@ -342,7 +342,7 @@ figcaption {
     display: block;
     margin: var(--margin-base) auto;
     border: 1px solid var(--color-border-primary);
-    border-radius: --border-radius-base;
+    border-radius: var(--border-radius-base);
     /* padding: 0.8em 1.2em; */
     padding: var(--padding-large);
     text-decoration: none;
@@ -437,6 +437,27 @@ footer .site-nav li a {
     display: inline-block;
 }
 
+/* Center list items and buttons inside nav and footer */
+.site-nav ul, .site-nav li, .footer-content ul, .footer-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-nav li a, .footer-content li a {
+    display: inline-block;
+    text-align: center;
+}
+
+/* Center entire header and footer contents */
+.site-header, footer, .footer-content, footer nav, .site-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 /* ========================================================= 
    📌 HIGHLIGHTED SECTION 
    ========================================================= */
@@ -507,6 +528,18 @@ site-nav, .nav-list {
 /* Nav Text Alignment */
 .site-nav, .site-nav li, .site-nav li a, 
 .nav-list, .nav-list li, .nav-list li a {
+    text-align: center;
+}
+
+/* Center list items and buttons inside nav and footer */
+.site-nav ul, .site-nav li, .footer-content ul, .footer-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-nav li a, .footer-content li a {
+    display: inline-block;
     text-align: center;
 }
 
@@ -582,6 +615,8 @@ section {
     padding: 0.8em 1.2em;
     transition: background-color 0.3s ease;
 }
+
+.index-list li a { border-radius: var(--border-radius-base); }
 
 .index-list li a:hover { background-color: var(--color-background-darker); }
 
