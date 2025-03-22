@@ -232,10 +232,11 @@ figcaption {
    5. LAYOUT & CONTAINERS 
    ========================================================= */
 
-.centered { text-align: center; }
-.justified { text-align: justify; }
 .left { text-align: left; }
 .right { text-align: right; }
+.center { text-align: center; }
+.justify { text-align: justify; }
+
 .mb-16 { margin-bottom: 1rem; }
 .p-16 { padding: 1rem; }
 
