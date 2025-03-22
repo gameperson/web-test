@@ -8,12 +8,12 @@ function toggleTheme() {
     const footerIcon = document.getElementById('theme-icon-footer');
 
     if (navIcon) {
-        navIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png';
+        navIcon.src = isLight ? '../images/bulb_black.png' : './images/bulb_white.png';
         navIcon.alt = isLight ? 'Light Mode Icon' : 'Dark Mode Icon';
     }
 
     if (footerIcon) {
-        footerIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png';
+        footerIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png';
         footerIcon.alt = isLight ? 'Light Mode Icon' : 'Dark Mode Icon';
     }
 }
@@ -24,11 +24,11 @@ window.onload = () => {
     const footerIcon = document.getElementById('theme-icon-footer');
 
     if (navIcon) {
-        navIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png';
+        navIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png';
         navIcon.alt = isLight ? 'Light Mode Icon' : 'Dark Mode Icon';
     }
     if (footerIcon) {
-        footerIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png';
+        footerIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png';
         footerIcon.alt = isLight ? 'Light Mode Icon' : 'Dark Mode Icon';
     }
 };
