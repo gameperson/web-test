@@ -317,7 +317,7 @@ figcaption {
 /* Button Text Alignment */
 .btn.justify, .button-link.justify {
     text-align: center; /* !important; */
-    text-align-last: center /* !important; */
+    text-align-last: center; /* !important; */
 }
 
 .btn.large.full-block-button, .button-link.large.full-block-button {
