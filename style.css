@@ -324,6 +324,7 @@ figcaption {
     text-align: justify;
     text-align-last: center;
     padding: 2em 1em;
+    margin: var(--margin-large) auto;
 }
 
 .btn.large.full-block-button h3,
