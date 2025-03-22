@@ -596,10 +596,10 @@ section {
 }
 
 .authors p {
-    font-weight: var(--font-weight-normal;
-    text-align: center;
-    text-align-last: justify;
+    font-weight: var(--font-weight-normal);
     margin: var(--margin-small) auto;
+    text-align: center;
+    text-align-last: center;
 }
 
 /* Guide, Overview, Summary, etc. */
