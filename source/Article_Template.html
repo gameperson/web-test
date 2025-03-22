@@ -340,23 +340,26 @@
     <script>
         function toggleTheme() {
             document.body.classList.toggle('light-theme'); // Toggle the light-theme class
-            const isDark = document.body.classList.contains('light-thene'); // Check if light-theme is present
+            const isDark = document.body.classList.contains('light-theme'); // Check if light-theme is present
 
             const navIcon = document.getElementById('theme-icon-nav');
             const footerIcon = document.getElementById('theme-icon-footer');
     
             if (navIcon) {
+                // Toggle nav icon
     // relative links href="../"  
-                navIcon.src = isDark ? '../images/bulb_black.png' : '../images/bulb_white.png';
-                navIcon.alt = isDark ? 'Light Mode Icon' : 'Dark Mode Icon';
+                navIcon.src = isDark ? '../images/bulb_black.png' : '../images/bulb.white.png';
+                navIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
             }
 
             if (footerIcon) {
+                // Toggle footer icon
     // relative links href="../"  
                 footerIcon.src = isDark ? '../images/bulb_black.png' : '../images/bulb_white.png';
-                footerIcon.alt = isDark ? 'Light Mode Icon' : 'Light Mode Icon';
+                footerIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
             }
         }
+        
         // sync on page load
         window.onload = () => {
             const isLight = document.body.classList.contains('light-theme'); // Check if light-theme is present
