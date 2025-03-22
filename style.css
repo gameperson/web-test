@@ -469,7 +469,8 @@ header a, .site-header a {
 .highlighted-section a {
     background-color: var(--color-background-dark);
     color: var(--color-text-primary);
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     border: 2px solid var(--color-border-primary);
     border-radius: 5px;
     padding: 0.8em 1.2em;
