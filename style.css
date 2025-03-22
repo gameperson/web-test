@@ -433,13 +433,14 @@ footer .site-nav li a {
     text-align: center;
 }
 
-/* Modify the header link (Full Disclaimer) */
+/* Modify the header link (Full Disclaimer) 
 header a, .site-header a {
     display: block;
-    margin: 1em auto; /* Apply the same margin */
+    margin: 1em auto; /* Apply the same margin 
     text-align: center;
     text-align-last: center;
 }
+*/
 
 /* ========================================================= 
    8. HIGHLIGHTED SECTION 
