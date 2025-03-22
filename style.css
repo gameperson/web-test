@@ -590,9 +590,16 @@ section {
     margin: var(--margin-large);
     margin-top: var(--margin-base);
     border-radius: var(--border-radius-base);
-    padding: var(--padding-large);
+    padding: var(--padding-base);
+    text-align: justify;
+    text-align-last: left;
+}
+
+.authors h4 {
+    font-weight: var(--font-weight-normal;
     text-align: justify;
     text-align-last: center;
+    margin: var(--margin-small) auto;
 }
 
 /* Guide, Overview, Summary, etc. */
