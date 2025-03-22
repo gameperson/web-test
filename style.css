@@ -333,8 +333,9 @@ figcaption {
 .button-link.large.full-block-button h3,
 .button-link.large.full-block-button p,
 .button-link.large.full-block-button span {
-    margin: 0.5em 0;
-    color: var(--color-text-primary);
+/*    margin: 0.5em 0;
+*/
+   color: var(--color-text-primary);
 }
 
 /* Ensure button hover styles still apply */
