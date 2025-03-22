@@ -340,7 +340,7 @@
     <script>
         function toggleTheme() {
             document.body.classList.toggle('light-theme'); // Toggle the light-theme class
-            const isDark = document.body.classList.contains('light-theme'); // Check if light-theme is present
+            const isLigbt = document.body.classList.contains('light-theme');
 
             const navIcon = document.getElementById('theme-icon-nav');
             const footerIcon = document.getElementById('theme-icon-footer');
@@ -348,15 +348,15 @@
             if (navIcon) {
                 // Toggle nav icon
     // relative links href="../"  
-                navIcon.src = isDark ? '../images/bulb_black.png' : '../images/bulb.white.png';
-                navIcon.alt = isDark ? 'Dark Mode Icon' : 'Light Mode Icon';
+                navIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb.white.png';
+                navIcon.alt = isLight ? 'Light Mode Icon' : 'Dark Mode Icon';
             }
 
             if (footerIcon) {
                 // Toggle footer icon
     // relative links href="../"  
-                footerIcon.src = isDark ? '../images/bulb_black.png' : '../images/bulb_white.png';
-                footerIcon.alt = isDark ? 'Light Mode Icon' : 'Dark Mode Icon';
+                footerIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png';
+                footerIcon.alt = isLight ? 'Light Mode Icon' : 'Dark Mode Icon';
             }
         }
         
@@ -367,8 +367,8 @@
             const footerIcon = document.getElementById('theme-icon-footer');
         
     // relative links href="../"  
-        if (navIcon) navIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png'; // Corrected icon logic
-        if (footerIcon) footerIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png'; // Corrected icon logic
+        if (navIcon) navIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png';
+        if (footerIcon) footerIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png';
         };
     </script>
 </body>
