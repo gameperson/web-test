@@ -595,10 +595,10 @@ section {
     text-align-last: left;
 }
 
-.authors h4 {
+.authors p {
     font-weight: var(--font-weight-normal;
-    text-align: justify;
-    text-align-last: center;
+    text-align: center;
+    text-align-last: justify;
     margin: var(--margin-small) auto;
 }
 
