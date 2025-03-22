@@ -463,15 +463,6 @@ footer .site-nav li a {
     text-align-last: center;
 }
 
-/* Modify the header link (Full Disclaimer) 
-header a, .site-header a {
-    display: block;
-    margin: 1em auto; /* Apply the same margin 
-    text-align: center;
-    text-align-last: center;
-}
-*/
-
 /* ========================================================= 
    8. HIGHLIGHTED SECTION 
    ========================================================= */
@@ -590,6 +581,18 @@ header a, .site-header a {
 
 section {
     margin-bottom: 2em;
+}
+
+/* Ahout & Authors */
+.about, .authors {
+    background: var(--color-background-light);
+    font-weight: var(--font-weight-semibold); 
+    margin: var(--margin-large);
+    margin-top: var(--margin-base);
+    border-radius: var(--border-radius-base);
+    padding: var(--padding-large);
+    text-align: justify;
+    text-align-last: center;
 }
 
 /* Guide, Overview, Summary, etc. */
