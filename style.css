@@ -158,6 +158,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: var(--line-height-smaller);
     font-weight: var(--font-weight-semibold);
     text-align: center;
+    text-align-last: center;
 }
 
 h1 { font-size: 2.5rem; font-weight: var(--font-weight-bold); margin: var(--margin-small); }
@@ -167,9 +168,19 @@ h4, h5 { font-size: 1.4em; font-weight: var(--font-weight-semibold); margin: var
 h6 { font-size: 1.25em; font-weight: var(--font-weight-semibold); margin: var(--margin-small); }
 
 /* Paragraphs and Lists */
-p, ul, ol, li, table, dl { text-align: justify; text-align-last: left; }
+p, ul, ol, li, table, dl { 
+      text-align: justify; 
+      text-align-last: left; 
+}
+
 p { margin-bottom: 1em; }
-ul, ol { list-style: none; padding-left: var(--padding-smaller); margin: var(--margin-base) 0; }
+
+ul, ol {
+   list-style: none; 
+   padding-left: var(--padding-smaller); 
+   margin: var(--margin-base) 0; 
+}
+
 ul li, ol li { margin-bottom: var(--margin-small); }
 
 /* ============================================================
@@ -203,6 +214,7 @@ table th, table td {
     border: 1px solid var(--color-border-primary);
     padding: var(--padding-small);
     text-align: left;
+    text-align-last: left;
 }
 
 /* Code Blocks */
@@ -226,16 +238,17 @@ figcaption {
     margin-top: 0.5em;
     font-style: italic;
     text-align: center;
+    text-align-last: center;
 }
 
 /* ========================================================= 
    5. LAYOUT & CONTAINERS 
    ========================================================= */
 
-.left { text-align: left; }
-.right { text-align: right; }
-.center { text-align: center; }
-.justify { text-align: justify; }
+.left { text-align: left; text-align-last: left; }
+.right { text-align: right; text-align-last: right; }
+.center { text-align: center; text-align-kast: center; }
+.justify { text-align: justify; text-align-last: justify; }
 
 .mb-16 { margin-bottom: 1rem; }
 .p-16 { padding: 1rem; }
@@ -284,6 +297,7 @@ figcaption {
     text-decoration: none;
     font-weight: var(--font-weight-normal);
     text-align: center;
+    text-align-last: center;
     transition: background 0.3s ease;
 }
 
@@ -355,11 +369,20 @@ header, nav, footer, .site-header {
     margin: var(--margin-base) auto;
     margin-bottom: var(--margin-base);
     text-align: center;
+    text-align-last: center;
 }
 
 header, .site-header {
     font-size: 1.6em;
     border-bottom: 2px solid var(--color-border-primary);
+}
+
+header #header, .site-header, .header-content,  .header-text, 
+.theme-toggle, {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 nav {
@@ -387,9 +410,10 @@ footer img {
 /* Footer Text Alignment */
 footer, footer nav, .footer-content, .footer-content ul, .footer-content li, footer .btn {
     text-align: center;
+    text-align-last: center;
 }
 
-footer #footer, .footer-content, .theme-toggle, footer p.footer-text {
+footer #footer, .footer-content, footer p.footer-text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -403,6 +427,7 @@ footer #footer, .footer-content, .theme-toggle, footer p.footer-text {
 /* Ensure any buttons inside footer nav are also centered */
 footer .site-nav li a {
     text-align: center;
+    text-align-last: center;
     display: inline-block;
 }
 
@@ -416,6 +441,7 @@ footer .site-nav li a {
 .site-nav li a, .footer-content li a {
     display: inline-block;
     text-align: center;
+    text-align-last: center;
 }
 
 .site-nav ul {
@@ -434,6 +460,7 @@ footer .site-nav li a {
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-align-last: center;
 }
 
 /* Modify the header link (Full Disclaimer) 
@@ -521,6 +548,7 @@ header a, .site-header a {
 .site-nav, .site-nav li, .site-nav li a,
 .nav-list, .nav-list li, .nav-list li a {
     text-align: center;
+    text-align-last: center;
 }
 
 /* Center list items and buttons inside nav and footer */
@@ -533,6 +561,7 @@ header a, .site-header a {
 .site-nav li a, .footer-content li a {
     display: inline-block;
     text-align: center;
+    text-align-last: center;
 }
 
 /* Custom utility for disclaimer and contact blocks */
@@ -545,12 +574,14 @@ header a, .site-header a {
 /* Ensure headings stay centered */
 .contact-link h3, .disclaimer-link h3 {
     text-align: center;
+    text-align-last: center;
 }
 
 .disclaimer-link .btn, .contact-link .btn {
     display: block;
     margin: 1em auto;
     text-align: justify;
+    text-align-last: ledt;
 }
 
 /* ============================================================
@@ -617,6 +648,7 @@ section {
     padding: 0.5em 1.2em 0em 1.2em;
     font-size: var(--font-size-small);
     text-align: center;
+    text-align-last: center;
 }
 
 .index-list li {
@@ -647,6 +679,7 @@ section {
     padding: 1em;
     font-size: 1.1em;
     text-align: justify;
+    text-align-last: left;
 }
 
 /* Article Layouts */
@@ -673,6 +706,7 @@ section {
 #toc, #overview, #conclusion, #image-example,
 .image-example, img, figure, figcaption {
     text-align: center;
+    text-align-last: center;
 }
 
 /* Border and padding similar to table styling */
@@ -697,6 +731,7 @@ section {
     font-style: italic;
     margin-top: var(--margin-small);
     text-align: center;
+    text-align-last: center;
 }
 
 /* ============================================================
