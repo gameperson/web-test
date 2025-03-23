@@ -7,12 +7,12 @@ theme-switch.js
 //    
 //    // Set the icon source to the light mode icon
 //    icons.forEach(icon => {
-//        icon.src = './images/bulb_white.png'; // Change to the desired icon
+//        icon.src = '../images/bulb_white.png'; // Change to the desired icon
 //    });
 //}
 
 //  Theme Switcher with non-functional Icon Switching
-<script>
+// <script>
     function toggleTheme() {
         // Toggle the light-theme class
         document.body.classList.toggle('light-theme'); 
@@ -21,15 +21,15 @@ theme-switch.js
         const navIcon = document.getElementById('theme-icon-nav');
         const footerIcon = document.getElementById('theme-icon-footer');
     
-        // relative links href="./"  
+        // relative links href="../"  
         if (navIcon) {
-            navIcon.src = isDark ? './images/bulb_black.png' : './images/bulb_white.png';
+            navIcon.src = isDark ? '../images/bulb_black.png' : '../images/bulb_white.png';
             navIcon.alt = isDark ? 'Light Mode Icon' : 'Dark Mode Icon';
         }
 
-        // relative links href="./" 
+        // relative links href="../" 
         if (footerIcon) {
-             footerIcon.src = isDark ? './images/bulb_black.png' : './images/bulb_white.png';
+             footerIcon.src = isDark ? '../images/bulb_black.png' : '../images/bulb_white.png';
             footerIcon.alt = isDark ? 'Light Mode Icon' : 'Light Mode Icon';
         }
     }
@@ -39,8 +39,8 @@ theme-switch.js
         const navIcon = document.getElementById('theme-icon-nav');
         const footerIcon = document.getElementById('theme-icon-footer');
 
-        // relative links href="./"  
-        if (navIcon) navIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png'; // Corrected icon logic
-        if (footerIcon) footerIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png'; // Corrected icon logic
+        // relative links href="../"  
+        if (navIcon) navIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png'; // Corrected icon logic
+        if (footerIcon) footerIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png'; // Corrected icon logic
     };
 </script>
