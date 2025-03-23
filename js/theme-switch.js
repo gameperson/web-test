@@ -43,4 +43,4 @@ theme-switch.js
         if (navIcon) navIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png'; // Corrected icon logic
         if (footerIcon) footerIcon.src = isLight ? '../images/bulb_black.png' : '../images/bulb_white.png'; // Corrected icon logic
     };
-</script>
+//</script>
