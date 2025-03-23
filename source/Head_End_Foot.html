@@ -15,14 +15,14 @@
     <meta property="og:description" content="DESCRIPTION">
     <meta property="og:url" content="https://gameperson.github.io/PATH/FILENAME.html">
     <meta property="og:type" content="TYPE">
-<!-- relative links href="./" --> 
+<!-- relative links href="../" --> 
     <meta property="og:image" content="../images/bulb_A.png">
     <meta property="og:image:type" content="image/jpeg">
     <!-- Twitter Cards -->
     <meta name="twitter:title" content="TITLE" />
     <meta name="twitter:description" content="DESCRIPTION" />
     <meta name="twitter:card" content="summary_large_image" />
-<!-- relative links href="./" --> 
+<!-- relative links href="../" --> 
     <meta name="twitter:image" content="../images/bulb_A.png" />
 
     <link rel="icon" href="../images/bulb_A.ico" type="image/x-icon">
@@ -44,7 +44,8 @@
                 <li><a href="../index.html#index" class="btn" aria-label="Article List">Article List</a></li> 
                 <li><a href="../gameperson_Disclaimer.html" class="btn" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="Full Dilaimer Page">Full Disclaimer Page</a></li>
 <!-- Page Navigation --> 
-                <li><a href="#" class="btn" aria-label="Article Top">Article Top</a></li>
+                <li><a href="#" class="btn" aria-label="Page Top">Page Top</a></li>
+                <li><a href="#article-top" class="btn" aria-label="Article Top">Article Top</a></li>
                 <li><a href="#top" class="btn" aria-label="Top of Page">Top of Page</a></li>
                 <li><a href="#nav" class="btn" aria-label="Quick Links">Quick Links</a></li>
                 <li><a href="javascript:history.back();" class="btn">Back</a></li>
@@ -77,7 +78,7 @@
     </header>
 
     <!-- Article Body -->
-    <main>
+    <main class="container" id="article-top">
         <section class="CLASS" id="ID">
             <h6>Page Main Section</h6>
         </section>
@@ -144,11 +145,8 @@
     </footer>
 
     <!-- JavaScript at the end of body -->
-
     <!-- Theme Switcher -->
-    <section id-javaScript>
-<!-- relative links href="../" --> 
-        <script src="../js/toggle-switch.js"></script>
-    </section>
+    <script src="../js/toggle-switch.js"></script>
+    
 </body>
 </html>
