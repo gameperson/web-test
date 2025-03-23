@@ -339,19 +339,17 @@
     
     <!-- Theme Switcher -->
     <script src="./js/theme-switch.js"></script>
-    -->
-
+ 
     <!-- Theme Switcher with non-functional Icon Switching -->
-    <script>
-        <!-- Theme Switcher -->
-    // theme-switch.js
+ 
+    <script> // theme-switch.js
+    // Toggle the light theme class
+        
         function toggleTheme() {
-        document.body.classList.toggle('light-theme');  // Toggle the light theme class
-
-    // Get all theme icons
+        document.body.classList.toggle('light-theme');
+        // Get all theme icons
         const icons = document.querySelectorAll('img[aria-label="Toggle Theme"]');
-    
-    // Set the icon source to the light mode icon
+        // Set the icon source to the light mode icon
         icons.forEach(icon => {
             icon.src = '../images/bulb_white.png'; // Change to the desired icon
         });
