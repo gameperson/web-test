@@ -1,4 +1,4 @@
-theme-switch.js
+// theme-switch.js
 function toggleTheme() {
     document.body.classList.toggle('light-theme');  // Toggle the light theme class
 
