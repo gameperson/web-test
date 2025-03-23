@@ -132,7 +132,28 @@
     </footer>
 
     <!-- JavaScript at the end of body -->
-    <!-- Theme Switcher with non-functional Icon Switching -->
+
+    <!-- Theme Switcher 
+    <script src="./js/theme-switch.js"></script>
+    -->
+
+    <script>
+        <!-- Theme Switcher -->
+    // theme-switch.js
+        function toggleTheme() {
+        document.body.classList.toggle('light-theme');  // Toggle the light theme class
+
+    // Get all theme icons
+        const icons = document.querySelectorAll('img[aria-label="Toggle Theme"]');
+    
+    // Set the icon source to the light mode icon
+        icons.forEach(icon => {
+            icon.src = '../images/bulb_white.png'; // Change to the desired icon
+        });
+    }
+    </script>
+
+    <!-- Theme Switcher with non-functional Icon Switching
     <script>
         function toggleTheme() {
             document.body.classList.toggle('light-theme'); // Toggle the light-theme class
@@ -164,5 +185,6 @@
         if (footerIcon) footerIcon.src = isLight ? './images/bulb_black.png' : './images/bulb_white.png'; // Corrected icon logic
         };
     </script>
+-->
 </body>
 </html>
