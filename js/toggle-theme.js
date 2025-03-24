@@ -1,13 +1,13 @@
-// theme-switch.js
+// toggle-theme.js //
 function toggleTheme() {
-    document.body.classList.toggle('light-theme');  // Toggle the light theme class
-
-    // Get all theme icons
+    // Toggle the light theme class //
+    document.body.classList.toggle('light-theme');
+    // Get all theme icons //
     const icons = document.querySelectorAll('img[aria-label="Toggle Theme"]');
-    
-    // Set the icon source to the light mode icon
+    // Set the icon source to the light mode icon //
     icons.forEach(icon => {
-        icon.src = '../images/bulb_white.png'; // Change to the desired icon
+    // Change to the desired icon //
+    icon.src = '../images/bulb_white.png';
     });
 }
 
