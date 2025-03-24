@@ -609,6 +609,7 @@ section {
 .takeaways-section,
 .conclusion-section,
 .glossary-section,
+.references-section,
 .further-reading-section {
     background: var(--color-background-light);
     padding: 1.5em;
@@ -620,6 +621,7 @@ section {
 .takeaways-section,
 .guide-section,
 .glossary-section,
+.references-section,
 .further-reading-section {
     text-align: justify;
     text-align-last: left;
