@@ -101,9 +101,116 @@
         </div>
     </header>
 
-<!-- Article Body -->
-    <main class="container" id="article-top">
-        <!-- TOC - Table of Contents-->
+<!-- Main Article Body -->
+<main class="container" id="article-top">
+
+    <!-- Table of Contents -->
+    <aside class="toc-container" id="toc">
+        <nav aria-label="Table of Contents">
+            <h3>Table of Contents</h3>
+            <ul class="toc-list">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#guide">Guide</a></li>
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#content-main">Main Content</a></li>
+                <li><a href="#key-insights">Key Insights</a></li>
+                <li><a href="#callout">Highlighted Section</a></li>
+                <li><a href="#code-sample">Code Example</a></li>
+                <li><a href="#image-example">Visuals</a></li>
+                <li><a href="#quote">Quote</a></li>
+                <li><a href="#summary">Summary</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </aside>
+
+    <!-- Content Sections -->
+    <article id="content-body">
+        <header id="introduction">
+            <h1>Introduction</h1>
+            <p>A concise intro paragraph introducing the topic.</p>
+        </header>
+
+        <section id="guide">
+            <h2>Guide</h2>
+            <p>Step-by-step instructions or tutorial content.</p>
+        </section>
+
+        <section id="overview">
+            <h2>Overview</h2>
+            <p>A summary of the topic before diving into details.</p>
+        </section>
+
+        <section id="content-main">
+            <h2>Main Content</h2>
+            <h3>Subsection A</h3>
+            <p>Discussion of Subsection A.</p>
+            <h3>Subsection B</h3>
+            <p>In-depth explanation for Subsection B.</p>
+        </section>
+
+        <section id="key-insights">
+            <h2>Key Insights</h2>
+            <ul>
+                <li>Critical takeaway #1</li>
+                <li>Critical takeaway #2</li>
+                <li>Critical takeaway #3</li>
+            </ul>
+        </section>
+
+        <!-- Highlighted Box -->
+        <aside class="callout" id="callout">
+            <h3>Highlighted Section</h3>
+            <p>Key information, learning goal, or warning.</p>
+        </aside>
+
+        <!-- Code Block -->
+        <section id="code-sample">
+            <h2>Code Example</h2>
+            <pre><code>function example() {
+    console.log("Hello World!");
+}</code></pre>
+        </section>
+
+        <!-- Image with Caption -->
+        <figure id="image-example">
+            <img src="../images/example.png" alt="Example Image">
+            <figcaption>Figure 1: A sample visual representation.</figcaption>
+        </figure>
+
+        <!-- Pull Quote -->
+        <blockquote id="quote">
+            “A powerful and relevant quote.” <br>— Source Name
+        </blockquote>
+
+        <!-- Summary -->
+        <section id="summary">
+            <h2>Summary</h2>
+            <p>A quick recap of the main points.</p>
+        </section>
+
+        <!-- References -->
+        <footer id="references">
+            <h2>References</h2>
+            <ul>
+                <li>Author, A. (2024). <em>Reference Title</em>. <a href="#">Source Link</a></li>
+            </ul>
+        </footer>
+    </article>
+
+    <!-- Return Navigation -->
+    <nav class="return-links">
+        <a href="#article-top">Top of Page</a>
+        <a href="#toc">Table of Contents</a>
+        <a href="javascript:history.back();">Back</a>
+    </nav>
+
+        
+<!-- ////////// -->
+
+    
+<!-- TOC - Table of Contents-->
         <section class="content-section center" id="toc">
             <h3>Table of Contents</h3>
             <ul class="index-list">
@@ -130,7 +237,35 @@
             <hr class="divider">
         </section>
 
-        <!-- White Paper / Article Section -->
+<!-- ////////// -->
+
+
+        <article>
+            <header>
+                <h1>-----------------<!-- Article Title --></h1>
+                <p class="subtitle"><!-- Subtitle or description --></p>
+            </header>
+
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p><!-- Introduction content --></p>
+            </section>
+
+            <!-- Additional sections as needed -->
+
+            <section id="conclusion">
+                <h2>Conclusion</h2>
+                <p><!-- Conclusion content --></p>
+            </section>
+        </article>
+
+        <aside>
+            <!-- Sidebar content such as related articles or advertisements -->
+        </aside>
+        
+<!-- ////////// -->
+
+    <!-- White Paper / Article Section -->
         <section class="CLASS">
 
             <!-- Example: Intro -->
@@ -286,7 +421,10 @@
                 </ul>
             </div>
         </section>
-        
+
+</main>
+<!-- //////////////// -->
+
         <!-- Return Link -->
         <div class="return-link">
             <a href="#top" class="btn" aria-label="Top of Page">Top of Page</a>
@@ -295,7 +433,6 @@
             <p>Alternate Return Link:<p>
             <a href="javascript:history.back();" class="btn" aria-label="Back">Back</a>
         </div>
-
     </main>
 
 <!-- End Section - Disclaimer, About, Contact, Footer
@@ -361,4 +498,22 @@
 <!-- Theme Switcher .js File-->
     <script src="../js/toggle-theme.js"></script>
 </body>
+
+<!--
+    <footer>
+        <p>&copy; <!-- Current Year --> Your Company Name. All rights reserved.</p>
+<!--
+        <nav aria-label="Footer Navigation">
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                <!-- Additional footer links -->
+<!--
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
+-->
+
 </html>
