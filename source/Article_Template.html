@@ -51,7 +51,7 @@
     <header class="site-header">
         <h1 class="index-title" id="top">Article - AI Deep Dives</h1>
         <h3 class="index-subtitle center">Template</h3>
-        <p>An HTML Guide for gameperson@github</p>
+        <p class="index-text left">An HTML Guide for gameperson@github</p>
         <nav class="site-nav">
             <ul class="nav" id="nav">
             <!-- Top Article Nav --> 
@@ -140,9 +140,9 @@
                     <li><a href="#introduction" class="btn">Introduction</a></li>
                     <li><a href="#guide" class="btn">Guide</a></li>
                     <li><a href="#overview" class="btn">Overview</a></li>
-     
+
+                    <li><a href="#content-main" class="btn" aria-label="Content Top">Content Top</a></li>
                     <li><a href="#sections" class="btn">Main and Subsequent Sections</a></li>
-                    <li><a href="#section-1" class="btn">Subsection</a></li>
                     <li><a href="#ordered-list" class="btn">Simole List</a></li>
                     <li><a href="#table-example" class="btn">Simole Table</a></li>
                     <li><a href="#callout" class="btn">Callout Box</a></li>
@@ -165,13 +165,14 @@
     <article class="content-body id="article-top"">
 
             <!-- Introduction -->
-        <header id="introduction">
-            <h1>Introduction</h1>
-            <p>
-                Introduction
-                abstract, preface, context, background 
-            </p>
+    <section id="introduction">
+        <h1>Introduction</h1>
+        <p>
+            Introduction
+            abstract, preface, context, background 
+        </p>
         <p><strong>Example:</strong> "Artificial Intelligence is transforming industries by automating complex tasks."</p>
+    </section>
         
         <!-- Guide -->
     <section id="guide">
@@ -208,7 +209,7 @@
         <h3>Subsection B</h3>
         <p><strong>Example:</strong> "However, AI in healthcare raises concerns about data privacy and bias in training data."</p>
     </section>
-
+    
         <!-- Key Insights -->
     <section id="key-insights">
         <h2>Key Insights</h2>
@@ -223,7 +224,7 @@
     </section>
 
         <!-- Ordered List Example -->
-    <section id="content-main key-insights ordered-list">
+    <section id="key-insights ordered-list">
         <h2>Lists</h2>
         <p>
             useful for processes, ranking, or structured steps
@@ -255,7 +256,7 @@
         <p><strong>Example:</strong> "Pro Tip: Always validate AI model results using real-world test cases before deployment."</p>
     </aside>
 
-    <!-- Code Sample -->
+        <!-- Code Sample -->
     <section id="code-sample">
         <h2>Code Example</h2>
         <p>
@@ -263,20 +264,19 @@
             programming example, CLI command, script, function
         </p>
         <pre><code>
-function greet() {
-    console.log("Hello, world!");
-}
+        function greet() {
+            console.log("Hello, world!");
+        }
         </code></pre>
     </section>
 
-    <!-- Simple Table -->
+        <!-- Simple Table -->
     <section id="table-example">
         <h2>Simple Table Example</h2>
         <p>
             Tables are useful for comparing data, showing structured information, or listing attributes.
             comparison table, feature list, structured data 
         </p>
-        <!-- CSV: -->
         <table>
             <thead>
                 <tr>
@@ -297,55 +297,51 @@ function greet() {
         </table>
     </section>
 
-    <!-- Image with Caption -->
+        <!-- Image with Caption -->
     <section id="image-example">
         <h2>Image with Caption</h2>
         <p>
             Visual elements such as graphs, illustrations, and infographics help reinforce key points.
             infographic, chart, visualization, diagram
         </p>
-        <!-- CSV:  -->
         <figure>
             <img src="../images/bulb_A.png" alt="Example Image">
             <figcaption>Figure 1: AI model accuracy improvement over time.</figcaption>
         </figure>
     </section>
 
-    <!-- Pull Quote -->
+        <!-- Pull Quote -->
     <blockquote id="quote">
         “AI is not going to replace humans, but humans who use AI will replace those who don’t.” <br>— Tech Thought Leader
     </blockquote>
 
-    <!-- Conclusion -->
+        <!-- Conclusion -->
     <section id="conclusion">
         <h2>Conclusion</h2>
         <p>
             Wraps up the discussion, offering final thoughts, implications, or recommendations.
             final thoughts, wrap-up, implications, future outlook
         </p>
-        <!-- CSV:  -->
         <p><strong>Example:</strong> "The future of AI depends on responsible innovation and ethical implementation."</p>
     </section>
 
-    <!-- Summary -->
+        <!-- Summary -->
     <section id="summary">
         <h2>Summary</h2>
         <p>
             A condensed version of the article for quick reference.
             TL;DR, recap, executive summary 
         </p>
-        <!-- CSV: -->
         <p><strong>Example:</strong> "AI is revolutionizing industries, but ethical and regulatory frameworks must evolve alongside it."</p>
     </section>
 
-    <!-- Takeaways -->
+        <!-- Takeaways -->
     <section id="takeaways">
         <h2>Takeaways</h2>
         <p>
             Bullet points that reinforce key learnings.
             major lessons, actionable insights, reminders
         </p>
-        <!-- CSV:  -->
         <ul>
             <li><strong>Example:</strong> "AI is a tool, not a replacement for human decision-making."</li>
             <li><strong>Example:</strong> "Transparency and explainability are essential in AI models."</li>
@@ -363,25 +359,17 @@ function greet() {
 <hr class="divider">
 <!-- ------------------- // ------------------- -->
 <hr class="divider">
-
-
-        <section id="content-main">
-            <h2>Main Content</h2>
-            <h3>Subsection A</h3>
-            <p>Discussion of Subsection A.</p>
-            <h3>Subsection B</h3>
-            <p>In-depth explanation for Subsection B.</p>
-        </section>
-
-    <!-- References & Additional Sections -->
+        
+            <!-- References -->
         <footer id="references">
             <h2>References</h2>
             <ul>
                 <li>Author, A. (2024). <em>Title of Reference</em>. <a href="#">Link to Source</a></li>
                 <li>Another, B. (2023). <em>Another Reference</em>. <a href="#">Link to Source</a></li>
             </ul>
-        </footer>
+        </section>
 
+            <!-- Glossary -->    
         <section id="glossary">
             <h2>Glossary</h2>
             <dl>
@@ -392,6 +380,7 @@ function greet() {
             </dl>
         </section>
 
+            <!-- Further Reading -->    
         <section id="further-reading">
             <h2>Further Reading</h2>
             <ul>
@@ -405,16 +394,18 @@ function greet() {
 <hr class="divider">
 <!-- ------------------- // ------------------- -->
 
-<!-- Return Navigation -->
+        <!-- Return Navigation -->
     <nav class="return-links">
-        <a href="#top" aria-label="Page Top">Page Top</a>
+        <a href="#top" aria-label="Page Top">Page Top</a> .. 
         <a href="#top">Top of Page</a> .. 
-        <a href="#nav">Quick Links</a> ..
+        <a href="#nav">Quick Links</a> .. 
         <a href="#toc">Table of Contents</a> .. 
         <a href="#article-top">Top of Article</a> .. 
+        <a href="#content-main" aria-label="Content Top">Content Top</a> .. 
         <a href="javascript:history.back();">Back</a>
     </nav>
-<!-- Return [Button]  Links -->
+        
+        <!-- Return [Button]  Links -->
     <div class="return-link">
         <a href="#top" class="btn" aria-label="Page Top">Page Top</a>
         <p>Alternate Return Link:<p>
@@ -424,15 +415,15 @@ function greet() {
         <p>Alternate Return Link:<p>
         <a href="#article-top" class="btn" aria-label="Article Top">Article Top</a>
         <p>Alternate Return Link:<p>
+        <a href="#content-main" class="btn" aria-label="Content Top">Content Top</a>
+        <p>Alternate Return Link:<p>
         <a href="javascript:history.back();" class="btn" aria-label="Back">Back</a>
     </div>
 
 <hr class="divider">
 <!-- ------------------- // ------------------- -->
-
-<!-- End Section - Disclaimer, About, Contact, Footer --> <!-- ----------- // ----------- -->
-
-<!-- Disclaimer -->
+        
+        <!-- Disclaimer -->
     <section class="highlighted-section">
         <div class="disclaimer-link" id="return-links disclaimer">
                 <!-- href="../" --> 
@@ -447,7 +438,7 @@ function greet() {
         </div>
     </section>
     
-<!-- About + Contact -->
+        <!-- About + Contact -->
     <section class="about content-section" id="about">
         <h2>About gameperson@github</h2>
         <p>Specialized content and in-depth analysis, combining AI-assisted research with human editing. Rich, insightful and thought-provoking content about today's pressing realities</p>
@@ -481,7 +472,7 @@ function greet() {
                     </ul>
                 </nav>
             </div>
-        <!-- Theme Toggle Button -->
+                <!-- Theme Toggle -->
             <div class="theme-toggle center" style="margin-top: 1rem;">
                     <!-- href="../" --> 
                 <img id="theme-icon-footer" src="../images/bulb_white.png" 
