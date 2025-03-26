@@ -555,20 +555,25 @@ footer .site-nav li a {
     text-align-last: center;
 }
 
-/* Custom utility for disclaimer and contact blocks */
-.contact-link, .disclaimer-link {
+/* Custom utility for return, disclaimer and contact blocks */
+return-link, .disclaimer-link, .contact-link {
     text-align: justify;
     text-align-last: left;
     padding: 1em;
 }
 
 /* Ensure headings stay centered */
-.contact-link h3, .disclaimer-link h3 {
+return-link h3, .disclaimer-link h3, .contact-link h3 {
     text-align: center;
     text-align-last: center;
 }
 
-.disclaimer-link .btn, .contact-link .btn {
+return-link p {
+    text-align: left;
+    text-align-last: left; 
+} 
+
+return-link .btn, .disclaimer-link .btn, .contact-link .btn {
     display: block;
     margin: 1em auto;
     text-align: justify;
