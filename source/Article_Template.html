@@ -39,7 +39,8 @@
         <!-- content-main, key-insights, ordered-list -->
         <!-- callout, code-sample, table-example, image-example -->
         <!-- conclusion, summary, takeaways,  -->
-        <!-- references, glossary, further-reading, return-links -->
+        <!-- references, glossary, further-reading -->
+    <!-- return-links: top, nav, toc, article-top, .back() -->
     <!-- end section (disclaimer, about, contact) -->
     <!-- footer (nav-list theme-toggle footer-text, scripts) -->
 
@@ -58,7 +59,7 @@
                 <li><a href="#guide" class="btn" aria-label="Quick Guide">Quick Guide</a></li>
                 <li><a href="#introduction" class="btn" aria-label="Introduction">Introduction</a></li>
             <hr class="divideer">
-            <!-- Article-Top Buttons --> 
+            <!-- Top Article [Buttons] --> 
                     <!-- [Disclaimer] --> 
                 <li><a href="#disclaimer" class="btn" aria-label="Disclaimer">Disclaimer</a></li>
                 <li><a href="#about" class="btn" aria-label="About gameperson@github">About</a></li>
@@ -68,7 +69,7 @@
                 <li><a href="javascript:history.back();" class="btn">Back</a></li>
                 <li><a href="#section" class="btn" aria-label="section">Section</a></li>
             <hr class="divideer">
-            <!-- End Article Buttons --> 
+            <!-- End Article [Buttons] --> 
                     <!-- End Article Nav --> 
                 <li><a href="#summary" class="btn" aria-label="Summary">Summary</a></li>
                 <li><a href="#conclusion" class="btn" aria-label="Conslusion">Conclusion</a></li>
@@ -83,7 +84,7 @@
                     <!-- href="../" --> 
                 <li><a href="../gameperson_Disclaimer.html" class="btn" data-tags="legal notice, terms of use, information accuracy, liability disclaimer, AI-generated content, content responsibility" aria-label="Full Dilaimer Page">Full Disclaimer Page</a></li>
                 <li><a href="mailto:gamesomeotherday@gmail.com" class="btn" data-tags="feedback, report, contact, gameperson, gameperson@github, contact gameperson, contact gameperson@github" aria-label="Email Feedback">Feedback is Welcome <b>Send an Email</b></a></li>
-            <!-- href="../" --> 
+                    <!-- href="../" --> 
                 <li><a href="../index.html" class="btn" aria-label="Site Index">Article Index Page</a></li>
                 <li><a href="../index.html#index" class="btn" aria-label="More Articles">More Articles from gameperson@github</a></li>                    
                 <li><a href="../index.html#index" class="btn" aria-label="Article List">Article List</a></li> 
@@ -102,7 +103,7 @@
 <!-- ------------------- // ------------------- -->
 
             <!-- Main Article Body -->
-    <main class="container" id="article-top">
+    <main class="container" id="article">
 
             <!-- List - Table of Contents - List -->
         <aside class="toc-container" id="toc">
@@ -161,7 +162,7 @@
 <!-- ------------------- // ------------------- -->
 
         <!-- Main Article Content -->
-    <article id="content-body">
+    <article class="content-body id="article-top"">
 
             <!-- Introduction -->
         <header id="introduction">
@@ -354,7 +355,6 @@ function greet() {
 </article>
 <!-- ------------------- // ------------------- -->
 
-    
 <hr class="divider">
 
 <!-- Main Body -->
@@ -409,25 +409,33 @@ function greet() {
         </section>
     </article>
 <!-- END OF BODY --> 
-<!-- ------------------- // ------------------- -->
-    <hr class="divider">
     
-<!-- List Return Navigation -->
+<!-- ------------------- // ------------------- -->
+<hr class="divider">
+
+<!-- Return Navigation -->
     <nav class="return-links">
-        <a href="#article-top">Top of Page</a>
-        <a href="#toc">Table of Contents</a>
+        <a href="#top">Top of Page</a> .. 
+        <a href="#nav">Quick Links</a> ..
+        <a href="#toc">Table of Contents</a> .. 
+        <a href="#article-top">Top of Article</a> .. 
         <a href="javascript:history.back();">Back</a>
     </nav>
-
-<!-- [Button] Return Link -->
+<!-- Return [Button]  Links -->
     <div class="return-link">
-        <a href="#top" class="btn" aria-label="Top of Page">Top of Page</a>
+        <a href="#top" class="btn" aria-label="Top of Page">Page Top</a>
         <p>Alternate Return Link:<p>
         <a href="#nav" class="btn" aria-label="Back to top">Quick-Links</a>
         <p>Alternate Return Link:<p>
+        <a href="#toc" class="btn" aria-label="COntents">Table of Contents</a>
+        <p>Alternate Return Link:<p>
+        <a href="#article-top" class="btn" aria-label="Article Top">Article Top</a>
+        <p>Alternate Return Link:<p>
         <a href="javascript:history.back();" class="btn" aria-label="Back">Back</a>
     </div>
+
 <!-- ------------------- // ------------------- -->
+<hr class="divider">
 
 <!-- End Section - Disclaimer, About, Contact, Footer --> <!-- ----------- // ----------- -->
 
