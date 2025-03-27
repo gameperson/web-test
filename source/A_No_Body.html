@@ -90,49 +90,82 @@
                 aria-label="Toggle Theme (Header)">
         </div>
     </header>
-    
-<!-- ------------------- // ------------------- -->
+    <!-- ------------------- // ------------------- -->
 
         <!-- Main Article Body -->
-    <main class="container" id="article-top">
-<!-- Table of Contents -->
-        <section class="content-section center" id="toc">
-            <h3>Table of Contents</h3>
-            <ul class="index-list">
+    <main class="container" id="content-main">
 
-        <!-- Top Links - local links --> 
-                <li><a href="#introduction" class="btn">Introduction</a></li>
-                <li><a href="#guide" class="btn">Guide</a></li>
-                <li><a href="#overview" class="btn">Overview</a></li>
+            <!-- List - Table of Contents - List -->
+        <aside class="toc-container" id="toc">
+            <nav aria-label="Table of Contents">
+                <h3>Table of Contents</h3>
+                <ul class="toc-list">
+                    <li><a href="#guide" aria-label="Guide">Guide</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#content-main" aria-label="Main Content">Main Content</a></li>
+                    <li><a href="#article-top" aria-label="Article Top">Article Top</a>
+                    
+                    <li><a href="#section" class="btn">"Section" Section</a></li>
+                    <li><a href="#key-insights">Key Insights</a></li>
+                    <li><a href="#ordered-list" class="btn">Simole List</a></li>
+                    
+                    <li><a href="#code-example">Code Example</a></li>
+                    <li><a href="#table-example">Simole Table</a></li>
+                    <li><a href="#image-example">Visuals</a></li>
+                    <li><a href="#quote">Quote</a></li>
+                    <li><a href="#callout">Highlighted Section</a></li>
 
-        <!-- Section Links- local links --> 
-                <li><a href="#sections" class="btn">Main and Subsequent Sections</a></li>
-                <li><a href="#section-1" class="btn">Subsection</a></li>
-                <li><a href="#ordered-list" class="btn">Simole List</a></li>
-                <li><a href="#table-example" class="btn">Simole Table</a></li>
-                <li><a href="#callout" class="btn">Callout Box</a></li>
-                <li><a href="#code-example" class="btn">Code Block</a></li>
-                <li><a href="#image-example" class="btn">Image + Caption</a></li>
-                <li><a href="#quote" class="btn">Pull Quote</a></li>
-                
-        <!-- Bottom Links - local links --> 
-                <li><a href="#conclusion" class="btn">Conclusion</a></li>
-                <li><a href="#summary" class="btn">Summary</a></li>
-                <li><a href="#takeaways" class="btn">Takeaways</a></li>
-                <li><a href="#glossary" class="btn">Glossary</a></li>
-                <li><a href="#further-reading" class="btn" aria-label="Further Reading">Further Reading</a></li>
-                <li><a href="#references" class="btn" aria-label="References">References</a></li>
-            </ul>
-            <hr class="divider">
+                    <li><a href="#summary">Summary</a></li>
+                    <li><a href="#conclusion">Conclusion</a></li>
+                    <li><a href="#takeaways">Takeaways</a></li>
+                    <li><a href="#glossary">Glossary</a></li>
+                    <li><a href="#further-reading">Further Reading</a></li>
+                    <li><a href="#references">References</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <hr>
+        
+            <!-- [Buttons] - Table of Contents - [Button] --><!-- ------------------- // ------------------- -->
+        <aside class="content-section center" id="toc">
+            <nav aria-label="Table of Contents">
+                <h3>Table of Contents</h3>
+                <ul class="index-list">
+                    <li><a href="#guide" class="btn" aria-label="Guide">Guide</a></li>
+                    <li><a href="#overview" class="btn" aria-label="Overview">Overview</a></li>
+                    <li><a href="#introduction" class="btn" aria-label="Introduction">Introduction</a></li>
+                    <li><a href="#article-top" class="btn" aria-label="Article Top">Article Top</a>
+                    <li><a href="#content-main" class="btn" aria-label="Content Top">Content Top</a></li>
+                    <li><a href="#section" class="btn" aria-label=" Scpecial Section Section" >Special "Section" Section</a></li>
+
+                    <li><a href="#key-insights">Key Insights</a></li>
+                    
+                    <li><a href="#ordered-list" class="btn">Simole List</a></li>
+
+                    <li><a href="#code-example" class="btn">Code Block</a></li>
+                    <li><a href="#table-example" class="btn">Simole Table</a></li>
+                    <li><a href="#image-example" class="btn">Image + Caption</a></li>
+                    <li><a href="#quote" class="btn">Pull Quote</a></li>
+                    <li><a href="#callout" class="btn">Callout Box</a></li>
+
+                    <li><a href="#summary" class="btn">Summary</a></li>
+                    <li><a href="#conclusion" class="btn">Conclusion</a></li>
+                    <li><a href="#takeaways" class="btn">Takeaways</a></li>
+                    <li><a href="#glossary" class="btn">Glossary</a></li>
+                    <li><a href="#further-reading" class="btn">Further Reading</a></li>
+                    <li><a href="#references" class="btn">References</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+<!-- ------------------- // ------------------- -->
+        <!-- Main Article Content -->
+    <article class="content-body id="article-top content-main"">
+        <section id="section">
+            <h2>SECTION TEXT</h2>
         </section>
-
-<!-- Article Main Body -->
-        <!-- White Paper / Article  - only without TOC code block-->
-    <main class="container" id="article-top">
-        <section class="CLASS" id="ID">
-            <h6>Page Main Section</h6>
-        </section>
-    </main>
+    </article>
 
 <!--End Section - Permanent -->    
     <!-- Disclaimer -->
