@@ -33,9 +33,9 @@
 
     <!-- relative links href="../" -->  <!-- ../ -->
     <!-- site-header (site-nav, theme-toggle) -->
-    <!-- main.. toc list, toc buttons -->
-        <!-- main article: introduction, guide, overview, -->
-        <!-- content-main, key-insights, ordered-list -->
+    <!-- main (toc list, toc buttons) -->
+    <!-- article: guide, overview, introduction,->
+        <!-- content-main, callout, key-insights, ordered-list -->
         <!-- callout, code-sample, table-example, image-example -->
         <!-- conclusion, summary, takeaways,  -->
         <!-- references, glossary, further-reading -->
@@ -59,6 +59,7 @@
                 <li><a href="#overview" class="btn" aria-label="Overview">Overview</a></li>
                 <li><a href="#introduction" class="btn" aria-label="Introduction">Introduction</a></li>
                 <li><a href="#content-main" class="btn" aria-label="Main Article">Main Article</a></li>
+                <li><a href="#callout" class="btn" aria-label="Callout">Callout</a></li>
             <hr class="divider">
                     <!-- End Article Nav --> 
                 <li><a href="#summary" class="btn" aria-label="Summary">Summary</a></li>
@@ -152,14 +153,13 @@
                     
                     <li><a href="#content-main" class="btn" aria-label="Content Top">Content Top</a></li>
                     <li><a href="#section" class="btn" aria-label=" Scpecial Section Section" >Special "Section" Section</a></li>
-                    <li><a href="#key-insights"class="btn" aria-label="">Key Insights</a></li>
+                    <li><a href="#callout" class="btn" aria-label="">Callout Box</a></li>
         
-                    <li><a href="#ordered-list" class="btn" aria-label="">Simole List</a></li>
+                    <li><a href="#list" class="btn" aria-label="Lists">Lists</a></li>
+                    <li><a href="#image-example" class="btn" aria-label="">Image + Caption</a></li>
                     <li><a href="#code-example" class="btn" aria-label="">Code Block</a></li>
                     <li><a href="#table-example" class="btn" aria-label="">Simole Table</a></li>
-                    <li><a href="#image-example" class="btn" aria-label="">Image + Caption</a></li>
                     <li><a href="#quote" class="btn" aria-label="">Pull Quote</a></li>
-                    <li><a href="#callout" class="btn" aria-label="">Callout Box</a></li>
 
                     <li><a href="#summary" class="btn" aria-label="">Summary</a></li>
                     <li><a href="#conclusion" class="btn" aria-label="">Conclusion</a></li>
@@ -226,7 +226,7 @@
             <p><strong>Example:</strong> "However, AI in healthcare raises concerns about data privacy and bias in training data."</p>
         </section>
     
-            <!-- Main Content -->
+            <!-- New Content -->
         <section id="section">
             <h2>Indexed Section - "#section"</h2>
             <p>
@@ -238,7 +238,10 @@
             </p>
         </section>
             
-            <!-- Highlighted Section -->
+    <hr class="divider">
+<!-- ------------------- // ------------------- -->
+
+            <!-- Callout -->
         <aside class="callout" id="callout">
             <h3>Highlighted Section</h3>
             <p>
@@ -251,6 +254,11 @@
 
     <hr class="divider">
 <!-- ------------------- // ------------------- -->
+
+            <!-- Pull Quote -->
+        <blockquote id="quote">
+            “<b>QUOTE:</b>AI is not going to replace humans, but humans who use AI will replace those who don’t.” <br>— Tech Thought Leader
+        </blockquote>
 
             <!-- lists -->
         <section id="lists">
@@ -269,7 +277,7 @@
             </ol>
 
             <!-- ordered list -->
-            <h3 id="ordered-list">Bulleted List Example</h3>
+            <h3 id="ordered-list">Ordered List Example</h3>
             <ul>
                 <li><strong>Example:</strong> "Analyze economic trends and predict market shifts."</li>
                 <li><strong>Example:</strong> "Assess political data and identify potential risks."</li>
@@ -284,31 +292,6 @@
                 <li><strong>Example:</strong> "Evaluate social indicators and propose mitigation strategies."</li>
             </ul>
         </section>
-
-            <!-- Pull Quote -->
-        <blockquote id="quote">
-            “AI is not going to replace humans, but humans who use AI will replace those who don’t.” <br>— Tech Thought Leader
-        </blockquote>
-
-            <!-- Code Sample -->
-        <section id="code-sample">
-            <h2>Code Example</h2>
-            <p>
-                A dedicated section for code snippets, CLI commands,
-                programming examples, programming example, 
-                CLI command, scripts, functions, etc.
-            </p>
-            <pre><code>
-            function greet() {
-                console.log("Hello, world!");
-            }
-            </code></pre>
-        </section>
-
-            <!-- Pull Quote -->
-        <blockquote id="quote">
-            “AI is not going to replace humans, but humans who use AI will replace those who don’t.” <br>— Tech Thought Leader
-        </blockquote>
 
             <!-- Image with Caption -->
         <section id="image-example">
@@ -352,7 +335,23 @@
             </table>
         </section>
 
-        
+            <!-- Code Sample -->
+        <section id="code-sample">
+            <h2>Code Example</h2>
+            <p>
+                A dedicated section for code snippets, CLI commands,
+                programming examples, programming example, 
+                CLI command, scripts, functions, etc.
+            </p>
+            <pre><code>
+<!-- --------------- -->
+    function greet() {
+        console.log("Hello, world!");
+    }
+<!-- --------------- -->
+            </code></pre>
+        </section>
+                
     <hr class="divider">
 <!-- ------------------- // ------------------- -->
 
