@@ -575,11 +575,6 @@ return-list-link {
 }
 
 return-link p {
-    text-align: left;
-    text-align-last: left; 
-} 
-
-return-link p {
     text-align: center;
     text-align-last: center; 
 } 
@@ -727,14 +722,14 @@ section {
 }
 
 /* Center these specific sections */
-#toc-buttons, #overview, #conclusion, #image-example,
-.image-example, img, figure, figcaption {
+.toc-buttons, .overview, .conclusion, .image,
+.image, img, figure, figcaption {
     text-align: center;
     text-align-last: center;
 }
 
 /* Border and padding similar to table styling */
-#image-example figure {
+#image figure {
     background-color: var(--color-background-medium);
     display: inline-block;
     max-width: 100%;
@@ -744,13 +739,13 @@ section {
     padding: var(--padding-base);
 }
 
-#image-example img {
+#image img {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
-#image-example figcaption {
+#image figcaption {
     color: var(--color-text-muted);
     font-style: italic;
     margin-top: var(--margin-small);
