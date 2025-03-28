@@ -591,7 +591,7 @@ return-link .btn, retyrn-list-link .btn, .disclaimer-link .btn, .contact-link .b
     text-align-last: ledt;
 }
 
-retyrn-list-link .btn {
+return-list-link .btn {
     text-align: center;
     text-align-last: cernter;
 }
@@ -624,45 +624,36 @@ section {
 }
 
 /* Guide, Overview, Summary, etc. */
-.guide-section,
-.overview-section,
-.summary-section,
-.takeaways-section,
-.conclusion-section,
-.glossary-section,
-.references-section,
-.further-reading-section {
+.guide, .overview, .introduction,
+.insights, .summary, .conclusion,
+.glossary, .references, .further-reading {
     background: var(--color-background-light);
     padding: 1.5em;
     border-radius: 5px;
     margin-bottom: 2em;
 }
 
-.summary-section,
-.takeaways-section,
-.guide-section,
-.glossary-section,
-.references-section,
-.further-reading-section {
+.guide, .insights, .summary, 
+.glossary, .references, .further-reading {
     text-align: justify;
     text-align-last: left;
 }
 
 /* Takeaways Special Styling */
-.takeaways-section ul {
+.insights ul {
     list-style-type: disc;
 }
 
 /* Glossary Styling */
-.glossary-section dl {
+.glossary dl {
     margin: 0;
 }
 
-.glossary-section dt {
+.glossary dt {
     font-weight: bold;
 }
 
-.glossary-section dd {
+.glossary dd {
     margin: 0 0 1em 1em;
 }
 
@@ -736,7 +727,7 @@ section {
 }
 
 /* Center these specific sections */
-#toc, #overview, #conclusion, #image-example,
+#toc-buttons, #overview, #conclusion, #image-example,
 .image-example, img, figure, figcaption {
     text-align: center;
     text-align-last: center;
