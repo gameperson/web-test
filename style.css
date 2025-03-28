@@ -267,19 +267,24 @@ figcaption {
     margin-bottom: 1em;
 }
 
-.divider {
-    max-width: 600px;
-    margin: 1.2em auto;
-    padding: 1px;
-    border-top: 2px solid var(--color-border-primary);
-}
-
 .section-divider {
     padding: 2px;
     border-top: 2px solid var(--color-border-primary);
     border-left: 1px solid var(--color-border-primary);
     border-right: 1px solid var(--color-border-primary);
     margin: 2em 0;
+}
+
+.divider {
+    max-width: 600px;
+    margin: 1.2em auto;
+    padding: 1px;
+    border: 1px 0 solid var(--color-border-primary);
+}
+
+.divider.2, .section-divider.2 {
+    border: 0 1px 0 1px solid var(--color-border-primary);
+    padding: 2px
 }
 
 /* ============================================================
@@ -565,6 +570,7 @@ return-link, .disclaimer-link, .contact-link {
 
 /* Ensure headings stay centered */
 return-link h3, .disclaimer-link h3, .contact-link h3 {
+    text-weight: var(--font-weight-normal);
     text-align: center;
     text-align-last: center;
 }
