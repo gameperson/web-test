@@ -33,14 +33,14 @@
     <link rel="apple-touch-icon" href="../images/bulb.gray.png"> 
 
     <!-- relative links href="../" -->  <!-- ../ -->
-    <!-- site-header (site-nav, theme-toggle) -->
+    
+    <!-- header (site-nav, theme-toggle) -->
     <!-- main (toc list, toc buttons) -->
-    <!-- article: guide, overview, introduction, content-main,->
-        <!-- callout, key-insights, ordered-list, code-sample, -->
-        <!-- table, image, conclusion, summary, takeaways, conclusion, -->
-        <!-- summary, takeaways, references, glossary, further-reading -->
+    <!-- article: guide, overview, introduction, article-top, section, -->
+        <!-- callout, quote, list, image, table, code, -->
+        <!-- insights, summary, conclusion, glossary, further-reading, references -->
     <!-- return-links: top, nav, toc, article-top, .back() -->
-    <!-- end section (disclaimer, about, contact, top) -->
+    <!-- tail section (disclaimer, back, about, contact) -->
     <!-- footer (nav-list theme-toggle footer-text, scripts) -->
 
 </head>
@@ -175,7 +175,7 @@
 <!-- ------------------- // ------------------- -->
 
         <!-- Article Content -->
-    <article class="content-body id="article-top content-main"">
+    <article class="content-body id="article-top"">
 
             <!-- Guide -->
         <section id="guide">
@@ -246,7 +246,7 @@
             </p>
         </section>
             
-    <hr class="divider">
+    <br class="divider">
 <!-- ------------------- // ------------------- -->
 
             <!-- Callout 
@@ -263,7 +263,7 @@
                 using real-world test cases before deployment."</p>
         </aside>
 
-    <hr class="divider">
+    <br class="divider">
 <!-- ------------------- // ------------------- -->
 
             <!-- Pull Quote -->
@@ -274,7 +274,7 @@
         </blockquote>
 
             <!-- lists -->
-        <section class="list" id="lists">
+        <section class="list" id="list">
             <h2>Lists</h2>
             <p>
                 Useful for processes, ranking, structured steps,
@@ -355,11 +355,11 @@
                 CLI command, scripts, functions, etc.
             </p>
             <pre><code>
-<!-- --------------- -->
+    <!-- --------------- -->
  function greet() {
      console.log("Hello, world!");
  }
-<!-- --------------- -->
+    <!-- --------------- -->
             </code></pre>
         </section>
                 
@@ -377,12 +377,6 @@
             <ul>
                 <li><strong>Example:</strong> "AI can enhance efficiency but requires careful data governance."</li>
                 <li><strong>Example:</strong> "Ethical AI development is critical to avoid unintended biases."</li>
-            </ul>
-            <h3>Alternate Section</h3>
-            <ul>
-                <li>lesson or insight #1</li>
-                <li>lesson or insight #2</li>
-                <li>lesson or insight #3</li>
             </ul>
         </section>
 
@@ -443,14 +437,16 @@
 <!-- ------------------- // ------------------- -->
 
         <!-- Return Navigation Link List-->
-    <nav class="return-link">
-        <a href="#top" aria-label="Page Top">Page Top</a> &bull; 
-        <a href="#nav" aria-label="Quick-Links">Quick Links</a> &bull; 
-        <a href="#toc" aria-label="Contents">Table of Contents</a> &bull; 
-        <a href="#article-top" aria-label="Article Top">Article Top</a> &bull; 
-        <a href="#content-main" aria-label="Content Top">Content Top</a> &bull; 
-        <a href="javascript:history.back();">Back</a>
+   <div class="return-link">
+    <nav class="rlist-link">
+        <a href="#top" aria-label="Page Top">[Page Top]</a> &nbsp;
+        <a href="#nav" aria-label="Quick-Links">[Quick Links]</a> &nbsp;
+        <a href="#toc" aria-label="Contents">[Table of Contents]</a> &nbsp;
+        <a href="#article-top" aria-label="Article Top">[Article Top]</a> &nbsp; 
+        <a href="#content-main" aria-label="Content Top">[Content Top]</a> &nbsp; 
+        <a href="javascript:history.back();">[Back]</a>
     </nav>
+    </div>
         
         <!-- Return [Button] Links -->
     <div class="return-link ">
@@ -471,7 +467,7 @@
     </div>
 <!-- END OF RETURN LINKS --> 
     
-    <hr class="divider">
+    <br class="divider">
 <!-- ------------------- // ------------------- -->
         
         <!-- Disclaimer -->
