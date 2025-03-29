@@ -568,37 +568,37 @@ footer .site-nav li a {
 
 /* Custom utility for return, rturn=list=link, disclaimer and contact blocks */
 
-return-link, .disclaimer-link, .contact-link {
+.return-link, .disclaimer-link, .contact-link {
     text-align: justify;
     text-align-last: left;
     padding: 1em;
 }
 
 /* Ensure headings stay centered */
-return-link h3, .disclaimer-link h3, .contact-link h3 {
+.return-link h3, .disclaimer-link h3, .contact-link h3 {
     text-weight: var(--font-weight-normal);
     text-align: center;
     text-align-last: center;
 }
 
-return-list-link {
+.return-list-link {
     text-align: left;
     padding: 3em 1em auto 1em;
 }
 
-return-link p {
+.return-link p {
     text-align: center;
     text-align-last: center; 
 } 
 
-return-link .btn, return-list-link .btn, .disclaimer-link .btn, .contact-link .btn {
+.return-link .btn, return-list-link .btn, .disclaimer-link .btn, .contact-link .btn {
     display: block;
     margin: 1em auto;
     text-align: justify;
     text-align-last: ledt;
 }
 
-return-list-link .btn {
+.return-list-link .btn {
     text-align: left;
     text-align-last: left;
 }
