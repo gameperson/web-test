@@ -113,8 +113,9 @@ body {
 
     /* Font Weights */
     --font-weight-normal: 400;
-    --font-weight-semibold: 600;
-    --font-weight-bold: 700;
+    --font-weight-ligbt: 300;
+    --font-weight-semibold: 500;
+    --font-weight-bold: 600;
 
     /* Spacing (Margins, Padding) */
     --margin-base: 1em;
@@ -570,7 +571,7 @@ footer .site-nav li a {
 
 .return-link, .disclaimer-link, .contact-link {
     text-align: justify;
-    text-align-last: left;
+    text-align-last: center;
     padding: 1em;
 }
 
@@ -582,9 +583,11 @@ footer .site-nav li a {
 }
 
 .return-list-link {
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weigt-light);
     text-align: center;
-    margin: 0.3rem auto;
-    padding: 0.2rem
+    margin: 0.4rem auto;
+    padding: 0.3rem
 }
 
 .return-link p, .return-list-link p {
@@ -597,10 +600,6 @@ footer .site-nav li a {
     margin: 1em auto;
     text-align: justify;
     text-align-last: left;
-}
-
-.return-list-link .btn {
-    text-align: center;
 }
 
 /* ============================================================
