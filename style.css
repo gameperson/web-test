@@ -108,6 +108,7 @@ body {
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Arial, sans-serif;
     --font-size-base: 1rem;
     --font-size-small: 0.875rem;
+    --font-size-medium: 1.1rem;
     --font-size-large: 1.25rem;
 
     /* Font Weights */
@@ -716,7 +717,7 @@ section {
     border: 1px solid var(--color-text-primary);
     border-radius: var(--border-radius-small);
     padding: 1em;
-    font-size: 1.1em;
+    font-size: var(--font-size-medium);
 }
 
 .article-white-paper {
@@ -728,10 +729,14 @@ section {
 }
 
 /* Center these specific sections */
-.toc-buttons, .overview, .conclusion, .image,
+.toc-button, .overview, .conclusion, .image,
 .image, img, figure, figcaption {
     text-align: center;
     text-align-last: center;
+}
+
+.toc-button {
+   font-size: var(--font-size-medium);
 }
 
 /* Border and padding similar to table styling */
