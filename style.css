@@ -568,7 +568,7 @@ footer .site-nav li a {
 
 /* Custom utility for return, rturn=list=link, disclaimer and contact blocks */
 
-.return-link, .disclaimer-link, .contact-link, .return-list-link {
+.return-link, .disclaimer-link, .contact-link {
     text-align: justify;
     text-align-last: left;
     padding: 1em;
@@ -583,6 +583,8 @@ footer .site-nav li a {
 
 .return-list-link {
     text-align: center;
+    margin: 0.3rem auto;
+    padding: 0.2rem
 }
 
 .return-link p, .return-list-link p {
@@ -598,7 +600,7 @@ footer .site-nav li a {
 }
 
 .return-list-link .btn {
-    text-align: left;
+    text-align: center;
 }
 
 /* ============================================================
@@ -732,7 +734,7 @@ section {
 }
 
 /* Center these specific sections */
-btn-toc, .overview, .conclusion, .image,
+.toc-btn, .overview, .conclusion, .image,
 .image, img, figure, figcaption {
     text-align: center;
     text-align-last: center;
