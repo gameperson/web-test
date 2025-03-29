@@ -292,7 +292,7 @@ figcaption {
    6. BUTTON LINKS 
    ============================================================ */
 
-.btn, .btn-link { /* Combined .btn and .btn-link */
+.btn, .btn-link, .toc-btn { /* Combined .btn and .btn-link */
     background-color: var(--color-background-dark);
     color: var(--color-text-primary);
     display: block;
@@ -307,19 +307,19 @@ figcaption {
     transition: background 0.3s ease;
 }
 
-.btn:hover, .btn-link:hover { /* Combined .btn:hover and .btn-link:hover */
+.btn:hover, .btn-link:hover, btn-toc:hover { /* Combined .btn:hover and .btn-link:hover */
     background: var(--color-background-darker);
 }
 
 /* Smaller nav Buttons */
-.nav .btn, .nav .btn-link {
+.nav .btn, .nav .btn-link, btn-toc {
     font-size: var(--font-size-small);
     display: inline-block;
     padding: var(--padding-smaller);
     margin: var(--margin-smaller);
 }
 
-.toc-btn {
+btn-toc {
    padding: var(--padding-small);
     
 }
@@ -734,7 +734,7 @@ section {
 }
 
 /* Center these specific sections */
-.toc-btn, .overview, .conclusion, .image,
+btn-toc, .overview, .conclusion, .image,
 .image, img, figure, figcaption {
     text-align: center;
     text-align-last: center;
