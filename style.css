@@ -319,6 +319,11 @@ figcaption {
     margin: var(--margin-smaller);
 }
 
+.toc-btn {
+   padding: var(--padding-small);
+    
+}
+   
 /* Large Button */
 .btn.large, .btn-link.large { /* Combined .btn.large and .btn-link.large */
     font-size: var(--font-size-base);
