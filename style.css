@@ -81,8 +81,8 @@ body {
     border-color: var(--color-link-primary); /* Teal border */
 }
 
-.light-theme .highlighted-section a.button-link,
-.button-link {
+.light-theme .highlighted-section a.btn-link,
+.btn-link {
     /* Button Styles, applies to both themes */
     display: block;
     padding: 0.8em 1.2em;
@@ -94,8 +94,8 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.light-theme .highlighted-section a.button-link:hover,
-.button-link:hover {
+.light-theme .highlighted-section a.btn-link:hover,
+.btn-link:hover {
     background-color: var(--color-background-dark);
 }
 
@@ -292,7 +292,7 @@ figcaption {
    6. BUTTON LINKS 
    ============================================================ */
 
-.btn, .button-link { /* Combined .btn and .button-link */
+.btn, .btn-link { /* Combined .btn and .btn-link */
     background-color: var(--color-background-dark);
     color: var(--color-text-primary);
     display: block;
@@ -307,12 +307,12 @@ figcaption {
     transition: background 0.3s ease;
 }
 
-.btn:hover, .button-link:hover { /* Combined .btn:hover and .button-link:hover */
+.btn:hover, .btn-link:hover { /* Combined .btn:hover and .btn-link:hover */
     background: var(--color-background-darker);
 }
 
 /* Smaller nav Buttons */
-.nav .btn, .nav .button-link {
+.nav .btn, .nav .btn-link {
     font-size: var(--font-size-small);
     display: inline-block;
     padding: var(--padding-smaller);
@@ -320,7 +320,7 @@ figcaption {
 }
 
 /* Large Button */
-.btn.large, .button-link.large { /* Combined .btn.large and .button-link.large */
+.btn.large, .btn-link.large { /* Combined .btn.large and .btn-link.large */
     font-size: var(--font-size-base);
     margin: var(--margin-large) auto;
     padding: var(--padding-base);
@@ -328,19 +328,19 @@ figcaption {
     text-align-last: center;
 }
 
-.btn.large h3, .button-link.large h3 {
+.btn.large h3, .btn-link.large h3 {
     line-height: var(--line-height-smaller);
     margin: 0;
     padding: 0;
 }
 
 /* Button Text Alignment */
-.btn.justify, .button-link.justify {
+.btn.justify, .btn-link.justify {
     text-align: center; /* !important; */
     text-align-last: center; /* !important; */
 }
 
-.btn.large.full-block-button, .button-link.large.full-block-button {
+.btn.large.full-block-btn, .btn-link.large.full-block-btn {
     display: block;
     text-align: justify;
     text-align-last: center;
@@ -348,19 +348,19 @@ figcaption {
     margin: var(--margin-large) auto;
 }
 
-.btn.large.full-block-button h3,
-.btn.large.full-block-button p,
-.btn.large.full-block-button span,
-.button-link.large.full-block-button h3,
-.button-link.large.full-block-button p,
-.button-link.large.full-block-button span {
+.btn.large.full-block-btn h3,
+.btn.large.full-block-btn p,
+.btn.large.full-block-btn span,
+.btn-link.large.full-block-btn h3,
+.btn-link.large.full-block-btn p,
+.btn-link.large.full-block-btn span {
 /*    margin: 0.5em 0;
 */
    color: var(--color-text-primary);
 }
 
 /* Ensure button hover styles still apply */
-.btn.large.full-block-button:hover, .button-link.large.full-block-button:hover {
+.btn.large.full-block-btn:hover, .btn-link.large.full-block-btn:hover {
     background: var(--color-background-darker);
 }
 
@@ -729,14 +729,14 @@ section {
 }
 
 /* Center these specific sections */
-.toc-button, .overview, .conclusion, .image,
+.toc-btn, .overview, .conclusion, .image,
 .image, img, figure, figcaption {
     text-align: center;
     text-align-last: center;
 }
 
-.toc-button {
-   font-size: var(--font-size-medium);
+.toc-btn {
+   font-size: var(--font-size-large);
 }
 
 /* Border and padding similar to table styling */
